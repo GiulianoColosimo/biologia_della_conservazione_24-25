@@ -2,7 +2,7 @@
 title: "Biologia della Conservazione"
 subtitle: "Class 1 - Introduction to Conservation Biology"
 date: "2024-11-04"
-footer:  "[Biologia della conservazione 24/25 - Giuliano Colosimo, PhD](https://giulianocolosimo.github.io/biologia_della_conservazione_23_24/)"
+footer:  "[Biologia della conservazione 24/25 - Giuliano Colosimo, PhD](https://giulianocolosimo.github.io/biologia_della_conservazione_24-25/)"
 logo: ../../figures/Tor-Vergata_logo_cmyk.png
 format: 
   revealjs:
@@ -44,7 +44,7 @@ library("DiagrammeR")
 
 -   The course will be thought in Italian unless international students are present. In this latter case the course will be thought in English. All the material and the literature used will be in English.
 
--   Check the website and your e-mail periodically for information. The website for this class is hosted at <https://giulianocolosimo.github.io/biologia_della_conservazione_23_24/>
+-   Check the website and your e-mail periodically for information. The website for this class is hosted at <https://giulianocolosimo.github.io/biologia_della_conservazione_24-25/>
 
 -   You need to be in class, follow, participate and take notes. I will try to make the class as interactive as possible. I need you to talk to me!!!
 
@@ -122,9 +122,6 @@ Ecologists, geneticists, zoologists, botanists, microbiologists, evolutionary bi
 
 ------------------------------------------------------------------------
 
-![The environmental impact triangle. From @VanDyke2020](./2_conservationbiology.png)
-
-------------------------------------------------------------------------
 
 ![Data downloaded from WOS. **Type**: Article, Proceeding Paper, Review Article; **Field**: Entomology, Env. Science, Env. Studies, Evol. Biology, Fisheries, Forestry, Oceanography, Ornithology, Biodiversity Conservation, Biology, Plant Sciences, Ecology, Marine Freshwater Biology, Water Resources, Zoology](./3_numofpubsconservation.png)
 
@@ -141,6 +138,12 @@ For thousands of years humans have *managed* natural resources, but did not spen
 . . .
 
 These are all historical examples showing that the notion to manage our natural resources is well known and established in our species. And yet, we continuously seem to fail at conserving them.
+
+------------------------------------------------------------------------
+
+![The environmental impact triangle. From @VanDyke2020](./2_conservationbiology.png)
+
+------------------------------------------------------------------------
 
 ## Deforestation
 
@@ -178,6 +181,11 @@ ffcons_long %>%
          yaxis = list(title = "TWh"))
 ```
 
+## New record in $CO_2$ atmosphere
+
+![Newspaper article from "Il Fatto Quotidiano" on line, published on [2024-10-28](https://www.ilfattoquotidiano.it/2024/10/28/onu-mai-cosi-tanta-co2-nellatmosfera-aumento-del-151-rispetto-ai-livelli-pre-industriali/7745878/)](./8_co2_ifq.png)
+
+
 ## Biodiversity loss
 
 ```{r glplan, echo = F, fig.cap = "Data downloaded from [https://ourworldindata.org/biodiversity](https://ourworldindata.org/biodiversity) on 2024-03-05", fig.align="center", out.width=1500, out.height=700}
@@ -197,6 +205,10 @@ glplan_wrld %>%
   layout(xaxis = list(title = "Year"),
          yaxis = list(title = "TWh"))
 ```
+
+## Earlier EOD (Earth Overshoot Day)
+
+![Evolution of the EOD dates (available from [Wikipedia](https://en.wikipedia.org/wiki/Earth_Overshoot_Day))](./9_eod.png)
 
 ## The "Ecologically Noble Savage" conundrum
 
