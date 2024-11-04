@@ -14,7 +14,8 @@ citecolor: "red"
 
 # Introduction
 
-Welcome to class! These web-pages contain all the information you need to accomplish your class work for the teaching module **Biologia della Conservazione**. This module is part of the integrated course of Evolution and Conservation. 
+Welcome to class! These web-pages contain all the information you need to accomplish your class work for the teaching module **Biologia della Conservazione**. This module is part of the integrated course of Evolution and Conservation.
+
 This is a mandatory module for master level students enrolled in the "Biologia Ambientale" degree at the University of Rome Tor Vergata. It is worth **5 CFU** for a total of 40 hours (i.e., 20 classes of 2 hours each) to be administered in person during the first semester of academic year 2024/2025. The first class will be on Monday, November 4, 2024.
 
 ## Program
