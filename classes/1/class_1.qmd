@@ -36,6 +36,26 @@ library("reshape2")
 library("DiagrammeR")
 ```
 
+## Who am I?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![Me and my buddy *Cyclura nubila caymanensis*](./10_whoamI.jpeg){width=80%}
+:::
+
+::: {.column width="50%"}
+- Evolutionary and Conservation Biologist
+- Research associate @ Tor Vergata University
+- Steering Committee member of the [IUCN-SSC-Iguana Specialist](https://www.iucn-isg.org/about/isg-committees/)
+- PhD in Conservation Genetics from Mississippi State University (MS, USA)
+- Master Degree in Ecology and Evolution from University of Rome Tor Vergata
+:::
+
+::::
+
+------------------------------------------------------------------------
+
 ## Course overview
 
 -   This is a mandatory module for master level students enrolled in the "Biologia Ambientale" degree at the University of Rome Tor Vergata. It is worth **5 CFU** for a total of 40 hours (i.e., 20 classes of 2 hours each) to be administered in person during the first semester of academic year 2024/2025.
@@ -130,7 +150,7 @@ Ecologists, geneticists, zoologists, botanists, microbiologists, evolutionary bi
 For thousands of years humans have *managed* natural resources, but did not spend much time conserving them. Yet, humans have always appreciated the importance of preserving the natural environment.
 
 ::: incremental
--   Plato, through the words of Critia, laments the bad conditions of the land that is no longer productive and rich how it used to be [@Platone].
+-   Plato (~427—348 b.c.), through the words of Critia, laments the bad conditions of the land that is no longer productive and rich how it used to be [@Platone].
 -   Judaism extended the principle of the Sabbath to agricultural land [@Levitico25].
 -   During the Song dynasty (China, 960---1279 AD) it was common practice to set aside *fengshui* (sacred) portions of the land, mostly forest, to help regulating spiritual and physical power. Modern china forgo this view.
 :::
@@ -203,7 +223,7 @@ glplan_wrld %>%
     type = 'scatter',
     mode = 'lines') %>% 
   layout(xaxis = list(title = "Year"),
-         yaxis = list(title = "TWh"))
+         yaxis = list(title = "Abundance (%)"))
 ```
 
 ## Earlier EOD (Earth Overshoot Day)
@@ -286,8 +306,8 @@ Conservation as a selfish strategy could evolve if the short term disadvantages 
 
 The native people considered in this study are the **Piro** community of Diamante, situated in the lowland rain forest environment of southeastern Peru.
 
--   $h_i$ = handling time with an individual of type i after encounter
--   $e_i$ = average expected net energy gain after encounter with prey ype i
+-   $h_i$ = handling time with an individual of type $i$ after encounter
+-   $e_i$ = average expected net energy gain after encounter with prey type $i$
 -   $\lambda_i$ = rate of encounter with prey type i
 
 The profitability of prey type $i$ is $e_i/h_i$. The prey are ranked according to their profitability, such that is $e_1/h_1 > e_2/h_2... > e_n/h_n$. Beginning with the most profitable type (which is always included in the diet), prey are added to the diet, one by one, until a prey item is found that has a lower return rate upon encounter than could be obtained from searching for more profitable prey. That is, prey types are added to the diet until:
@@ -304,6 +324,10 @@ After @Alvard1993, but see also @Stephens1986
 
 ------------------------------------------------------------------------
 
+![From @Alvard1993](./11_Alvard1993.png)
+
+------------------------------------------------------------------------
+
 ![From @Alvard1993](./6_Alvard1993.png)
 
 ------------------------------------------------------------------------
@@ -316,7 +340,9 @@ After @Alvard1993, but see also @Stephens1986
 
 -   The observation that no restraint was shown killing the large primate species is the strongest evidence contrary to the conservation hypothesis.
 
--   Native populations are expected to desire the same material benefits that other, more developed peoples enjoy, such as adequate nutrition, shelter, health care, and education.
+-   Native populations are expected to desire the same material benefits than other, more developed peoples, enjoy such as adequate nutrition, shelter, health care, and education.
+
+. . .
 
 -   Is conservation behavior something that still needs to evolve?
 

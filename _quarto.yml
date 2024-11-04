@@ -35,8 +35,8 @@ website:
       - section: "Classes"
         title: "Classes"
         contents: 
-          #- href: ./classes/1/class_1.html
-          #  text: "Class 1 - Introduction to Conservation Biology"
+          - href: ./classes/1/class_1.html
+            text: "Class 1 - Introduction to Conservation Biology"
  
 
     tools:
