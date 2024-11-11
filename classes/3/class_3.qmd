@@ -43,16 +43,64 @@ library("gtsummary")
 library("plotly")
 ```
 
-# The Anthropocene
+## Geological Time Scale
 
+![Downloaded from [www.geosociety.org](www.geosociety.org).](./1_geots.png)
+
+::: notes
+Speaker notes go here.
+:::
+
+## The Anthropocene
+
+- "Any formal recognition of an Anthropocene epoch in the geological time scale hinge on whether humans have changed the Earth ecosystem....to produce a stratigraphic signature in sediment and ice that is distinct of that of the holocene epoch" [@Waters2016]
+- The sharpest of these signals is made by the artificial radionuclides spread worldwide by the thermonuclear bomb tests from the early 1950 [@VanDyke2020]
 - In 2019 the Anthropocene Working Group (AWG) released the result of its vote to designate a new geologic epoch
 - 2019 officially marks the manifold and planetary effects that human beings are now creating on the ecology, natural processes and even geological records of planet Earth [@VanDyke2020]
 
 ------------------------------------------------------------------------
 
+- The Holocene (Greek for "entirely recent") had been designated for the post-glacial period of the past ten to twelve thousands years during the Geological Congress in Bologna in 1855
+- The Welsh geologist Thomas Jenkins was probably the first one to publish the idea of an evidence-based  human geologic time unit [@Lewis2015]
+- The US author George Perkins published in 1864 the volume "Man and Nature" detailing the global extent of modification of the earth by humans 
+- In 1873 the overwhelming impact of human activities on the environment was even more explicitly stated by the Italian geologist Antonio Stoppani who described the human impact as a "telluric force which in power and universality may compared to the greater forces of earth" [@VanDyke2020]
+
+------------------------------------------------------------------------
+
+<br/>
+
+![After @Lewis2015](./newgeoscale.png)
+
+------------------------------------------------------------------------
+
+<br/> <br/>
+
+:::: columns
+::: {.column width="50%"}
+![After @Lewis2015](./lewis1.png)
+:::
+
+::: {.column width="50%" }
+![After @Lewis2015](./lewis2.png)
+:::
+::::
+
+------------------------------------------------------------------------
+
+## From Biomes...
+
+![Biomes are large areas of regionally similar vegetation which generally occur in predictable patterns of latitude and climate](./biomes.png)
 
 
 ------------------------------------------------------------------------
+
+
+## ... to Anthromes
+
+![After @Ellis2008](./ellis1.png)
+
+------------------------------------------------------------------------
+
 
 <br/> <br/> <br/> <br/> <br/>
 
@@ -69,13 +117,6 @@ library("plotly")
 
 ------------------------------------------------------------------------
 
-## Geological Time Scale
-
-![Downloaded from [www.geosociety.org](www.geosociety.org).](./1_geots.png)
-
-::: notes
-Speaker notes go here.
-:::
 
 ## Three major steps during the evolution of life on earth.
 
@@ -156,11 +197,11 @@ Estimates of species lifespan from origin to extinction [@Lawton1995].
 
 ------------------------------------------------------------------------
 
-1.  [Ordovician-Silurian]{style="color: blue;"}. 86% of life lost. Scientists theorize that there were two main phases to this extinction; a glaciation event and a heating event.
-2.  [Late Devonian]{style="color: blue;"}. 75% life lost. Global cooling. Algae blooming consumed vast amounts of oxygen in the oceans, suffocating many species.
-3.  [Permian-Triassic]{style="color: blue;"}. 96% of life lost. Volcanic activity in Siberia put out massive amounts of carbon dioxide into the atmosphere. Bacteria began producing methane, another greenhouse gas. Large quantities of both gases warmed the planet and combined with earth's water, making the ocean and rain acidic, creating a highly toxic environment for life.
-4.  [Triassic-Jurassic]{style="color: blue;"}. 80% of life lost. Volcanic eruption and/or asteroid.
-5.  [Cretaceous]{style="color: blue;"}. ca. 65% of life lost. The cretaceous-Paleogene extinction wiped out the dinosaurs. along with a significant portion of all life on Earth. A widely accepted theory is that an asteroid landed in the Yucatán Peninsula in Mexico and killed the dinosaurs.
+1.  [Ordovician-Silurian]{style="color: blue;"}. 86% of life lost. Scientists theorize that there were two main phases to this extinction; a glaciation event and a heating event
+2.  [Late Devonian]{style="color: blue;"}. 75% life lost. Global cooling. Algae blooming consumed vast amounts of oxygen in the oceans, suffocating many species
+3.  [Permian-Triassic]{style="color: blue;"}. 96% of life lost. Volcanic activity in Siberia put out massive amounts of carbon dioxide into the atmosphere. Bacteria began producing methane, another greenhouse gas. Large quantities of both gases warmed the planet and combined with earth's water, making the ocean and rain acidic, creating a highly toxic environment for life
+4.  [Triassic-Jurassic]{style="color: blue;"}. 80% of life lost. Volcanic eruption and/or asteroid
+5.  [Cretaceous]{style="color: blue;"}. ca. 65% of life lost. The Cretaceous-Paleogene extinction wiped out the dinosaurs, along with a significant portion of all life on Earth. A widely accepted theory is that an asteroid landed in the Yucatán Peninsula in Mexico and killed the dinosaurs
 
 ------------------------------------------------------------------------
 
@@ -181,9 +222,9 @@ plot_ly(descSpec,
 
 ## A little excercise...
 
--   We saw that the majority of life on earth exploded and differentiated approximately in the last 600 MY.
--   We also estimated that a single species persists on average 5 MY [@Lawton1995].
--   Finally we will assume that the number of total species today is, roughly, 2.16 M.
+-   We saw that the majority of life on earth exploded and differentiated approximately in the last 600 MY
+-   We also estimated that a single species persists on average 5 MY [@Lawton1995]
+-   Finally we will assume that the number of total species today is, roughly, 2.16 M
 
 ::: callout-important
 # Question
@@ -208,58 +249,60 @@ This means that more than 99% of all species that have ever lived are extinct to
 ::: callout-important
 # Question
 
-Based on the data we have, can you roughly estimate what is the proportion of species that went extinct outside of the mass extinction events? (Ordovician-Silurian 86%; Late Devonian 75%; Permian-Triassic 96%; Triassic-Jurassic 80%; Cretaceous. 65%; current number of species approx. 2.16 M; average life span for a species is 5 MY).
+Based on the data we have, can you roughly estimate what is the proportion of species that went extinct outside of the mass extinction events? (Ordovician-Silurian 86%; Late Devonian 75%; Permian-Triassic 96%; Triassic-Jurassic 80%; Cretaceous 65%)
 :::
 
 . . .
 
 ```{r outsideOfMassExtinc}
-100-((1*0.86)+(1*0.75)+(1*0.96)+(1*0.80)+(1*0.65))
+100-(0.86+0.75+0.96+0.80+0.65)
 ```
 
 . . .
 
--   This means that 100% - 4% = 96% of all extinctions occurred [outside]{style="color: red;"} the mass extinction events.
+-   This means that 100% - 4% = 96% of all extinctions occurred [outside]{style="color: red;"} the mass extinction events
 
 . . .
 
--   The results from this little exercise are not so distant from what has been known in the scientific literature [@Raup1991].
+-   The results from this little exercise are not so distant from what has been known in the scientific literature [@Raup1991]
 
 . . .
 
--   These results tell us that extinction is a natural process.
+-   These results tell us that extinction is a natural process!!!
 
 ## Background extinction rate.
 
--   If extinction is part of the natural process of evolution it should be possible to identify a [background-extinction]{style="color: red;"} rate, i.e. the natural extinction rate during periods in between major extinction events.
--   If we can estimate a background-extinction rate it should also be possible to compare it across time to measure our current impact on biodiversity.
--   The value we just used (\~5-10 MY) per species is a good approximation of the background extinction rate [@Lawton1995] and falls under the categories of extinction rate intended as species survival rate.
--   Another way used to estimate extinction rate is based on the species-area estimate [@Chisholm2018].
--   One of the estimate of extinction rate largely used is in million species years [MSY, @Pimm2006].
+-   If extinction is part of the natural process of evolution it should be possible to identify a [background-extinction]{style="color: red;"} rate, i.e. the natural extinction rate during periods in between major extinction events
+-   If we can estimate a background-extinction rate it should also be possible to compare it across time to measure our current impact on biodiversity
+-   The value we just used (\~5-10 MY) per species is a good approximation of the background extinction rate [@Lawton1995] and falls under the categories of extinction rate intended as species survival rate
+-   Another way used to estimate extinction rate is based on the species-area estimate [@Chisholm2018]
+-   One of the estimate of extinction rate largely used is in million species years (MSY) and is originally based from the evidence gathered from the fossil records [@Pimm2006]
 
 ------------------------------------------------------------------------
 
--   The million species year extinction rate is based on the empirical estimate from known data on current extinction.
--   It tells us how many extinctions we should expect in any sample where the sum of all of the years over all of the species under consideration is one million.
--   For example, follow the fates of 10,000 bird species for one century and one should observe just one extinction [i.e., 1 E/MSY according to @Pimm2006].
+-   The million species year extinction rate is based on the empirical estimate from known data on current extinction
+-   It tells us how many extinctions we should expect in any sample where the sum of all of the years over all of the species under consideration is one million
+-   For example, follow the fates of 10,000 bird species for one century and one should observe just one extinction [i.e., 1 E/MSY according to @Pimm2006]
 
 . . .
 
 ::: callout-important
 # Question!
 
-1230 species of birds have been described since 1900. This cohort has accumulated 98334 species-years, meaning that one species has been known for 80 years. Since their description, 13 have gone extinct. Can you estimate the extinction rate?
+1230 species of birds have been described since 1900. This cohort has accumulated 98334 species-years, meaning that one species has been known, on average, for 80 years. Since their description, 13 have gone extinct. Can you estimate the extinction rate?
 :::
 
 . . .
 
-```{r millionSpeciesYear}
-(13*10^6)/98334
-```
+$$
+13:98334=x:10^6
+$$
+
+
 
 . . .
 
-This means that the rates of extinctions in recent times (at least since we can document extinctions as they happen) seems to be dramatically increased \[1\]!
+This means that the rates of extinctions in recent times (at least since we can document extinctions as they happen) seems to be dramatically increased [@Pimm2014]!
 
 ------------------------------------------------------------------------
 
@@ -338,10 +381,5 @@ The overarching driver of species extinction is human population growth and per-
 ------------------------------------------------------------------------
 
 ![After @Smith1993b.](./7_extSince1600.png)
-
-## To read for Tuesday March 26
-
--   [What is Conservation Biology?](https://drive.proton.me/urls/CBS3TM5QHC#gOpewlLRifD2)
--   [Nature conservation: priority-setting needs a global change](https://drive.proton.me/urls/X0V1FA768R#6RTvlJLtiFRa)
 
 # References
