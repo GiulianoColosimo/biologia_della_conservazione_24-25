@@ -45,11 +45,21 @@ library("plotly")
 
 ## Geological Time Scale
 
-![Downloaded from [www.geosociety.org](www.geosociety.org).](./1_geots.png)
+![Downloaded from [www.geosociety.org](https://www.geosociety.org/GSA/gsa/timescale/home.aspx).](./1_geots.png)
 
 ::: notes
 Speaker notes go here.
 :::
+
+
+## We know we are changing the environment
+
+- The Holocene (Greek for "entirely recent") had been designated for the post-glacial period of the past ten to twelve thousands years during the Geological Congress in Bologna in 1855
+- The Welsh geologist Thomas Jenkins was probably the first one to publish the idea of an evidence-based  human geologic time unit [@Lewis2015]
+- The US author George Perkins published in 1864 the volume "Man and Nature" detailing the global extent of modification of the earth by humans 
+- In 1873 the overwhelming impact of human activities on the environment was even more explicitly stated by the Italian geologist Antonio Stoppani who described the human impact as a "telluric force which in power and universality may compared to the greater forces of earth" [@VanDyke2020]
+
+------------------------------------------------------------------------
 
 ## The Anthropocene
 
@@ -57,13 +67,6 @@ Speaker notes go here.
 - The sharpest of these signals is made by the artificial radionuclides spread worldwide by the thermonuclear bomb tests from the early 1950 [@VanDyke2020]
 - In 2019 the Anthropocene Working Group (AWG) released the result of its vote to designate a new geologic epoch
 - 2019 officially marks the manifold and planetary effects that human beings are now creating on the ecology, natural processes and even geological records of planet Earth [@VanDyke2020]
-
-------------------------------------------------------------------------
-
-- The Holocene (Greek for "entirely recent") had been designated for the post-glacial period of the past ten to twelve thousands years during the Geological Congress in Bologna in 1855
-- The Welsh geologist Thomas Jenkins was probably the first one to publish the idea of an evidence-based  human geologic time unit [@Lewis2015]
-- The US author George Perkins published in 1864 the volume "Man and Nature" detailing the global extent of modification of the earth by humans 
-- In 1873 the overwhelming impact of human activities on the environment was even more explicitly stated by the Italian geologist Antonio Stoppani who described the human impact as a "telluric force which in power and universality may compared to the greater forces of earth" [@VanDyke2020]
 
 ------------------------------------------------------------------------
 
@@ -99,10 +102,124 @@ Speaker notes go here.
 
 ![After @Ellis2008](./ellis1.png)
 
+## Invasive species
+
+-   Invasive species represent the second most commonly listed factor for species endangerment! (Do you remember which is the first one?)
+
+-   An estimated cost of non-native species in the US alone is over \$120 billion annually [@Crowl2008]
+
+-   The role of humans as one of the most nefarious agent of disruption of biological communities is well recognized in the anthropocene epoch. One of the means of such disruption is undoubtedly tied to our transport of new species thousands of kilometers away from their native habitat [@VanDyke2020]
+
+> Make no mistake, we are seeing one of the great historical convulsions in the world's fauna and flora [@Elton2020, Elton's original publication is from 1958]
+
 ------------------------------------------------------------------------
 
+-   International commerce has aided and increased the movement of species worldwide and across taxonomic groups
 
-<br/> <br/> <br/> <br/> <br/>
+-   Only a fraction of transported species becomes established, and only $1\%$ become a pest, but addition and effects of all non native species, including pest species are cumulative over time
+
+. . .
+
+-   Currently New Zealand harbors more or less the same number of native plants and invasive plant species
+
+-   Arizona and Montana historically did not share any fish species. They now have about 33 species of fishes in common [@Mooney2001]
+
+. . .
+
+-   These changes have occurred because humans transport species for their benefit, and invasive species use human means of transport to their benefit!
+
+-   Once an invasive species has established and naturalized at regional or continental scale there is little hope to eradicate it
+
+------------------------------------------------------------------------
+
+## An example of catastrophic invasion
+
+- Green iguanas have invaded [Grand Cayman](https://doe.ky/wp-content/uploads/2021/07/Invasive_-Green-Iguanas-in-the-Cayman-Islands.pdf) island!
+
+. . .
+
+![Downloaded [here](https://doe.ky/green-iguana-cull-update/)](./iguana_cull.png){width=60%}
+
+------------------------------------------------------------------------
+
+![A typical sequence of invasion for most non-native species. After @Crowl2008.](./class_3_invasive.png)
+
+------------------------------------------------------------------------
+
+![*Dreissena polymorpha* the zebra mussel. Picture downloaded from [this](https://www.flickr.com/photos/117184384@N07/39449820624) website.](./class_17_2.jpg)
+
+------------------------------------------------------------------------
+
+-   Zebra mussel can attach to any hard surface and to other living creature. In the later case they can cause the death of the individual they attach to
+
+-   They are exceptionally good filter-feeders and they can alter the ecosystem by filtering huge amounts of phytoplankton, often the most important component of primary production in many aquatic systems
+
+-   The introduction in North America, in the late 80ies, caused a great deal of disruption in many biotic and abiotic components of the environment where they were introduced and spread
+
+-   Among others, this invaders altered water transparency, nutrient cycling, and benthic habitat structure as well as food web structure, bioaccumulation of contaminants, and the diversity of native freshwater mussels [@Strayer2009; @Crowl2008]
+
+-   Along with the zebra mussel came also its own roundworm parasite (*Bucephalus polymorphus*) which caused the reduction in many cyprind fish species [@Crowl2008; @VanDyke2020]
+
+------------------------------------------------------------------------
+
+![@Strayer2009](./class_17_4.png)
+
+------------------------------------------------------------------------
+
+## The seven steps of a succesfull invasion
+
+1.  Introduction (intentional or accidental)
+2.  Colonization (sustained residence on at least one invaded area)
+3.  Establishment (positive population growth on at least one of the new sites)
+4.  Dispersal
+5.  Spatially distributed populations
+6.  Invasive spread
+7.  Adaptation to new environments
+
+-   Indeed, this is just a general framework describing what are the main steps, but the specifics of invasions vary on a case by case basis. Despite this, whether benign or disruptive, invasive species end up altering the local environment where they are introduced
+
+------------------------------------------------------------------------
+
+## Understanding the invasive process!
+
+-   Successful invaders are rare!
+-   They must be species that possess traits predisposing them to be transported by humans and to be able to survive the selection regimes they encounter in the new environment
+
+. . .
+
+1.  They can deliver seeds, breeding individuals, or other type of propagules at a high rate at an opportune moment for invasion and at a high density
+
+2.  They are able to persist for extended periods of time at low density under unfavorable conditions until favorable conditions permit them to grow to very high densities and initiate the spreading phase
+
+3.  They are a good ecological match for the environment and are able to exploit local conditions and abiotic factors that favor the completion of their life cycle as well or even better than the native species [@VanDyke2020]
+
+------------------------------------------------------------------------
+
+## The role of humans in moving things around!
+
+-   Effects of invasive species will increase in response with increased levels of global trade and will be exacerbated by the climatic crisis [@Levine2003]
+
+-   Humans have often been deliberate in the intent of introducing species to non-native areas while ignorant of the consequences of such introductions
+
+. . .
+
+-   In the nineteenth century the Naturalization Society attempted, and for the most part succeeded, in its intent to introduce common British songbirds to recreate the England country side environement. Such behaviour caused a dramatic dirsuption of the natural environment, with great damage to the local avifauna [@VanDyke2020]
+
+-   More introductions are accomplished without any goal at all, as species can easily find themselves traveling unnoticed as stowaway around the globe
+
+------------------------------------------------------------------------
+
+## A documented case of impact
+
+<br/>
+
+![ ](./6_iverson.png)
+
+------------------------------------------------------------------------
+
+## Species extinction
+
+<br/><br/><br/>
 
 > The extinction of species, each one a pilgrim of four billion years of evolution, is an irreversible loss. The ending of the lines of so many creatures with whom we have traveled this far is an occasion of profound sorrow and grief. Death can be accepted and to some degree transformed. But the loss of lineages and all their future young is not something to accept. It must be rigorously and intelligently resisted [@Snyder1990].
 
@@ -376,7 +493,6 @@ The overarching driver of species extinction is human population growth and per-
 
 (List available from the [Smithsonian](https://naturalhistory.si.edu/education/teaching-resources/paleontology/extinction-over-time) website.)
 
-![A documented example of the impact of introduced species on island environment.](./6_iverson.png)
 
 ------------------------------------------------------------------------
 
