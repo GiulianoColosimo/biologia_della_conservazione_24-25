@@ -41,7 +41,8 @@ website:
             text: "Class 2 - Biodiversity"
           - href: ./classes/3/class_3.html
             text: "Class 3 - Anthropocene"
- 
+          - href: ./classes/4/class_4.html
+            text: "Class 4 - Populations and conservation genetics"
 
     tools:
       - icon: envelope
