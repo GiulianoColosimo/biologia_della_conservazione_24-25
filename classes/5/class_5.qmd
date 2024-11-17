@@ -1,0 +1,691 @@
+---
+title: "Biologia della Conservazione"
+subtitle: "Class 5 - HW and Genetic drift"
+date: "2024-11-18"
+footer:  "[Biologia della conservazione 24/25 - Giuliano Colosimo, PhD](https://giulianocolosimo.github.io/biologia_della_conservazione_24-25/)"
+logo: ../../figures/Tor-Vergata_logo_cmyk.png
+format: 
+  revealjs:
+    width: 1600
+    height: 900 
+    theme: slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+    preview-links: true
+    chalkboard: 
+      boardmarker-width: 5
+editor: visual
+from: markdown+emoji
+execute:
+  freeze: auto
+editor_options: 
+  chunk_output_type: console
+bibliography: /Users/giulianocolosimo/Library/CloudStorage/ProtonDrive-giuliano.colosimo@protonmail.com/manuscripts/literature/bibtex/comprehensive_database.bib
+csl: /Users/giulianocolosimo/Library/CloudStorage/ProtonDrive-giuliano.colosimo@protonmail.com/manuscripts/literature/bibtex/apa_5th_edition.csl
+citation_package: biblatex
+citecolor: "red"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+x <- c("DT", "tidyverse")
+lapply(x, require, character.only = T)
+rm(x)
+```
+
+## Analyzing the Hardy-Weinberg model
+
+-   We begin considering a diploid population with n = 15 individuals
+
+![](./population10a.png){fig-align="center"}
+
+------------------------------------------------------------------------
+
+-   Being diploids each individual has two alleles per locus (A and a)
+
+![](./population10c.png){fig-align="center"}
+
+------------------------------------------------------------------------
+
+-   We can summarize the information in a table:
+
+| $n_{AA}$ | $n_{Aa}$ | $n_{aa}$ | $n$ |
+|----------|----------|----------|-----|
+| 6        | 7        | 2        | 15  |
+
+-   We can estimate the allele frequencies:
+
+$$
+p = f(A) = \frac{2n_{AA} + n_{Aa}}{2n} = \frac{12 + 7}{30} \approx 0.633
+$$ and
+
+$$
+q = f(a) = \frac{2n_{aa} + n_{Aa}}{2n}= \frac{4 + 7}{30} \approx 0.367
+$$
+
+-   Since there are only two alleles we can write $p + q = 1$
+
+------------------------------------------------------------------------
+
+## Expansion of the Hardy-Weinberg model with > 2 alleles
+
+-   In this previous basic example we only had 2 alleles and therefore $p+q=1$.
+
+-   Because of our assumption of random mating the assortment of alleles in the zygotes can be estimated from the allele frequencies using a binomial expansion:
+
+$$
+(p+q)^2=p^2+2pq+q^2
+$$
+
+-   If we want to add another allele ($A_1, A_2, A_3$)...
+
+$$
+(p+q+r)^2=p^2+2pq+q^2+2pr+2qr+r^2
+$$
+
+------------------------------------------------------------------------
+
+-   "All alleles and genotypes have the same fitness with no differential reproduction or survival" and individuals are "mating at random"
+
+-   If this is true, the frequencies of male and female gametes correspond to the allele frequencies and zygotes are formed randomly choosing gametes from the gene pool
+
+![](./genePool.png){fig-align="center"}
+
+## Basic probability theory
+
+-   The probability of two independent events, such as the union of two gametes at random in a zygote, is calculated as the product of the probability of the single events
+
+```{r dice1}
+#| output-location: column-fragment
+dice <- c(1,2,3,4,5,6)
+dice
+```
+
+<br/>
+
+```{r dice2}
+#| output-location: column-fragment
+sample(dice, size = 1)
+```
+
+<br/>
+
+```{r dice3}
+#| output-location: column-fragment
+sample(dice, size = 1)
+```
+
+<br/>
+
+```{r dice4}
+#| output-location: column-fragment
+sim_dice <- sample(dice, size = 100000,
+                   replace = T)
+table(sim_dice)/100000
+```
+
+. . .
+
+-   The probability of casting a dice and obtaining one of the six numbers is $\frac{1}{6} \approx 0.17$
+
+
+------------------------------------------------------------------------
+
+- The probability of casting the dice twice and obtaining the same number is $\frac{1}{6} * \frac{1}{6} = \frac{1}{36} \approx 0.028$
+
+. . .
+
+-   We want to recreate a sample of 15 individuals starting from the gamete pool of our original population with $n = 15$ and $p \approx 0.633$ and $q \approx 0.367$
+
+![](./genePoolHWA0.png){fig-align="center" width=50%}
+
+------------------------------------------------------------------------
+
+```{r echo=TRUE, eval=FALSE}
+p <- 0.633 
+q <- 0.367  
+sample(c("A", "a"), size = 1, prob = c(p, q))
+```
+
+. . .
+
+- Every time we sample an allele, we add a color. Remember A = [red]{style="color: red;"} and a = [yellow]{style="color: yellow;"}
+
+![](./genePoolGif.gif){fig-align="center" width=65%}
+
+------------------------------------------------------------------------
+
+![](./genePoolHWA30.png){fig-align="center"}
+
+-   We summarize the results in a table
+
+| $n_{AA}$ | $n_{Aa}$ | $n_{aa}$ | $n$ |
+|----------|----------|----------|-----|
+| 7        | 7        | 1        | 15  |
+
+------------------------------------------------------------------------
+
+-   The genotype and allele frequencies of the new generation are different from the previous one. We repeat the experiment one more time
+
+```{r echo=TRUE, eval=TRUE}
+p <- 0.633 
+q <- 0.367  
+newSample <- sample(c("A", "a"), size = 30,
+                    prob = c(p, q),
+                    replace = T)
+table(newSample)
+```
+
+-   Once again, the genotype and allele frequencies of the new generation are different from the previous one, and it will likely be different most of the time we do this again
+
+```{r echo=TRUE, eval=TRUE}
+p <- 0.633 
+q <- 0.367  
+newSample <- sample(c("A", "a"), size = 30,
+                    prob = c(p, q),
+                    replace = T)
+table(newSample)
+```
+
+------------------------------------------------------------------------
+
+```{r echo=TRUE, eval=TRUE, fig.align='center'}
+# This code has been modified from prof. Gratton
+newSample <- t(sapply(1:10000, function(i){table(factor(sample(c("A","a"), size = 30, prob = c(p,q), replace = T),
+                                               levels = c("A","a")))}))
+hist(newSample[,"A"]/30, 
+     xlim = c(0,1), xlab = "f(A)", 
+     breaks = seq(0, 1, by= 0.1),
+     col = "darkgoldenrod3", 
+     border = NA, 
+     main = "10,000 samples of size 30",
+     cex.axis = 2, cex.main = 2, cex.lab = 2)
+abline(v = 0.637, lty = 2, lwd = 2)
+```
+
+------------------------------------------------------------------------
+
+-   We notice that there is a pretty large variability around the original value of p = 0.633
+
+-   In other words, the sampling error is quite large
+
+```{r echo=FALSE, eval=TRUE, fig.align='center'}
+# This code has been modified from prof. Gratton
+newSample <- t(sapply(1:10000, function(i){table(factor(sample(c("A","a"), size = 30, prob = c(p,q), replace = T),
+                                               levels = c("A","a")))}))
+hist(newSample[,"A"]/30, 
+     xlim = c(0,1), xlab = "f(A)", 
+     breaks = seq(0, 1, by= 0.1),
+     col = "darkgoldenrod3", 
+     border = NA, 
+     main = "10,000 samples of size 30",
+     cex.axis = 2, cex.main = 2, cex.lab = 2)
+abline(v = 0.637, lty = 2, lwd = 2)
+```
+
+------------------------------------------------------------------------
+
+```{r echo=TRUE, eval=TRUE, fig.align='center'}
+newSample <- t(sapply(1:10000, function(i){table(factor(sample(c("A","a"), size = 100, prob = c(p,q), replace = T),
+                                               levels = c("A","a")))}))
+hist(newSample[,"A"]/100, 
+     xlim = c(0,1), xlab = "f(A)", 
+     breaks = seq(0, 1, by= 0.01),
+     col = "darkgoldenrod3", 
+     border = NA, 
+     main = "10,000 samples of size 100",
+     cex.axis = 2, cex.main = 2, cex.lab = 2)
+abline(v = 0.637, lty = 2, lwd = 2)
+```
+
+------------------------------------------------------------------------
+
+![](./samplingError.png){fig-align="center"}
+
+------------------------------------------------------------------------
+
+## Summary of the Hardy-Weinberg model
+
+-   The larger the sample dimension, the lower is the variation in allele frequencies with respect to the original value
+
+-   If all the assumptions of the HW model are met, we should expect no variation at all in allele frequency, generation after generation
+
+-   In natural population it is very hard to meet all the assumptions of the HW, in particular the one of infinite population size
+
+-   The HW model is a very effective and simple way to "see" the effects of various evolutionary forces operating at the population level. It provides a "null model" against which compare what we see in our data
+
+-   Once we found that something is different between what we expect from the HW model and what we see in nature at the population genetic level, we can start investigate the relative role of the various evolutionary forces
+
+------------------------------------------------------------------------
+
+## Testing a null hypothesis
+
+-   A fundamental aspect of every scientific discipline is the capability to discern between alternative hypotheses. The general approach is to present a formal or null-hypothesis ($H_0$) and a statistical test to estimate the probability that it holds true
+-   Such test usually implies the calculation of a P-value (*i.e.*, a probability distribution)
+-   Lower P-values correspond to higher degree of certainty that the null is rejected and an alternative hypothesis ($H_1$) is preferred to explain the data
+-   When $P=0.002$ it means that, if the null holds true, you expect to see a result as extreme or even more extreme than the one you have measured only 2 times out of 1000 experiment
+-   The general threshold value ($\alpha$) is $P=0.05$, meaning that you have 5 chances in 100 of rejecting the null hypothesis when it is true
+
+------------------------------------------------------------------------
+
+### Excercise to test the HW proportions
+
+```{r simBiallelicPop, echo=FALSE}
+set.seed(3912)
+
+pop_sim <- function(n, a, prob){
+  alleles <- paste("A", 1:a, sep = "")
+  pop <- vector(length = n)
+  for(i in 1:n){
+    pop[i] <- paste(sample(alleles, 2,
+                           prob = prob,
+                           replace = T), 
+                    collapse = "")}
+  pop <- regmatches(pop, gregexpr(".{2}", pop))
+  
+  pop2 <- vector()
+  for(i in 1:length(pop)){
+    temp <- sort(pop[[i]])
+    temp <- str_c(temp, sep = "", collapse = "")
+    pop2 <- c(pop2, temp)
+  }
+  
+  pop <- pop2
+  
+  return(pop)
+}
+
+pop_test <- pop_sim(1647, 2, c(.75, .25))
+
+pop_test_df <- as.data.frame(table(pop_test))
+names(pop_test_df) <- c("Genotypes", "Number")
+datatable(pop_test_df, filter = "none", rownames = F)
+```
+
+::: callout-important
+# Problem
+
+Calculate allele frequency, genotype frequency and expected genotype frequency.
+:::
+
+------------------------------------------------------------------------
+
+-   Allele frequency:
+
+$$
+p = f(A) = \frac{2n_{11} + n_{12}}{2n} = \frac{(2*907)+616}{2*1647} =0.738
+$$
+
+$$
+q = f(a) = \frac{2n_{22} + n_{12}}{2n} = \frac{(2*124)+616}{2*1647} =0.262
+$$
+
+. . .
+
+-   Observed genotype frequency:
+
+$$
+f(AA) =\frac{n_{11}}{n}  = \frac{907}{1647}=0.551; \ \ \ f(Aa) =\frac{n_{12}}{n}  = \frac{616}{1647}=0.374
+$$
+
+$$
+f(aa) =\frac{n_{22}}{n}  = \frac{124}{1647}=0.075
+$$
+
+------------------------------------------------------------------------
+
+-   Expected genotype frequency:
+
+$$
+p^2 = f(AA)^2 = 0.738^2 = 0.545; \ \ \ 2pq = f(Aa) = 2*0.738*0.262=0.387
+$$
+
+$$
+q^2 = f(aa)=0.262^2=0.068
+$$
+
+------------------------------------------------------------------------
+
+## Is this difference significant?
+
+$$
+\chi^2=\sum\frac{(Observed-Expected)^2}{Expected}
+$$
+
+-   This methodology allows us to understand if the difference between observed and expected outcomes is greater than we would expect by chance
+
+-   The empirical rule is to run the $\chi^2$ on the actual genotype count rather than the genotype frequencies
+
+. . .
+
+```{r chiSq}
+((907-897.615)^2/897.615)+((616-637.389)^2/637.389)+((124-111.996)^2/111.996)
+```
+
+-   The computed $\chi^2$ value is compared to a set of values calculated under the assumption that the null hypothesis we are testing is correct; our null hypothesis is that the population from which the samples was drawn is in HW proportions.
+
+```{r echo=TRUE, eval=TRUE}
+#| output-location: column-fragment
+pchisq(q = 2.102498, df = 1, lower.tail = F)
+```
+
+------------------------------------------------------------------------
+
+```{r chiSq2, echo=F}
+chiTestVal <- seq(0, 10, by = 0.001)
+plot(1-pchisq(chiTestVal, df = 1), chiTestVal, type = "l",
+     main = "Chi-Square distribution",
+     ylab = "Test Statistic Value",
+     xlab = "P-value", lwd = 2)
+lines(1-pchisq(chiTestVal, df = 2), chiTestVal, type = "l",
+      lwd = 2, col = "blue")
+lines(1-pchisq(chiTestVal, df = 3), chiTestVal, type = "l",
+      lwd = 2, col = "green")
+lines(1-pchisq(chiTestVal, df = 4), chiTestVal, type = "l",
+      lwd = 2, col = "brown")
+lines(1-pchisq(chiTestVal, df = 5), chiTestVal, type = "l",
+      lwd = 2, col = "deeppink")
+abline(v=0.05, col = "red", lty = 2, lwd = 2)
+legend("topright", legend = c("df = 1", "df = 2", "df = 3", "df = 4", "df = 5"), 
+       col = c("black", "blue", "green", "brown", "deeppink"), lty = 1)
+```
+
+------------------------------------------------------------------------
+
+### Degrees of freedom
+
+-   The number of degrees of freedom is the number of values in the final calculation of a statistic that are free to vary [@Wiki_DoF_2023]
+-   If a car dealer is giving away 15 random cars to the first 15 customers, the first 14 that show up at the car dealer will have the freedom to pick and choose the car they want. The $15^{th}$ will not be able to do so as only one car will be remaining. Similarly, if you calculated the mean of a sample of 15 numbers, the first 14 numbers can vary freely, but the value of the $15^{th}$ number is determined as the value needed to achieve the given sample mean!
+-   Degrees of freedom for tests for Hardy--Weinberg proportions are estimated according to: $df=\# genotypes − \# alleles$. This is because the number of genotypes in a population can not vary freely, but is bound to the number of alleles present in that population
+
+------------------------------------------------------------------------
+
+```{r pvalxsquplot, echo=F}
+
+par(mfrow=c(2,2))
+curve(dchisq(x, df = 1), from = 0, to = 10, ylim = c(0, .5),
+      main = "",
+      ylab = "Prob. dens. function",
+      xlab = "", lwd = 1)
+curve(dchisq(x, df = 2), from = 0, to = 20, ylim = c(0, .5), add = T, lwd = 1, lty = 2)
+curve(dchisq(x, df = 3), from = 0, to = 20, ylim = c(0, .5), add = T, lwd = 1, lty = 3)
+curve(dchisq(x, df = 4), from = 0, to = 20, ylim = c(0, .5), add = T, lwd = 1, lty = 4)
+curve(dchisq(x, df = 5), from = 0, to = 20, ylim = c(0, .5), add = T, lwd = 1, lty = 5)
+legend("topright", legend = c("df = 1", "df = 2", "df = 3", "df = 4", "df = 5"), 
+      lty = c(1,2,3,4,5), lwd = 1, cex = .7, pt.lwd = .2)
+
+curve(dchisq(x, df = 1), from = 0, to = 10, ylim = c(0, .5),
+      main = "",
+      ylab = "",
+      xlab = "", lwd = 2)
+#create vector of x values
+x_vector <- seq(qchisq(p=.95, df=1), 10, by = 0.01)
+x2_vector <- seq(0.01, qchisq(p=.95, df=1), by = 0.01)
+#create vector of chi-square density values
+p_vector <- dchisq(x_vector, df = 1)
+p2_vector <- dchisq(x2_vector, df = 1)
+#fill in portion of the density plot from 0 to 10
+polygon(c(x_vector, rev(x_vector)), c(p_vector, rep(0, length(p_vector))),
+        col = adjustcolor('red', alpha=0.8), border = NA)
+polygon(c(x2_vector, rev(x2_vector)), c(p2_vector, rep(0, length(p2_vector))),
+        col = adjustcolor('green', alpha=0.8), border = NA)
+legend("topright", legend = c("p <= 0.05", "p > 0.05"), fill = c("red", "green"), title = "df = 1")
+
+curve(dchisq(x, df = 2), from = 0, to = 10, ylim = c(0, .5),
+      main = "",
+      ylab = "Prob. dens. function",
+      xlab = "Test statistic value", lwd = 2)
+#create vector of x values
+x_vector <- seq(qchisq(p=.95, df=2), 10, by = 0.01)
+x2_vector <- seq(0.01, qchisq(p=.95, df=2), by = 0.01)
+#create vector of chi-square density values
+p_vector <- dchisq(x_vector, df = 2)
+p2_vector <- dchisq(x2_vector, df = 2)
+#fill in portion of the density plot from 0 to 10
+polygon(c(x_vector, rev(x_vector)), c(p_vector, rep(0, length(p_vector))),
+        col = adjustcolor('red', alpha=0.8), border = NA)
+polygon(c(x2_vector, rev(x2_vector)), c(p2_vector, rep(0, length(p2_vector))),
+        col = adjustcolor('green', alpha=0.8), border = NA)
+legend("topright", legend = c("p <= 0.05", "p > 0.05"), fill = c("red", "green"), title = "df = 2")
+
+
+
+curve(dchisq(x, df = 4), from = 0, to = 10, ylim = c(0, .5),
+      main = "",
+      ylab = "",
+      xlab = "Test statistic value", lwd = 2)
+#create vector of x values
+x_vector <- seq(qchisq(p=.95, df=4), 10, by = 0.01)
+x2_vector <- seq(0.01, qchisq(p=.95, df=4), by = 0.01)
+#create vector of chi-square density values
+p_vector <- dchisq(x_vector, df = 4)
+p2_vector <- dchisq(x2_vector, df = 4)
+#fill in portion of the density plot from 0 to 10
+polygon(c(x_vector, rev(x_vector)), c(p_vector, rep(0, length(p_vector))),
+        col = adjustcolor('red', alpha=0.8), border = NA)
+polygon(c(x2_vector, rev(x2_vector)), c(p2_vector, rep(0, length(p2_vector))),
+        col = adjustcolor('green', alpha=0.8), border = NA)
+legend("topright", legend = c("p <= 0.05", "p > 0.05"), fill = c("red", "green"), title = "df = 4")
+
+```
+
+------------------------------------------------------------------------
+
+## When not to use the $\chi^2$ test
+
+-   The expected count of individuals is \< 5 in any of the possible genotype considered
+-   Very low allele frequencies
+-   The sample size is too small
+-   There are too many alleles at a locus
+
+### A valid alternative: Fisher's exact test
+
+-   Based on the calculation of probabilities
+-   $P(genotype\ counts|allele \ counts)$ assuming HWE
+-   Let's work out an example with a small population: 4 individuals $AA$, 2 individuals $Aa$ and 1 individuals $aa$
+-   What genotype configurations could give us the same allele count?
+
+------------------------------------------------------------------------
+
+| $n_{AA}$ | $n_{Aa}$ | $n_{aa}$ | $n_{A}$ | $n_{a}$ |
+|:--------:|:--------:|:--------:|:-------:|:-------:|
+|    5     |    0     |    2     |   10    |    4    |
+|    4     |    2     |    1     |   10    |    4    |
+|    3     |    4     |    0     |   10    |    4    |
+
+. . .
+
+-   Can we estimate the theoretical probability of each combination of genotypes?
+
+. . .
+
+$$
+P(n_{Aa}|n_A, n_a, HWE)=\frac{n!}{n_{AA}!*n_{Aa}!*n_{aa}!}*\frac{2^{n_{Aa}}*n_A!*n_a!}{(2n)!}
+$$
+
+. . .
+
+| $n_{AA}$ | $n_{Aa}$ | $n_{aa}$ | Theoretical probability |
+|:--------:|:--------:|:--------:|:-----------------------:|
+|    5     |    0     |    2     |          0.021          |
+|    4     |    2     |    1     |          0.419          |
+|    3     |    4     |    0     |          0.559          |
+
+## Other options for testing null hypothesis
+
+-   Likelihood, the probability of observing the data given some parameter value under a certain statistical model, particularly useful when there are many alleles at a single locus
+-   Permutation tests, randomization of the dataset by sampling, particularly useful when many genotypes are expected to have very low frequency
+
+### Multiple tests
+
+-   If we examine 10 loci in 10 population samples, 100 tests of HW proportions will be performed. If all of these loci are in HW proportions (*i.e.*, our null hypothesis is true at all loci in all populations), we expect to find five significant tests if we use the 5% significance level [@Allendorf2022, p.102-103].
+
+-   The Bonferroni correction allows to adjust the significance level (say 5%) by dividing it by the number of tests performed. In the previous example $0.05/100 = 0.0005$. The critical $\chi^2$ value for $P = 0.0005$ with one degree of freedom is 12.1.
+
+## Genetic Drift
+
+-   Genetic drift is the random change in allele frequencies from generation to generation because of sampling error. That is, the finite number of genes transmitted to progeny will be an imperfect sample of the allele frequencies in the previous generation [@Allendorf2022, p. 114]
+-   Genetic drift is the primary cause bringing about allele frequency changes throughout the genome over time [@Chen2018; @Allendorf2022]
+
+![](./samplingError.png){fig-align="center" width=60%}
+
+
+------------------------------------------------------------------------
+
+-   With many samples ($n >> 1$) the probability that their alleles all are $A_1$ or $A_2$ becomes $(\frac{1}{2})^{2n}$, and it will be less likely to loose one of the two alleles
+
+-   The probability that a population has $k$ copies of allele $A_1$ and $2n-k$ copies of $A_2$ allele is $\binom{2n}{k}p^kq^{2n-k}$ where $\binom{2n}{k}$ is the binomial function $\frac{2n!}{k!(2n-k)!}$
+
+-   The variance around the mean allele frequency is the binomial sampling variance: $\sigma^2_p =\frac{p_0q_0}{2n}$
+-   Variances are higher in smaller than larger populations
+-   In small population the process of sampling happens every single generation, and its effect on allele frequency is cumulative:
+-   Genetic drift will eventually cause all except one allele to go to fixation.
+-   The probability that a gamete does not contain allele $A_1$ (with frequency $p$ in the parental population) is $1-p$
+
+$$
+P(fixation \ A_2)=(1-p)^{2n}
+$$
+
+------------------------------------------------------------------------
+
+::: callout-important
+# Problem
+
+Diploid population with $n = 4$ with allele $A_1$ with a frequency $p = 0.25$ and allele $A_2$ with a frequency $q = 0.75$. What is the probability of losing allele $A_1$ in one generation of sampling to recreate a population of the same size?
+:::
+
+. . .
+
+::: callout-tip
+# Solution
+
+$(1-0.25)^8=$ `r (1-0.25)^8`
+:::
+
+------------------------------------------------------------------------
+
+### Genetic Drift
+
+```{r drift1, echo=FALSE, fig.cap="Allele frequency distribution at t = 0, with N = 100 [@Russo2021]."}
+pop.ls <- list(geneA = c(rep("A",50), rep("a",50)), 
+               geneB = c(rep("B",50), rep("b",50)),
+               geneC = c(rep("C",50), rep("c",50)))
+
+pop.df <- data.frame(Gene = c(rep("geneA", 100),
+                              rep("geneB", 100),
+                              rep("geneC", 100)),
+                     Alleles = matrix(unlist(pop.ls),
+                                      ncol = 1, byrow=F))
+
+barplot(
+  table(pop.df$Allele,
+        pop.df$Gene)/nrow(pop.df[pop.df$Gene == "geneA",]),
+  col = c("#14B635", "#158A29",
+          "#23A9F6", "#2970A1",
+          "#F77023", "#AF4E18"),
+  xlab="",
+  ylab="Allele frequencies",
+  axes = F
+)
+axis(side = 2,
+     labels = seq(from = 0, to = 1, by = 0.1),
+     at = seq(from = 0, to = 1, by = 0.1))
+lines(x = c(0.06,1,2,3,3.6),
+      y = c(0.5, 0.5, 0.5, 0.5, 0.5),
+      lty = 2, col = "red")
+par(xpd=TRUE)
+legend(3.7, 1, c("A", "a", "B", "b", "C", "c"),
+       pch = rep(19, 4), col = c("#14B635", "#158A29",
+                                 "#23A9F6", "#2970A1",
+                                 "#F77023", "#AF4E18"),
+       horiz = F, bty = "n")
+```
+
+------------------------------------------------------------------------
+
+### Genetic Drift
+
+```{r drift2, echo=F, fig.cap="Allele frequency distribution at t = 1, with N = 100 [@Russo2021]."}
+set.seed(482)
+pop.ls.t1 <- lapply(pop.ls, sample, 100, replace = T)
+pop.df.t1 <- data.frame(Gene = c(rep("geneA", 100),
+                                 rep("geneB", 100), 
+                                 rep("geneC", 100)),
+                     Alleles = matrix(unlist(pop.ls.t1),
+                                      ncol = 1, byrow=F))
+barplot(
+  table(pop.df.t1$Allele,
+        pop.df.t1$Gene)/nrow(pop.df.t1[pop.df.t1$Gene == "geneA",]),
+  col = c("#14B635", "#158A29",
+          "#23A9F6", "#2970A1",
+          "#F77023", "#AF4E18" ),
+  xlab="",
+  ylab="Allele frequencies",
+  axes = F
+)
+axis(side = 2, labels = seq(from = 0, to = 1, by = 0.1),
+     at = seq(from = 0, to = 1, by = 0.1))
+lines(x = c(0.06,1,2,3,3.6), y = c(0.5, 0.5, 0.5, 0.5, 0.5),
+      lty = 2, col = "red")
+par(xpd=TRUE)
+legend(3.7, 1, c("A", "a", "B", "b", "C", "c"),
+       pch = rep(19, 4), col = c("#14B635", "#158A29",
+                                 "#23A9F6", "#2970A1",
+                                 "#F77023", "#AF4E18" ),
+       horiz = F, bty = "n")
+```
+
+------------------------------------------------------------------------
+
+### Genetic Drift
+
+```{r drift3, echo=F, fig.cap="Allele frequencies variation after 200 generations while maintaining N = 100 [@Russo2021]."}
+set.seed(23561)
+geneA <- vector(mode = "list", length = 200)
+geneB <- vector(mode = "list", length = 200)
+geneC <- vector(mode = "list", length = 200)
+geneA[[1]] <- pop.ls[[1]]
+geneB[[1]] <- pop.ls[[2]]
+geneC[[1]] <- pop.ls[[3]]
+
+for (i in 2:200) {
+  geneA[[i]] <- sample(geneA[[i-1]], 100, replace = T)
+  geneB[[i]] <- sample(geneB[[i-1]], 100, replace = T)
+  geneC[[i]] <- sample(geneC[[i-1]], 100, replace = T)
+}
+
+freqA <- NULL
+freqa <- NULL
+freqB <- NULL
+freqb <- NULL 
+freqC <- NULL
+freqc <- NULL 
+for (i in 1:200) {
+  freqA[i] <- sum(geneA[[i]] == "A")/ length(geneA[[i]])
+  freqa[i] <- sum(geneA[[i]] == "a")/ length(geneA[[i]])
+  freqB[i] <- sum(geneB[[i]] == "B")/ length(geneB[[i]])
+  freqb[i] <- sum(geneB[[i]] == "b")/ length(geneB[[i]])
+  freqC[i] <- sum(geneC[[i]] == "C")/ length(geneC[[i]])
+  freqc[i] <- sum(geneC[[i]] == "c")/ length(geneC[[i]])
+}
+
+plot(1,0, type="n", xlim=c(1,200), ylim=c(0,1),
+     main = "",
+     xlab="Generations", ylab="Allele frequencies")
+points(1:200, freqA, pch = 21, col = "black", bg = "#14B635")
+points(1:200, freqa, pch = 21, col = "black", bg = "#158A29")
+points(1:200, freqB, pch = 21, col = "black", bg = "#23A9F6")
+points(1:200, freqb, pch = 21, col = "black", bg = "#2970A1")
+points(1:200, freqC, pch = 21, col = "black", bg = "#F77023")
+points(1:200, freqc, pch = 21, col = "black", bg = "#AF4E18")
+par(xpd=TRUE)
+legend(180, .75, c("A", "a", "B", "b", "C", "c"),
+       pch = rep(19, 4), col = c("#14B635", "#158A29",
+                                 "#23A9F6", "#2970A1",
+                                 "#F77023", "#AF4E18" ),
+       horiz = F, bty = "n")
+```
+
+
+## References

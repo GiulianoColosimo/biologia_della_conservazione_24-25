@@ -26,8 +26,8 @@ rm(x)
 
 ```{r schedule, echo=FALSE}
 schedule <- data.frame(" " = c("Lectures", "Mid Term Exam - 1", "Mid Term Exam - 2", "Final exam"),
-                       "Day" = c("Mon/Thu", "Monday, December 9", "To be decided", "To be decided"),
-                       "Time" = c("11:00-13:00/14:00-16:00", "14:00:16:00", "To be decided", "To be decided"),
+                       "Day" = c("Mon/Thu", "Monday, December 9", "Thursday, January 30 2025", "To be decided"),
+                       "Time" = c("11:00-13:00/14:00-16:00", "14:00-16:00", "14:00-16:00", "To be decided"),
                        "Location" = c("Aula centro studi pesca", "Aula centro studi pesca","Aula centro studi pesca", "Aula centro studi pesca"))
 kable(schedule, col.names = c(" ", "Day", "Time", "Location"),
       caption = "The course will begin on Monday, November 4, 2024. The tentative schedule for mid-terms and final exams will be updated throughout the course.")
@@ -93,6 +93,27 @@ calendR(month = 12,
         weeknames.size = 4, 
         title = "December",
         subtitle="2024",
+        text.size = 2.5,              
+        text.col = "black")
+```
+
+```{r echo=FALSE}
+#| out-width: 100%
+
+dates <- seq(as.Date("2025-01-01"), as.Date("2025-01-31"), by = "1 day")
+events <- ifelse(format(dates, "%w") %in% c(6, 0), "Weekend", NA)
+events[c(9, 13, 16, 20, 23, 27)] <- "Class"
+events[30] <- "Mid Term 2"
+calendR(month = 1, year = 2025,
+        start = "M",
+        special.days = events,
+        special.col = c("green", "red", "gray"),
+        legend.pos = "bottom",
+        pdf = F, 
+        day.size = 3, 
+        weeknames.size = 4, 
+        title = "January",
+        subtitle="2025",
         text.size = 2.5,              
         text.col = "black")
 ```
