@@ -158,7 +158,7 @@
     "href": "calendar.html",
     "title": "Calendar",
     "section": "",
-    "text": "The course will begin on Monday, November 4, 2024. The tentative schedule for mid-terms and final exams will be updated throughout the course.\n\n\n\n\n\n\n\n\n\nDay\nTime\nLocation\n\n\n\n\nLectures\nMon/Thu\n11:00-13:00/14:00-16:00\nAula centro studi pesca\n\n\nMid Term Exam - 1\nMonday, December 9\n14:00-16:00\nAula centro studi pesca\n\n\nMid Term Exam - 2\nThursday, January 30 2025\n14:00-16:00\nAula centro studi pesca\n\n\nFinal exam\nTo be decided\nTo be decided\nAula centro studi pesca\n\n\n\n\n\nBelow you will find a temptative schedule for the rest of the semester and a table with the temptative date for your presentation. Manuscript and dates have been assigned in a random way. Please, if you already know that you will not be present on the date that has been assigned to you let me know in time so that I can arrange a schedule change.\n\n\n\n\n\n\nRead carefully!\n\n\n\nIt is a student’s responsibility to periodically check this website to make sure he/she has the most updated information about the course schedule and content. The dates for the mid term and final exams will be published on this website later during the course of the semester!\n\n\n\n\n\n\n\n\nLast.name\nPaper\nPresentation.date\n\n\n\n\nEsposito\nFreudenberger_Nature conservation priority setting needs a global change_2013\n2024-11-14\n\n\nCannone\nSvenning_The late-quaternary megafauna extinctions_2024\n2024-11-21\n\n\nDe Sanctis\nHardy_Swift action increases the success of population reinforcement for a declining prairie grouse_2018\n2024-11-25\n\n\nGiammattei\nGarizio_First evidence of recruitment in critically endangered Galapagos pink land_2024\n2024-11-28\n\n\nPasina\nBina-Perl_Population genetic analysis of the recently redisovered Hula painted frog Latonia nigriventer reveals high genetic diversity and low inbreeding _2018\n2024-12-2\n\n\nGiammatteo\nChekunov_Scale of unregulated international trade in Australian reptiles and amphibians_2024\n2024-12-05\n\n\nSegatti\nSatta_Genetic characterization and implications for conservation of the last autochthous Mouflon population in Europe_2021\n2024-12-12\n\n\nZingaretti\nLeitschuh_Developing gene drive technologies to eradicate invasive rodents from islands_2018\n2024-12-16\n\n\nPepere\nCalinger_Herbarium specimens reveal the footprint of climate change on flowering trends across North America_2013\n2024-12-19\n\n\nMarchetti\nOppel_Habitat specific effectiveness of feral cat control for the conservation of an endemic ground-nesting bird species_2014\n2025-01-09\n\n\nCanti\nWestaway_Wildlife restoration in fragmented landscapes Trialling wild-to-wild translocation with two common reptiles_2024\n2025-01-13\n\n\nAleskeeva\nSchwoerer_Human-connected wild lands How network analysis can inform invasive species management_2024\n2025-01-16"
+    "text": "The course will begin on Monday, November 4, 2024. The tentative schedule for mid-terms and final exams will be updated throughout the course.\n\n\n\n\n\n\n\n\n\nDay\nTime\nLocation\n\n\n\n\nLectures\nMon/Thu\n11:00-13:00/14:00-16:00\nAula centro studi pesca\n\n\nMid Term Exam - 1\nMonday, December 9\n14:00-16:00\nAula centro studi pesca\n\n\nMid Term Exam - 2\nThursday, January 30 2025\n14:00-16:00\nAula centro studi pesca\n\n\nFinal exam\nTo be decided\nTo be decided\nAula centro studi pesca\n\n\n\n\n\nBelow you will find a temptative schedule for the rest of the semester and a table with the temptative date for your presentation. Manuscript and dates have been assigned in a random way. Please, if you already know that you will not be present on the date that has been assigned to you let me know in time so that I can arrange a schedule change.\n\n\n\n\n\n\nRead carefully!\n\n\n\nIt is a student’s responsibility to periodically check this website to make sure he/she has the most updated information about the course schedule and content. The dates for the mid term and final exams will be published on this website later during the course of the semester!\n\n\n\n\n\n\n\n\nLast.name\nPaper\nPresentation.date\n\n\n\n\nEsposito\nFreudenberger_Nature conservation priority setting needs a global change_2013\n2024-11-14\n\n\nCannone\nSvenning_The late-quaternary megafauna extinctions_2024\n2024-11-21\n\n\nGiammattei\nGarizio_First evidence of recruitment in critically endangered Galapagos pink land_2024\n2024-11-28\n\n\nPasina\nBina-Perl_Population genetic analysis of the recently redisovered Hula painted frog Latonia nigriventer reveals high genetic diversity and low inbreeding _2018\n2024-12-2\n\n\nGiammatteo\nChekunov_Scale of unregulated international trade in Australian reptiles and amphibians_2024\n2024-12-05\n\n\nSegatti\nSatta_Genetic characterization and implications for conservation of the last autochthous Mouflon population in Europe_2021\n2024-12-12\n\n\nZingaretti\nLeitschuh_Developing gene drive technologies to eradicate invasive rodents from islands_2018\n2024-12-16\n\n\nPepere\nCalinger_Herbarium specimens reveal the footprint of climate change on flowering trends across North America_2013\n2024-12-19\n\n\nMarchetti\nOppel_Habitat specific effectiveness of feral cat control for the conservation of an endemic ground-nesting bird species_2014\n2025-01-09\n\n\nCanti\nWestaway_Wildlife restoration in fragmented landscapes Trialling wild-to-wild translocation with two common reptiles_2024\n2025-01-13\n\n\nDe Sanctis\nHardy_Swift action increases the success of population reinforcement for a declining prairie grouse_2018\n2025-01-16"
   },
   {
     "objectID": "classes/1/class_1.html#new-record-in-co_2",
@@ -810,5 +810,292 @@
     "title": "Biologia della Conservazione",
     "section": "Genetic Drift",
     "text": "Genetic Drift\n\nGenetic drift is the random change in allele frequencies from generation to generation because of sampling error. That is, the finite number of genes transmitted to progeny will be an imperfect sample of the allele frequencies in the previous generation (Allendorf et al., 2022, p. 114)\nGenetic drift is the primary cause bringing about allele frequency changes throughout the genome over time (Allendorf et al., 2022; Chen et al., 2018)"
+  },
+  {
+    "objectID": "classes/6/class_6.html#effective-population-size",
+    "href": "classes/6/class_6.html#effective-population-size",
+    "title": "Biologia della Conservazione",
+    "section": "Effective population size",
+    "text": "Effective population size"
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure",
+    "href": "classes/6/class_6.html#population-structure",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure",
+    "text": "Population structure\n\nIn most species individuals are scattered in local conglomerates that are called demes (i.e., local populations or subpopulations)\n\n\n\n\n\n\n\nAfter Akçakaya, Mills, & Doncaster (2007)\n\n\n\n\n\n\nAfter Frankham et al. (2010)"
+  },
+  {
+    "objectID": "classes/6/class_6.html#references",
+    "href": "classes/6/class_6.html#references",
+    "title": "Biologia della Conservazione",
+    "section": "References",
+    "text": "References\n\n\n\n\nBiologia della conservazione 24/25 - Giuliano Colosimo, PhD\n\n\n\n\nAkçakaya, H. R., Mills, G., & Doncaster, C. P. (2007). The role of metapopulations in conservation.\n\n\nAllendorf, F. W., Funk, W. C., Aitken, S. N., Byrne, M., Luikart, G., & Antunes, A. (2022). Conservation and the Genomics of Populations. Oxford University Press. Retrieved from https://doi.org/10.1093/oso/9780198856566.001.0001\n\n\nBaan, L. de, Alkemade, R., & Koellner, T. (2013). Land use impacts on biodiversity in LCA: A global approach. The International Journal of Life Cycle Assessment, 18(6), 1216–1230. Retrieved from https://link.springer.com/content/pdf/10.1007/s11367-012-0412-0.pdf\n\n\nCharlesworth, B. (2009). Fundamental concepts in genetics: Effective population size and patterns of molecular evolution and variation. Nature Reviews Genetics, 10(3), 195–205. Retrieved from http://www.nature.com/doifinder/10.1038/nrg2526\n\n\nColosimo, G., Jackson, A. C., Benton, A., Varela-Stokes, A., Iverson, J., Knapp, C. R., & Welch, M. (2021). Correlated Population Genetic Structure in a Three-Tiered Host-Parasite System: The Potential for Coevolution and Adaptive Divergence. Journal of Heredity, 112(7), 590–601. Retrieved from https://doi.org/10.1093/jhered/esab058\n\n\nColosimo, G., Knapp, C. R., Wallace, L. E., & Welch, M. E. (2014). Inferred vs realized patterns of gene flow: an analysis of population structure in the Andros Island Rock Iguana. (V. Ketmaier, Ed.)PLoS ONE, 9(9), e106963. Retrieved from http://dx.plos.org/10.1371/journal.pone.0106963\n\n\nDonald, P. F. (2007). Adult sex ratios in wild bird populations. Ibis, 149(4), 671–692. Retrieved from https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1474-919X.2007.00724.x\n\n\nEldridge, M. D. B., King, J. M., Loupis, A. K., Spencer, P. B. S., Taylor, A. C., Pope, L. C., & Hall, G. P. (1999). Unprecedented low levels of genetic variation and inbreeding depression in an island population of the black-footed rock-wallaby. Conservation Biology, 13(3), 531–541. Retrieved from https://conbio.onlinelibrary.wiley.com/doi/abs/10.1046/j.1523-1739.1999.98115.x\n\n\nForbes, S. H., & Hogg, J. T. (1999). Assessing population structure at high levels of differentiation: Microsatellite comparisons of bighorn sheep and large carnivores. Animal Conservation, 2(3), 223–233. Retrieved from https://zslpublications.onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1795.1999.tb00068.x\n\n\nFrankham, R. (1996). Relationship of genetic variation to population size in wildlife. Conserv Biol, 10(6), 1500–1508.\n\n\nFrankham, R., Ballou, J. D., & Briscoe, D. A. (2010). Introduction to conservation genetics. Cambridge University Press. Retrieved from https://doi.org/10.1017%2Fcbo9780511809002\n\n\nFrankham, R., Ballou, J. D., Eldridge, M. D. B., Lacy, R. C., Ralls, K., Dudash, M. R., & Fenster, C. B. (2011). Predicting the probability of outbreeding depression. Conservation Biology, 25(3), 465–475.\n\n\nHanski, I., & Simberloff, D. (1997). The metapopulation approach, its history, conceptual domain, and application to conservation. In I. Hanski & M. E. Gilpin (Eds.), Metapopulation biology (pp. 5–26). San Diego: Academic Press. Retrieved from https://www.sciencedirect.com/science/article/pii/B9780123234452500031\n\n\nLamb, L. (2010). Living up to its name: How controversial hunting regulations restored big bulls to the elkhorn mountains. Living up to its name: how controversial hunting regulations restored big bulls to the Elkhorn Mountains, Nov/Dec, 14–19. Retrieved from https://fwp.mt.gov/binaries/content/assets/fwp/montana-outdoors/2010/elkhorns.pdf\n\n\nMalécot, G. (1948). Les mathématiques de l’hérédité. Masson. Retrieved from https://books.google.fi/books?id=g7FjAQAACAAJ\n\n\nNei, M. (1977). F-statistics and analysis of gene diversity in subdivided populations. Annals of Human Genetics, 41(2), 225–233. Wiley. Retrieved from https://doi.org/10.1111%2Fj.1469-1809.1977.tb01918.x\n\n\nNunes, L. (2011). Landslides in são paulo, brazil: An integrated historical perspective. Pages News, 19, 60–63.\n\n\nRiley, S. P. D., Pollinger, J. P., Sauvajot, R. M., York, E. C., BROMLEY, C., FULLER, T. K., & WAYNE, R. K. (2006). A southern california freeway is a physical and social barrier to gene flow in carnivores. Molecular Ecology, 15(7), 1733–1741. Wiley. Retrieved from https://doi.org/10.1111%2Fj.1365-294x.2006.02907.x\n\n\nRosenberg, N. A., & Nordborg, M. (2002). Genealogical trees, coalescent theory and the analysis of genetic polymorphisms. Nature Reviews Genetics, 3(5), 380–390. Springer Science; Business Media LLC. Retrieved from https://doi.org/10.1038%2Fnrg795\n\n\nSoule, M. (1973). The epistasis cycle: A theory of marginal populations. Annual Review of Ecology and Systematics, 4, 165–187. Annual Reviews. Retrieved April 5, 2023, from http://www.jstor.org/stable/2096809\n\n\nThatte, P., Joshi, A., Vaidyanathan, S., Landguth, E., & Ramakrishnan, U. (2018). Maintaining tiger connectivity and minimizing extinction into the next century: Insights from landscape genetics and spatially-explicit simulations. Biological Conservation, 218, 181–191. Retrieved from https://www.sciencedirect.com/science/article/pii/S0006320717307346\n\n\nWelch, M. E., Colosimo, G., Pasachnik, S. A., Malone, C. L., Hilton, J., Long, J., Getz, A. H., et al. (2017). Molecular variation and population structure in critically endangered Turks and Caicos Rock Iguanas: identifying intraspecific conservation units and revising subspecific taxonomy. Conservation Genetics, 18(2), 479–493. Retrieved from http://link.springer.com/10.1007/s10592-016-0922-6\n\n\nWright, S. (1931). Evolution in Mendelian populations. Bulletin of Mathematical Biology, 52(1-2), 241–295.\n\n\nWright, S. (1939). Statistical genetics in relation to evolution. Actualités scientifiques et industrielles. Hermann. Retrieved from https://books.google.com.au/books?id=RQqMoAEACAAJ\n\n\nWright, S. (1951). The genetical structure of populations. Annals of eugenics, 15, 323–354."
+  },
+  {
+    "objectID": "classes/6/class_6.html#fluctuating-population-size",
+    "href": "classes/6/class_6.html#fluctuating-population-size",
+    "title": "Biologia della Conservazione",
+    "section": "Fluctuating population size",
+    "text": "Fluctuating population size\n\nThe rate of loss of heterozygosity (\\(\\frac{1}{2N}\\)) is the reciprocal of the population size (\\(\\frac{1}{N}\\)).\nMany generations with reduced population size will influence greatly the loss of heterozygosity and influcence \\(N_e\\).\nConsider a population that fluctuates in the following way: \\(N_1 = 100\\), \\(N_2 = 2\\), and \\(N_3 = 100\\).\nWe can use the armonic mean to calculate the loss of heterozygosity and the effective population size in this situation.\n\n\\[\n\\label{fluctPop}\n\\tag{8.11}\nN_e=\\frac{t}{\\sum_{i=1}^t{(\\frac{1}{N_i})}}\n\\]\n\\[\nN_e=\\frac{3}{(\\frac{1}{100}+\\frac{1}{2}+\\frac{1}{100})}=5.77\n\\]"
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-1",
+    "href": "classes/6/class_6.html#population-structure-1",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure",
+    "text": "Population structure\n\nA metapopulation is defined as a set of discrete populations (demes) of the same species, in the same general geographical area, potentially able to exchange individuals through migration, dispersal, or human-mediated movement (Akçakaya et al., 2007; Hanski & Simberloff, 1997)\nThis subdivision (or structure) of populations can be natural and/or human driven\nRegardless of the cause, the existence of population structure in many species forces us to think at the genetic variation within a species at two primary levels:\n\nGenetic variation within local demes.\nGenetic variation bewteen local demes.\n\nNot all species are scattered!"
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-2",
+    "href": "classes/6/class_6.html#population-structure-2",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure",
+    "text": "Population structure\n\nAfter Allendorf et al. (2022), p. 184"
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-3",
+    "href": "classes/6/class_6.html#population-structure-3",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure",
+    "text": "Population structure\n\nBoreal forest distibution in North America. Available here"
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-4",
+    "href": "classes/6/class_6.html#population-structure-4",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure",
+    "text": "Population structure\n\nEven in the absence of barriers to gene flow, genetic differences can accrue so that individuals that are very distant from each other may present significant differences at the genetic level: isolation by distance\n\n\nVariability in the correlation between species genetic diversity and geographic distance. ranges. Modified from Forbes & Hogg (1999) with additional unpublished data from M.K. Schwartz (Allendorf et al., 2022)."
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-5",
+    "href": "classes/6/class_6.html#population-structure-5",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure",
+    "text": "Population structure\n\nDescribing the patterns and amount of differentiation among demes is of the uttermost importance to develop effective conservation strategies (see for example Thatte, Joshi, Vaidyanathan, Landguth, & Ramakrishnan, 2018).\n\n\nStudy area in Thatte et al. (2018). Genetically identified tigers as red dots"
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-6",
+    "href": "classes/6/class_6.html#population-structure-6",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure",
+    "text": "Population structure\n\nFrankham et al. (2011) describe the risks of outbreeding depression when translocating individuals from genetically distinct populations to supplement imperiled ones.\n\n\n\n\n\n\n\nAfter Welch et al. (2017).\n\n\n\n\n\n\nAfter Welch et al. (2017)."
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-7",
+    "href": "classes/6/class_6.html#population-structure-7",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure",
+    "text": "Population structure\n\nAfter Colosimo et al. (2021)"
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-8",
+    "href": "classes/6/class_6.html#population-structure-8",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure",
+    "text": "Population structure\n\nDeveloping priorities for the conservation of a species often requires an understanding of adaptive genetic differentiation among populations (Allendorf et al., 2022).\nTo understand how genetic variation is distributed at different loci within subdivided populations it is necessary to look at different interacting forces like gene flow, genetic drift and natural selection.\n\\(F\\) statistics (Malécot, 1948; Wright, 1931, 1951) are undoubtedly the most used indexes to describe genetic differentiation in and between demes.\n\\(F\\) statistics are, in short, inbreeding coefficients measuring different types of inbreeding at different levels."
+  },
+  {
+    "objectID": "classes/6/class_6.html#f-statistics",
+    "href": "classes/6/class_6.html#f-statistics",
+    "title": "Biologia della Conservazione",
+    "section": "\\(F\\) statistics",
+    "text": "\\(F\\) statistics\n\nWe recognize three primary coefficients: \\(F_{IS}\\), \\(F_{IT}\\), and \\(F_{ST}\\).\n\\(F_{IS}\\) measures Hardy–Weinberg departures within local demes.\n\\(F_{ST}\\) measures divergence in allele frequencies among demes.\n\\(F_{IT}\\) measures Hardy–Weinberg departures in the metapopulation due to \\(F_{IS}\\) (nonrandom mating within local demes) and \\(F_{ST}\\) (allele frequency divergence among demes).\nThe original \\(F\\) statistics developed by wright focused on loci with only two alleles.\nNei (1977) extended these measures to multiple alleles and used a different notation to name what he called analysis of gene diversity: \\(G_{IS}\\), \\(G_{IT}\\), and \\(G_{ST}\\). Often the two groups of indexes are used interchangeably."
+  },
+  {
+    "objectID": "classes/6/class_6.html#f_is",
+    "href": "classes/6/class_6.html#f_is",
+    "title": "Biologia della Conservazione",
+    "section": "\\(F_{IS}\\)",
+    "text": "\\(F_{IS}\\)\nThis is a measure of departure from HW proportions within local demes.\n\\[\n\\label{fis}\n\\tag{13.1}\nF_{IS} = 1-\\frac{H_O}{H_S}\n\\]\nwhere \\(H_O\\) is the observed heterozygosity averaged over all demes while \\(H_S\\) is the expected heterozygosity averaged over all demes. \\(F_{IS}\\) values can range from \\(-1 \\leq 0 \\leq 1\\), with positive values indicating an excess of homozygotes and negative values indicating an excess of heterozygotes (Allendorf et al., 2022)."
+  },
+  {
+    "objectID": "classes/6/class_6.html#f_st",
+    "href": "classes/6/class_6.html#f_st",
+    "title": "Biologia della Conservazione",
+    "section": "\\(F_{ST}\\)",
+    "text": "\\(F_{ST}\\)\nOften called fixation index, it is a measure of genetic divergence among demes.\n\\[\n\\label{fst}\n\\tag{13.2}\nF_{ST} = 1-\\frac{H_S}{H_T}\n\\]\nwith \\(H_T\\) as the expected HW heterozygosity if the metapopulation were panmictic, and \\(H_S\\) is the HW proportion of heterozygotes in each separate deme and then averaged over all demes. This measure varies from \\(0\\) (demes all have equal allele frequencies) to \\(1\\) (demes are all fixed for different alleles)."
+  },
+  {
+    "objectID": "classes/6/class_6.html#f_it",
+    "href": "classes/6/class_6.html#f_it",
+    "title": "Biologia della Conservazione",
+    "section": "\\(F_{IT}\\)",
+    "text": "\\(F_{IT}\\)\nMeasures the departure from HW proportions due to departures from HW proportions within local demes and divergence among demes (Allendorf et al., 2022).\n\\[\n\\label{fit}\n\\tag{13.3}\nF_{IT} = 1-\\frac{H_O}{H_T}\n\\]\nwhere \\(H_O\\) is the observed heterozygosity averaged over all demes while \\(H_T\\) is the expected HW heterozygosity if the metapopulation were panmictic.\n\n\nThe fixation indexes described in the previous slides are related by the following expression:\n\n\\[\n\\label{findexrelation}\n\\tag{13.4}\nF_{IT}= F_{IS}+F_{ST}-(F_{IS}*F_{ST})\n\\]"
+  },
+  {
+    "objectID": "classes/6/class_6.html#the-wahlund-effect",
+    "href": "classes/6/class_6.html#the-wahlund-effect",
+    "title": "Biologia della Conservazione",
+    "section": "The Wahlund effect",
+    "text": "The Wahlund effect\n\nA deficit of heterozygosity due to the presence of differential distribution of genetic diversity among demes is often called Wahlund effect, for the the Swedish geneticist who described it (Wahlund, 1928).\nHe analyzed the excess of homozygotes and deficit of heterozygotes in terms of the variance of allele frequencies among S deme (Allendorf et al., 2022).\n\n\\[\n\\label{wahlund}\n\\tag{13.5}\nVar(q)=\\frac{1}{S}\\sum(q_i-\\bar{q})^2 \\\\ \\\\ F_{ST} = \\frac{Var(q)}{pq}\n\\]"
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-and-habitat-fragmentation",
+    "href": "classes/6/class_6.html#population-structure-and-habitat-fragmentation",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure and habitat fragmentation",
+    "text": "Population structure and habitat fragmentation\n\nHabitat fragmentation is a combination of two processes: reduction in total area, and the creation of separate islands.\nHuman induced fragmentation and habitat loss is recognized as the main cause of biodiversity loss (Baan, Alkemade, & Koellner, 2013).\nHabitat fragmentation causes an overall reduction in population size.\nHabitat fragmentation also causes an overall reduction in gene flow among the patches it creates.\nInhospitable, cleared habitat among fragments typically inhibits gene flow. The same goes for roads rivers, water bodies, mountains, or any other artificial or natural barrier Riley et al. (2006).\nWith restricted gene flow fragmentation is highly deleterious in the long term.\nSingle Large or Several Small (Frankham et al., 2010)."
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-and-habitat-fragmentation-1",
+    "href": "classes/6/class_6.html#population-structure-and-habitat-fragmentation-1",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure and habitat fragmentation",
+    "text": "Population structure and habitat fragmentation\n\nFragmentation of Atlantic forest. After Nunes (2011)"
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-and-habitat-fragmentation-2",
+    "href": "classes/6/class_6.html#population-structure-and-habitat-fragmentation-2",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure and habitat fragmentation",
+    "text": "Population structure and habitat fragmentation\n\nSingle large (SL) VS several small (SS). After Frankham et al. (2010)"
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-and-habitat-fragmentation-3",
+    "href": "classes/6/class_6.html#population-structure-and-habitat-fragmentation-3",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure and habitat fragmentation",
+    "text": "Population structure and habitat fragmentation\nFragmentation happens in two steps:\n\nInitial genetic subdivision of the population.\nCumulative diversification through genetic drift, selection, inbreeding etc. etc. etc.\n\nAfter an initial fragmentation, different fragments will have different initial allele frequencies. This diversification can be described by the binomial sampling variance (\\(\\sigma_p^2 = \\frac{pq}{2N}\\)) and the smaller the fragment, the higher the variance.\n\nThe degree of differentiation among fragments can be described by partitioning the overall inbreeding into components within and among populations (\\(F\\) statistics).\n\n\nWe will look at some examples on estimating \\(F\\) statistics from genotype data."
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-structure-and-habitat-fragmentation-4",
+    "href": "classes/6/class_6.html#population-structure-and-habitat-fragmentation-4",
+    "title": "Biologia della Conservazione",
+    "section": "Population structure and habitat fragmentation",
+    "text": "Population structure and habitat fragmentation\nGene flow\nWhat is gene flow?\n\nMovement of alleles between population due to migration.\n\nThe effects of fragmentation on gene flow depend on:\n\nNumber of population fragments.\nDistribution of population sizes in the fragments.\nDistance between fragments.\nDispersal ability of the species.\nMigration rates among fragments.\nEnvironment of the matrix among fragments.\nTimes since fragmentation and extinction and recolonization rates across fragments."
+  },
+  {
+    "objectID": "classes/6/class_6.html#the-black-footed-rock-wallaby",
+    "href": "classes/6/class_6.html#the-black-footed-rock-wallaby",
+    "title": "Biologia della Conservazione",
+    "section": "The black footed rock wallaby",
+    "text": "The black footed rock wallaby\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocation\nProp. of polymorphic loci\nMean # of alleles\nAverage heterozygosity\n\n\n\n\nBarrow Island (1)\n0.1\n1.2\n0.05\n\n\nExmouth (2)\n1.0\n3.4\n0.62\n\n\nWheatbelt (3)\n1.0\n4.4\n0.56\n\n\n\n\nData from Eldridge et al. (1999), images after Frankham et al. (2010)."
+  },
+  {
+    "objectID": "classes/6/class_6.html#example---1",
+    "href": "classes/6/class_6.html#example---1",
+    "title": "Biologia della Conservazione",
+    "section": "Example - 1",
+    "text": "Example - 1\n\nPopulations with same allele frequencies. One with random mating the other one with inbreeding.\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation\n\\(A_1A_1\\)\n\\(A_1A_2\\)\n\\(A_2A_2\\)\nAllele Freq\nF\nHe\n\n\n\n\n1\n0.25\n0.5\n0.25\n\\(p=0.5\\)\n0\n0.5\n\n\n\n\n\n\n\\(q=0.5\\)\n\n\n\n\n2\n0.4\n0.2\n0.4\n\\(p=0.5\\)\n0.6\n0.5\n\n\n\n\n\n\n\\(q=0.5\\)\n\n\n\n\n\n\n\\(H_O\\) observed heterozygosity averaged over all demes.\n\\(H_S\\) expected heterozygosity averaged over all demes.\n\\(H_T\\) expected heterozygosity of the metapopulation.\n\\(F_{IS} = 1-\\frac{H_O}{H_S}\\); \\(F_{IT} = 1-\\frac{H_O}{H_T}\\); \\(F_{ST} = 1-\\frac{H_S}{H_T}\\)."
+  },
+  {
+    "objectID": "classes/6/class_6.html#example---2",
+    "href": "classes/6/class_6.html#example---2",
+    "title": "Biologia della Conservazione",
+    "section": "Example - 2",
+    "text": "Example - 2\n\nRandom mating populations with different allele frequencies.\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation\n\\(A_1A_1\\)\n\\(A_1A_2\\)\n\\(A_2A_2\\)\nAllele Freq\nF\nHe\n\n\n\n\n1\n0.25\n0.5\n0.25\n\\(p=0.5\\)\n0\n0.5\n\n\n\n\n\n\n\\(q=0.5\\)\n\n\n\n\n2\n0.04\n0.32\n0.64\n\\(p=0.2\\)\n0\n0.32\n\n\n\n\n\n\n\\(q=0.8\\)\n\n\n\n\n\n\n\\(H_O\\) observed heterozygosity averaged over all demes.\n\\(H_S\\) expected heterozygosity averaged over all demes.\n\\(H_T\\) expected heterozygosity of the metapopulation.\n\\(F_{IS} = 1-\\frac{H_O}{H_S}\\); \\(F_{IT} = 1-\\frac{H_O}{H_T}\\); \\(F_{ST} = 1-\\frac{H_S}{H_T}\\)."
+  },
+  {
+    "objectID": "classes/6/class_6.html#example---3",
+    "href": "classes/6/class_6.html#example---3",
+    "title": "Biologia della Conservazione",
+    "section": "Example - 3",
+    "text": "Example - 3\n\nPopulations with different allele frequencies, one random mating and one with inbreeding.\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation\n\\(A_1A_1\\)\n\\(A_1A_2\\)\n\\(A_2A_2\\)\nAllele Freq\nF\nHe\n\n\n\n\n1\n0.25\n0.5\n0.25\n\\(p=0.5\\)\n0\n0.5\n\n\n\n\n\n\n\\(q=0.5\\)\n\n\n\n\n2\n0.14\n0.13\n0.74\n\\(p=0.2\\)\n0.6\n0.32\n\n\n\n\n\n\n\\(q=0.8\\)\n\n\n\n\n\n\n\\(H_O\\) observed heterozygosity averaged over all demes.\n\\(H_S\\) expected heterozygosity averaged over all demes.\n\\(H_T\\) expected heterozygosity of the metapopulation.\n\\(F_{IS} = 1-\\frac{H_O}{H_S}\\); \\(F_{IT} = 1-\\frac{H_O}{H_T}\\); \\(F_{ST} = 1-\\frac{H_S}{H_T}\\)."
+  },
+  {
+    "objectID": "classes/6/class_6.html#example---4",
+    "href": "classes/6/class_6.html#example---4",
+    "title": "Biologia della Conservazione",
+    "section": "Example - 4",
+    "text": "Example - 4\n\n\\(F_{ST}\\) increases over generations in fragmented populations at a rate inversely dependent on population size. Values that are \\(\\ge 0.15\\) indicate significant differentiation between fragments (Frankham et al., 2010)."
+  },
+  {
+    "objectID": "classes/6/class_6.html#migration-and-gene-flow",
+    "href": "classes/6/class_6.html#migration-and-gene-flow",
+    "title": "Biologia della Conservazione",
+    "section": "Migration and gene flow",
+    "text": "Migration and gene flow\n\nMigration reduces the impact of fragmentation in a way that is dependent on the rate of gene flow.\nWhen is gene flow sufficiently high to prevent the genetic impact of fragmentation?\n\n\n\n\n\nA single migrant per generation is considered sufficient to prevent differentiation between demes.\nThe migration rate \\(m\\) is the proportion of genes in a population derived from migrants per generation.\n\\(Nm\\) is the number of migrants per generation (Frankham et al., 2010)."
+  },
+  {
+    "objectID": "classes/6/class_6.html#genetic-drift",
+    "href": "classes/6/class_6.html#genetic-drift",
+    "title": "Biologia della Conservazione",
+    "section": "Genetic Drift",
+    "text": "Genetic Drift\nSimulating the average time of allele fixation in our example\n\n\nShow the code\n# simulare il tempo medio di fissazione degli alleli\npop.ls &lt;- list(geneA = c(rep(\"A\",50), rep(\"a\",50)), \n               geneB = c(rep(\"B\",50), rep(\"b\",50)),\n               geneC = c(rep(\"C\",50), rep(\"c\",50)))\n\n\n# pop.ls  =  lista contenente i geni della popolazione\n# num.sim = numero di volte la simulazione deve girare\nsim.gen2fix &lt;- function (pop.ls, num.sims) {\n  \n  # numero totale di loci per ogni gene   \n  n &lt;- length(pop.ls[[1]])\n  # numero di geni differenti nella popolazione\n  n.genes &lt;- length(pop.ls)\n  # lista vuota per i risultati della simulazione\n  generations &lt;- vector(mode = \"list\", length = length(pop.ls))\n  for (h in 1:n.genes){\n    generations[[h]] &lt;- rep(0, num.sims)\n  }\n  names(generations) &lt;- names(pop.ls)\n  \n  # ciclo di simulazione \n  for (i in 1:num.sims) {\n    temp.pop.ls &lt;- pop.ls\n    for (y in 1:n.genes) {\n      while (max(table(temp.pop.ls[[y]])) &lt; n) {\n        temp.pop.ls[[y]] &lt;- sample(temp.pop.ls[[y]],\n                                   100, replace = T)\n        generations[[y]][i] &lt;- generations[[y]][i] + 1\n      }\n    }\n  }\n  \n    # statistiche descrittive dei risultati\n  df &lt;- rbind(data.frame(lapply(generations, mean)),\n        data.frame(lapply(generations, sd))) \n  rownames(df) &lt;- c(\"mean\", \"sd\")\n\n  # ciclo per plottare i risultati\n  # modificare se i geni da plottare sono &gt; 4\n  par(mfrow = c(2,2))\n  for (z in 1:n.genes) {\n    graph &lt;- generations[[z]]\n    hist(graph, \n         main = paste(\"Num. of generations to fix \",\n                             names(generations[z])),\n         xlab = \"Generations\")\n    abline(v=mean(graph), lwd=2, lty=2, col=\"red\")\n  }\n  \n  #return(df)\n}\n\nsim.gen2fix(pop.ls, 5000)"
+  },
+  {
+    "objectID": "classes/6/class_6.html#size-matters",
+    "href": "classes/6/class_6.html#size-matters",
+    "title": "Biologia della Conservazione",
+    "section": "Size matters",
+    "text": "Size matters"
+  },
+  {
+    "objectID": "classes/6/class_6.html#population-size",
+    "href": "classes/6/class_6.html#population-size",
+    "title": "Biologia della Conservazione",
+    "section": "Population size",
+    "text": "Population size\n\nThere can be no doubt that genetic variation is related to population size, as Soule (1973) proposed. Small population size reduces the evolutionary potential of wildlife species (Frankham, 1996).\n\n\nThe importance of maintaining a large population size is pretty intuitive, but may not be enough!\nMany populations of insects and small mammals naturally fluctuate in their “census” population size, but it is when they are at their minimum that the genetic processes affect them the most\nOften the census population counts juveniles and senescent individuals that do not really contribute to the reproductive output of next generations\nWithin adult and reproductive individuals there may be significant variance in the number of offspring sired by males and females"
+  },
+  {
+    "objectID": "classes/6/class_6.html#wright-fisher-population-model",
+    "href": "classes/6/class_6.html#wright-fisher-population-model",
+    "title": "Biologia della Conservazione",
+    "section": "Wright-Fisher population model",
+    "text": "Wright-Fisher population model\nAssumptions of the model:\n\nAll individuals in the population are considered adults and capable of breeding\nIndividuals are hermafroditic (self fertilization is possible)\nThe number of breeding individuals is constant in all generations and they breed randomly\nNew individuals are formed each generation by random sampling, with replacement, of the gametes from the parents\nThe parents die after mating so each generation is only composed by new individuals (discrete generations)\nThere is no selection at any life stage and mutation is ignored\nWhen \\(N\\) is sufficiently large this means that each individual contributes to the next generation a number of offspring that is approximated by a Poisson distribution"
+  },
+  {
+    "objectID": "classes/6/class_6.html#the-wright-fisher-model-used-in-wild-populations",
+    "href": "classes/6/class_6.html#the-wright-fisher-model-used-in-wild-populations",
+    "title": "Biologia della Conservazione",
+    "section": "The Wright-Fisher model used in wild populations",
+    "text": "The Wright-Fisher model used in wild populations\n\nAny characteristic of a real population that deviates from the characteristic of the ideal population will make the census size \\(N\\) to be different than the effective population size \\(N_e\\)\nAn important measure in conservation is the ratio \\(\\frac{N_e}{N}\\)\nThere are multiple evidence that in most natural population this ratio is usually much less than 1\nThe primary factors in natural populations that are influencing this ratio are:\n\nfluctuating population size over multiple generations\nhigh variance in family size\nunequal ratios between sexes\n\nDemographic and genetic approaches to estimate \\(N_e\\)"
+  },
+  {
+    "objectID": "classes/6/class_6.html#estimating-n_e",
+    "href": "classes/6/class_6.html#estimating-n_e",
+    "title": "Biologia della Conservazione",
+    "section": "Estimating \\(N_e\\)",
+    "text": "Estimating \\(N_e\\)\nDemographic approaches\n\nDemographic methodologies require extensive data and sometimes are unattainable in wild populations\n\n\nFluctuations in population sizeVariation in family sizeUnequal sex-ratio\n\n\n\n\n\nNatural populations continuously undergo fluctuations in size over multiple generations (Reed, OGrady, Ballou, & Frankham, 2003)\nWe can use the harmonic mean to estimate \\(N_e\\) over \\(t\\) generations\n\n\n\\[\nN_e \\sim \\frac{t}{\\sum(\\frac{1}{N_{ei}})} \\\\ \\sim \\frac{3}{(1/175000)+(1/20)+(1/175000)} \\sim 60\n\\]\n\n\n\n\n\n\nThe effect on \\(N_e\\) of variation in family sizes in an otherwise ideal population can be estimated using:\n\n\\[\nN_e = \\frac{4N-2}{V_k +2}\n\\]\n\n\n\\(k\\) is the mean family size\nIn Wright-Fisher population \\(V_k = 2\\) so that \\(N_e \\sim N\\)\nIn Darwin’s finches the value of \\(V_k\\) has been estimated at 6.74, which reduces dramatically \\(N_e\\) (Frankham, 1995)\n\n\n\n\n\n\n\nAccording to Donald (2007) there usually is an excess of females in mammals and a deficiency in males \\[\nN_e=\\frac{4N_{ef}N_{em}}{N_{ef}+N_{em}}\n\\]\n\n\n\n\n\nEffects of unequal sex ratio on \\(N_e/N\\). After Frankham, Ballou, & Briscoe (2010), p.249"
+  },
+  {
+    "objectID": "classes/6/class_6.html#estimating-n_e-demographic-approaches",
+    "href": "classes/6/class_6.html#estimating-n_e-demographic-approaches",
+    "title": "Biologia della Conservazione",
+    "section": "Estimating \\(N_e\\): demographic approaches",
+    "text": "Estimating \\(N_e\\): demographic approaches\n\nDemographic methodologies require extensive data and sometimes are unattainable in wild populations\n\nUnequal sex ratio\n\nWhat is the size of the ideal population that will lose heterozygosity at the same rate of the real population that has unequal sex ratio?\nWhen selfing is not permitted, gametes in the progeny cannot come from the same individual, therefore the effective population size in a population with separate sexes is equal to the probability that the gametes in the progeny comes from the same grandparent.\nThe probability that the two uniting gametes in an individual will come from the same male (or female) grandparent is \\(\\frac{1}{4}\\).\nOne-half of the time uniting gametes will come from a grandmother and a grandfather, and 1/4 of the time both gametes will come from the same grandparent (Allendorf et al., 2022).\nTherefore, the combined probability that both gametes come from the same grandparent is \\(\\frac{1}{4}*\\frac{1}{N_m}= \\frac{1}{4N_m}\\) for grandfathers and \\(\\frac{1}{4}*\\frac{1}{N_f}= \\frac{1}{4N_f}\\) for grandmothers."
+  },
+  {
+    "objectID": "classes/6/class_6.html#estimating-n_e-unequal-sex-ratio",
+    "href": "classes/6/class_6.html#estimating-n_e-unequal-sex-ratio",
+    "title": "Biologia della Conservazione",
+    "section": "Estimating \\(N_e\\): Unequal sex ratio",
+    "text": "Estimating \\(N_e\\): Unequal sex ratio\n\nWhat is the size of the ideal population that will lose heterozygosity at the same rate of the real population that has unequal sex ratio?\nWhen selfing is not permitted, gametes in the progeny cannot come from the same individual, therefore the effective population size in a population with separate sexes is equal to the probability that the gametes in the progeny comes from the same grandparent.\nThe probability that the two uniting gametes in an individual will come from the same male (or female) grandparent is \\(\\frac{1}{4}\\).\nOne-half of the time uniting gametes will come from a grandmother and a grandfather, and 1/4 of the time both gametes will come from the same grandparent (Allendorf et al., 2022).\nTherefore, the combined probability that both gametes come from the same grandparent is \\(\\frac{1}{4}*\\frac{1}{N_m}= \\frac{1}{4N_m}\\) for grandfathers and \\(\\frac{1}{4}*\\frac{1}{N_f}= \\frac{1}{4N_f}\\) for grandmothers."
+  },
+  {
+    "objectID": "classes/6/class_6.html#estimating-n_e-unequal-probability-of-producing-offspring",
+    "href": "classes/6/class_6.html#estimating-n_e-unequal-probability-of-producing-offspring",
+    "title": "Biologia della Conservazione",
+    "section": "Estimating \\(N_e\\): Unequal probability of producing offspring",
+    "text": "Estimating \\(N_e\\): Unequal probability of producing offspring\n\nIn real populations parents very rarely have the same probability of producing offspring.\nThis variation results in a greater proportion of the progeny being produced by a smaller group of individuals compared to the number of adults potentially able to reproduce (Allendorf et al., 2022).\nWe can model the non-random progeny contribution using Wright (1939).\nLets imagine a population of \\(N\\) individuals each contributing a varying number \\(k\\) of gametes to the next generation of the same size (\\(N\\)). The mean number of gametes contributed by individual is \\(\\bar{k}=2\\). We can calculate the variance associated to this number using\n\n\\[\n\\label{varOffsp}\n\\tag{6.3}\nV_k = \\frac{\\sum_{i=1}^N (k_i-2)^2}{N}\n\\]"
+  },
+  {
+    "objectID": "classes/6/class_6.html#estimating-n_e-fluctuating-population-size",
+    "href": "classes/6/class_6.html#estimating-n_e-fluctuating-population-size",
+    "title": "Biologia della Conservazione",
+    "section": "Estimating \\(N_e\\): Fluctuating population size",
+    "text": "Estimating \\(N_e\\): Fluctuating population size\n\nThe rate of loss of heterozygosity (\\(\\frac{1}{2N}\\)) is the reciprocal of the population size (\\(\\frac{1}{N}\\))\nMany generations with reduced population size will influence greatly the loss of heterozygosity and influcence \\(N_e\\).\nConsider a population that fluctuates in the following way: \\(N_1 = 100\\), \\(N_2 = 2\\), and \\(N_3 = 100\\)\nWe can use the armonic mean to calculate the loss of heterozygosity and the effective population size in this situation\n\n\\[\n\\label{fluctPop}\n\\tag{6.6}\nN_e=\\frac{t}{\\sum_{i=1}^t{(\\frac{1}{N_i})}}\n\\]\n\\[\nN_e=\\frac{3}{(\\frac{1}{100}+\\frac{1}{2}+\\frac{1}{100})}=5.77\n\\]"
+  },
+  {
+    "objectID": "classes/6/class_6.html#estimating-n_e-genetic-approaches",
+    "href": "classes/6/class_6.html#estimating-n_e-genetic-approaches",
+    "title": "Biologia della Conservazione",
+    "section": "Estimating \\(N_e\\): Genetic approaches",
+    "text": "Estimating \\(N_e\\): Genetic approaches\n\nDNA retains information on the evolutionary history of individuals\nWe can use basic probability theory to extrapolate information, including information on \\(N_e\\) from DNA markers\nThe coalescent approach uses the sampling theory for neutral alleles and allows us to trace back in time this information (Rosenberg & Nordborg, 2002)\nUnder the neutral theory of evolution 2 alleles may descend from the same ancestral allele in the previous generation with probability \\(1/N_{ef}\\) for mtDNA, or \\(1/2N_e\\) for a general diploid locus\nAlternatively 2 alleles may derive from 2 different alleles in the previous generation with probability \\(1-\\frac{1}{N_{ef}}\\)"
+  },
+  {
+    "objectID": "classes/6/class_6.html#estimating-n_e-the-coalescent-theory",
+    "href": "classes/6/class_6.html#estimating-n_e-the-coalescent-theory",
+    "title": "Biologia della Conservazione",
+    "section": "Estimating \\(N_e\\): the coalescent theory",
+    "text": "Estimating \\(N_e\\): the coalescent theory\n\nThe coalescent allows to study the loss of genetic diversity and to use this information to infer effective population size\nTo coalesce means “unite” or “fuse”\nTo better understand this approach we can look at the example of mitochondrial DNA (mtDNA)\nmtDNA is haploid, maternally inherited and it does not undergo recombination\nCoalescent theory provides a powerful framework to study the effects of genetic drift, natural selection, mutation, and gene flow in natural populations (Allendorf et al., 2022; Rosenberg & Nordborg, 2002)"
+  },
+  {
+    "objectID": "classes/6/class_6.html#estimating-n_e-genetic-approaches-and-the-coalescent-theory",
+    "href": "classes/6/class_6.html#estimating-n_e-genetic-approaches-and-the-coalescent-theory",
+    "title": "Biologia della Conservazione",
+    "section": "Estimating \\(N_e\\): Genetic approaches and the coalescent theory",
+    "text": "Estimating \\(N_e\\): Genetic approaches and the coalescent theory\n\nDNA retains information on the evolutionary history of individuals\nWe can use basic probability theory to extrapolate information, including information on \\(N_e\\) from DNA markers\nThe coalescent allows to study the loss of genetic diversity and to use this information to infer effective population size\nTo coalesce means “unite” or “fuse”\nTo better understand this approach we can look at the example of mitochondrial DNA (mtDNA) which is haploid, maternally inherited and it does not undergo recombination\nCoalescent theory provides a powerful framework to study the effects of genetic drift, natural selection, mutation, and gene flow in natural populations (Allendorf et al., 2022; Rosenberg & Nordborg, 2002)"
   }
 ]

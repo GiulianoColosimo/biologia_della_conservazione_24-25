@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="Calendar – Biologia della Conservazione 24/25">
 <meta property="og:description" content="">
@@ -183,6 +212,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="././classes/5/class_5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Class 5 - HW and Genetic drift</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="././classes/6/class_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 6 - <span class="math inline">\(N_{e}\)</span> and Population structure</span></a>
   </div>
 </li>
       </ul>
@@ -319,53 +354,48 @@ Read carefully!
 <td style="text-align: left;">2024-11-21</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">De Sanctis</td>
-<td style="text-align: left;"><a href="https://drive.proton.me/urls/MD4MH3HTAC#UBvhNlW6mTW8" style="     color: blue !important;">Hardy_Swift action increases the success of population reinforcement for a declining prairie grouse_2018</a></td>
-<td style="text-align: left;">2024-11-25</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">Giammattei</td>
 <td style="text-align: left;"><a href="https://drive.proton.me/urls/CQB38F8A9C#NheDpcGZn3RJ" style="     color: blue !important;">Garizio_First evidence of recruitment in critically endangered Galapagos pink land_2024</a></td>
 <td style="text-align: left;">2024-11-28</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Pasina</td>
 <td style="text-align: left;"><a href="https://drive.proton.me/urls/NBFJE8NNGM#yRgDtaptARxk" style="     color: blue !important;">Bina-Perl_Population genetic analysis of the recently redisovered Hula painted frog Latonia nigriventer reveals high genetic diversity and low inbreeding _2018</a></td>
 <td style="text-align: left;">2024-12-2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Giammatteo</td>
 <td style="text-align: left;"><a href="https://drive.proton.me/urls/MEA6E2C1CR#vrvGyiOOoKps" style="     color: blue !important;">Chekunov_Scale of unregulated international trade in Australian reptiles and amphibians_2024</a></td>
 <td style="text-align: left;">2024-12-05</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Segatti</td>
 <td style="text-align: left;"><a href="https://drive.proton.me/urls/17AJ1RYBSR#j3SO3UIgOen6" style="     color: blue !important;">Satta_Genetic characterization and implications for conservation of the last autochthous Mouflon population in Europe_2021</a></td>
 <td style="text-align: left;">2024-12-12</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Zingaretti</td>
 <td style="text-align: left;"><a href="https://drive.proton.me/urls/9WVQGE6J5M#GEndO0gEvVJq" style="     color: blue !important;">Leitschuh_Developing gene drive technologies to eradicate invasive rodents from islands_2018</a></td>
 <td style="text-align: left;">2024-12-16</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Pepere</td>
 <td style="text-align: left;"><a href="https://drive.proton.me/urls/8EH3AT9RV8#r478zTHfQsdA" style="     color: blue !important;">Calinger_Herbarium specimens reveal the footprint of climate change on flowering trends across North America_2013</a></td>
 <td style="text-align: left;">2024-12-19</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Marchetti</td>
 <td style="text-align: left;"><a href="https://drive.proton.me/urls/NBH1EJBHGW#Kna90ZcAGZfX" style="     color: blue !important;">Oppel_Habitat specific effectiveness of feral cat control for the conservation of an endemic ground-nesting bird species_2014</a></td>
 <td style="text-align: left;">2025-01-09</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Canti</td>
 <td style="text-align: left;"><a href="https://drive.proton.me/urls/TW6FTQ335G#OupaNiPYxYSm" style="     color: blue !important;">Westaway_Wildlife restoration in fragmented landscapes Trialling wild-to-wild translocation with two common reptiles_2024</a></td>
 <td style="text-align: left;">2025-01-13</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Aleskeeva</td>
-<td style="text-align: left;"><a href="https://drive.proton.me/urls/95N9VGANRG#p7Hu4RJTGyGa" style="     color: blue !important;">Schwoerer_Human-connected wild lands How network analysis can inform invasive species management_2024</a></td>
+<tr class="odd">
+<td style="text-align: left;">De Sanctis</td>
+<td style="text-align: left;"><a href="https://drive.proton.me/urls/MD4MH3HTAC#UBvhNlW6mTW8" style="     color: blue !important;">Hardy_Swift action increases the success of population reinforcement for a declining prairie grouse_2018</a></td>
 <td style="text-align: left;">2025-01-16</td>
 </tr>
 </tbody>

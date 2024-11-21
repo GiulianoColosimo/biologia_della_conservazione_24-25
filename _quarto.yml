@@ -45,6 +45,8 @@ website:
             text: "Class 4 - Populations and conservation genetics"
           - href: ./classes/5/class_5.html
             text: "Class 5 - HW and Genetic drift"
+          - href: ./classes/6/class_6.html
+            text: "Class 6 - $N_{e}$ and Population structure"
 
 
     tools:
