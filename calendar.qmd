@@ -83,7 +83,7 @@ calendR(month = 11,
 
 dates <- seq(as.Date("2024-12-01"), as.Date("2024-12-31"), by = "1 day")
 events <- ifelse(format(dates, "%w") %in% c(6, 0), "Weekend", NA)
-events[c(2, 5, 12, 16, 19)] <- "Class"
+events[c(2, 5, 12, 16, 17, 19)] <- "Class"
 events[9] <- "Mid Term 1"
 calendR(month = 12,
         start = "M",
@@ -97,8 +97,8 @@ calendR(month = 12,
         subtitle="2024",
         text.size = 2.5,              
         text.col = "black",
-        text = c("11:00-13:00\n 14:00-16:00", "11:00-13:00\n 14:00-16:00"),
-        text.pos = c(2, 9))
+        text = c("11:00-13:00\n 14:00-16:00", "11:00-13:00"),
+        text.pos = c(9,17))
 ```
 
 ```{r echo=FALSE}
