@@ -49,6 +49,8 @@ website:
             text: "Class 6 - $N_{e}$ and Population structure"
           - href: ./classes/7/class_7.html
             text: "Class 7 - Inbreeding and Inbreeding depression"
+          - href: ./classes/8/class_8.html
+            text: "Class 8 - Hybridization and heritability"
 
 
     tools:

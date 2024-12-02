@@ -262,7 +262,12 @@ $$
 -   Yes, but the mechanism related to a fitness reduction is distinct! Increased homozygosity leads to expression of a greater number of deleterious recessive alleles in inbred individuals, thereby lowering their fitness. Reduced heterozygosity reduces fitness of inbred individuals at loci where the heterozygotes have a selective advantage over homozygotes (heterozygous advantage or overdominance)
 -   Most evidence show support for the primary problem of inbreeding depression is increased homozygosity [@Allendorf2022]
 
-------------------------------------------------------------------------
+
+## Different mechanisms of fitness reduction
+
+![After @Frankham2010](./class_15_2.jpg)
+
+---
 
 -   It is crucial to know the mechanisms causing inbreeding depression because it affects the ability of a population to "adapt" to inbreeding.
 -   A population could adapt to inbreeding if inbreeding depression is caused by deleterious recessive alleles that potentially could be removed (purged by selection).
