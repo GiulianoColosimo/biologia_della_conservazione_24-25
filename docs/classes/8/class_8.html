@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
@@ -348,7 +413,7 @@
 </ul>
 <p><span class="math display">\[
 \label{ga}
-\tag{8.2}
+\tag{8.1}
 GA = \frac{Sh^2}{L}\sum_{i=1}^{\frac{y}{L}}[1-\frac{1}{2N_e}]^{\frac{y}{L}}(1-m_i)
 \]</span></p>
 </section>
@@ -357,11 +422,22 @@ GA = \frac{Sh^2}{L}\sum_{i=1}^{\frac{y}{L}}[1-\frac{1}{2N_e}]^{\frac{y}{L}}(1-m_
 <ul>
 <li>Where <span class="math inline">\(S\)</span> is the selection differential in captivity (the strength in selection for captive traits).</li>
 <li><span class="math inline">\(h^2\)</span> is heritability (additive genetic variation for reproductive fitness).</li>
+<li><span class="math inline">\(y/L\)</span> number of generations in captivity (<span class="math inline">\(y\)</span> = years, <span class="math inline">\(L\)</span> = generation length).</li>
+<li><span class="math inline">\(N_e\)</span>, you should recognize this one….</li>
+<li><span class="math inline">\(m_i\)</span> proportion of genetic material coming from immigrants.</li>
 </ul>
 </section>
-<section class="slide level2">
-
-<h3 id="heritability">Heritability</h3>
+<section id="what-could-we-do-to-minimize-ga" class="slide level2">
+<h2>What could we do to minimize GA?</h2>
+<ul>
+<li>Reduce the amount of time in captivity (i.e., reduce the number of iterations <span class="math inline">\(\sum_{i=1}^{y/L}\)</span>).</li>
+<li>Reduce the strength of selection, <span class="math inline">\(S\)</span>, in captivity. Very complicated, as it entails making the captive environment as similar as possible to the natural environment, both at the biotic and the abiotic level.</li>
+<li>Add more immigrants (unrelated individuals) from wild or captive populations to slow the rate of genetic adaptation.</li>
+</ul>
+<p>Understanding the intentions, methods and scope of the management plans is essential if we want to grasp the way in which captive populations are integrated into worldwide conservation strategies today <span class="citation" data-cites="Allendorf2022">(<a href="#/references" role="doc-biblioref" onclick="">Allendorf et al., 2022</a>)</span>.</p>
+</section>
+<section id="heritability" class="slide level2">
+<h2>Heritability</h2>
 <ul>
 <li><p>The heritability of a character is probably the most important determinant of individuals to evolve in response to selection!</p></li>
 <li><p>Heritability is the proportion of phenotypic variance in a population due to genetic differences that parents can pass through offspring in the next generation.</p></li>
@@ -378,7 +454,7 @@ GA = \frac{Sh^2}{L}\sum_{i=1}^{\frac{y}{L}}[1-\frac{1}{2N_e}]^{\frac{y}{L}}(1-m_
 
 <ul>
 <li><p>Quantitative traits are influenced by mani loci plus environmental influences (feeding, exposure to sunlight, water availability et. etc. etc.).</p></li>
-<li><p>It is not possible to directly infer genotype from phenotype only when we refer to quantitative characters, and individuals with the same genotype may have different genotypes, or individuals with the same genotypes may have different phenotype.</p></li>
+<li><p>It is not possible to directly infer genotype from phenotype only when we refer to quantitative characters, and individuals with the same phenotype may have different genotypes, or individuals with the same genotypes may have different phenotype.</p></li>
 <li><p>Genetic diversity for quantitative characters in outbred populations is due to the segregation of multiple mendelian loci referred to as Quantitative Trait Loci (QTL).</p></li>
 <li><p>QTLs possess alleles that add to or detract from the magnitude of the quantitative character.</p></li>
 <li><p>How do we measure what portion of the phenotypic variance for quantitative traits derives from genetic variation among individuals?</p></li>
@@ -397,32 +473,434 @@ GA = \frac{Sh^2}{L}\sum_{i=1}^{\frac{y}{L}}[1-\frac{1}{2N_e}]^{\frac{y}{L}}(1-m_
 </section>
 <section class="slide level2">
 
-
-<img data-src="./class_13_29.jpg" class="r-stretch quarto-figure-center"><p class="caption">Quantitative genetic variation for corolla length in tobacco. After <span class="citation" data-cites="Strickberger1985">Strickberger (<a href="#/references" role="doc-biblioref" onclick="">1985</a>)</span>.</p></section>
+<p>When talking about phenotypes we have mentioned that a measurable phenotype is the consequence of the underlying genotypes inherited by the parents plus the influence of the environment. We can represent this relation in mathematical terms in the following way:</p>
+<p><span class="math display">\[
+\label{p}
+\tag{8.2}
+P = G + E
+\]</span></p>
+<p>where <span class="math inline">\(P\)</span> = phenotye, <span class="math inline">\(G\)</span> = genotype, and <span class="math inline">\(E\)</span> = environment. Being able to distinguish between the genetic and the environmental component in this interaction is important to understand the evolutionary trajectory of a population or species <span class="citation" data-cites="Frankham2010">(<a href="#/references" role="doc-biblioref" onclick="">Frankham et al., 2010</a>)</span>.</p>
+<p>Different phenotypes within a population, also known as phenotypic variance <span class="math inline">\(V_P\)</span>, represents the sum total of all the interactions between the genotypic variance, <span class="math inline">\(V_G\)</span>, the environmental variance, <span class="math inline">\(V_E\)</span>, and the interaction term between these two quantities, <span class="math inline">\(G*E\)</span>.</p>
+<p><span class="math display">\[
+\label{Vp}
+\tag{8.3}
+V_P = V_G + V_E + 2Cov_{GE}
+\]</span></p>
+</section>
 <section class="slide level2">
 
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./class_14_7.jpg" style="width:70.0%"></p>
+<figcaption>Quantitative genetic variation for corolla length in tobacco. After <span class="citation" data-cites="Strickberger1985">Strickberger (<a href="#/references" role="doc-biblioref" onclick="">1985</a>)</span>.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Variances for corolla length in the two homozygous parent population are 48 and 32 respectively.</li>
+<li>Variance in the <span class="math inline">\(F_1\)</span> population is 46, while variance in the <span class="math inline">\(F_2\)</span> population is 130.5.</li>
+<li>The variances in the parental and <span class="math inline">\(F_1\)</span> populations are due solely on environmental variance, <span class="math inline">\(V_E\)</span>.</li>
+<li>We can average the three separate estimates of <span class="math inline">\(V_E = \frac{48+32+46}{3}=42\)</span>.</li>
+<li>In <span class="math inline">\(F_2\)</span> we need to account for both genetic variation and environmental variation: <span class="math inline">\(V_{F_2} = V_G+V_E = 130.5\)</span>, and we can rearrange the equation as <span class="math inline">\(V_G = V_{F_2} - V_E = 130.5- 42 = 88.5\)</span>.</li>
+</ul>
+</div></div>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Based on the previous example, we can conclude that in <span class="math inline">\(F_2\)</span> generation <span class="math inline">\(88/130.5 = 68\%\)</span> of variance is due to segregation of polymorphic loci while only <span class="math inline">\(100-68=32\%\)</span> of the total phenotypic variance is due to environmental factors (<span class="math inline">\(V_E\)</span>).</li>
+<li>In common garden experiment the covariance term in equation <span class="math inline">\(\ref{p}\)</span> can be kept under control by standardizing the experimental condition for the animal or plant under study.</li>
+<li>This is way more complicated to obtain in wild populations as the there is no easy way to keep under control the many environmental variables that play into the reproductive fitness of individuals.</li>
+</ul>
+<div class="fragment">
+<h3 id="further-partitioning-v_g">Further partitioning <span class="math inline">\(V_G\)</span></h3>
+<p>We can further divide the genetic variance in three subcomponents: additive genetic variance (<span class="math inline">\(V_A\)</span>), dominance variance (<span class="math inline">\(V_D\)</span>) and interacting variance (<span class="math inline">\(V_I\)</span>).</p>
 <p><span class="math display">\[
-\label{ga2}
-\tag{8.3}
-GA = \frac{Sh^2}{L}\sum_{i=1}^{\frac{y}{L}}[1-\frac{1}{2N_e}]^{\frac{y}{L}}(1-m_i)
+\label{Vg}
+\tag{8.4}
+V_G= V_A+V_D+V_I
+\]</span></p>
+</div>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><span class="math inline">\(V_A\)</span> reflects variation in the avergae effect of the many loci involved in the overall genotypic variance. This measure, and in particular the ratio <span class="math inline">\(V_A/V_P\)</span> (also known as heritability) reflects the evolutionary potential of the population or species under study <span class="citation" data-cites="Frankham2010">(<a href="#/references" role="doc-biblioref" onclick="">Frankham et al., 2010</a>)</span>.</li>
+<li><span class="math inline">\(V_D\)</span> measures variation in dominance deviation.</li>
+<li><span class="math inline">\(V_I\)</span> is a measure of epistasis, i.e.&nbsp;the variation in interaction deviations among genes. This can also be interpreted as a measure of the effects of outbreeding, whether beneficial or deleterious <span class="citation" data-cites="Frankham2010">(<a href="#/references" role="doc-biblioref" onclick="">Frankham et al., 2010</a>)</span>.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>To better understand the meaning of <span class="math inline">\(V_A\)</span> and <span class="math inline">\(V_D\)</span> we can work a simple model to help illustrate how we can partition the genetic variance in its component, in particular the additive and the dominant ones (<span class="math inline">\(V_A\)</span> and <span class="math inline">\(V_D\)</span>)!</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./class_15_1.jpg"></p>
+<figcaption>Genotypic values assigned to three genotypes at a locus along with their frequencies with random mating <span class="citation" data-cites="Frankham2010">(<a href="#/references" role="doc-biblioref" onclick="">Frankham et al., 2010</a>)</span></figcaption>
+</figure>
+</div>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./class_15_2.jpg"></p>
+<figcaption>Genotypic values for additive, dominant and overdominant loci <span class="citation" data-cites="Frankham2010">(<a href="#/references" role="doc-biblioref" onclick="">Frankham et al., 2010</a>)</span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>In Merino sheep the <span class="math inline">\(B\)</span> allele increases the litter size. Based on some experimental studies we can compute the following average litter size for the three distinct genotypes:</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>BB</th>
+<th>Bb</th>
+<th>bb</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.66</td>
+<td>2.17</td>
+<td>1.48</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>We can now compute the value of <span class="math inline">\(a\)</span> as:</li>
+</ul>
+<p><span class="math display">\[
+a = \frac{BB \ value- bb \ value}{2} = \frac{2.66-1.48}{2}=0.59
 \]</span></p>
 <ul>
-<li>Where <span class="math inline">\(S\)</span> is the selection differential in captivity (the strength in selection for captive traits).</li>
-<li><span class="math inline">\(h^2\)</span> is heritability (additive genetic variation for reproductive fitness).</li>
-<li><span class="math inline">\(y/L\)</span> number of generations in captivity (<span class="math inline">\(y\)</span> = years, <span class="math inline">\(L\)</span> = generation length).</li>
-<li><span class="math inline">\(N_e\)</span>, you should recognize this one….</li>
-<li><span class="math inline">\(m_i\)</span> proportion of genetic material coming from immigrants.</li>
+<li>Based on our model, the mid-point between the two homozygotes is the zero point on the scale of genotypic values, and we can use it to determine <span class="math inline">\(d\)</span>. It is calculated as <span class="math inline">\((2.66-0.59 = 2.07)\)</span>. We can now calculate the dominance deviation <span class="math inline">\(d\)</span> as:</li>
+</ul>
+<p><span class="math display">\[
+d= Bb \ value - mid \ point = 2.17-2.07=0.10
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Each copy of the <span class="math inline">\(B\)</span> allele increases the litter size by an average of 0.59 offspring and this allele presents partial dominance with the heterozygote having 0.10 offspring above the <span class="math inline">\(bb\)</span> homozygote.</li>
+</ul>
+<div class="fragment">
+<h3 id="focusing-on-additive-genetic-variance-v_a">Focusing on additive genetic variance (<span class="math inline">\(V_A\)</span>)</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./class_15_1.jpg"></p>
+<figcaption>Genotypic values assigned to three genotypes at a locus along with their frequencies with random mating <span class="citation" data-cites="Frankham2010">(<a href="#/references" role="doc-biblioref" onclick="">Frankham et al., 2010</a>)</span></figcaption>
+</figure>
+</div>
+<ul>
+<li>For a polymorphic locus with addivie effects (<span class="math inline">\(d = 0\)</span>) and genotypic frequncies and values as in the above example, the additive genetic variation is defined as <span class="math inline">\(V_A = 2pqa^2\)</span>.</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>We can desume that <span class="math inline">\(V_A\)</span> is directly dependent on the heterozygosity (2pq) and half the difference in genotypic values between the two homozygotes (<span class="math inline">\(a\)</span>).</li>
+<li>The larger the difference between the two homozygotes the larger <span class="math inline">\(V_A\)</span>.</li>
+<li>On the other end, when <span class="math inline">\(d \ne 0\)</span> (there is dominance) the additive genetic variation can be computed as:</li>
+</ul>
+<p><span class="math display">\[
+\label{vadom}
+\tag{8.5}
+V_A = 2pq[a+d(q-p)]^2
+\]</span></p>
+<ul>
+<li><p>Thus, <span class="math inline">\(V_A\)</span> also depends on the dominance deviation!</p></li>
+<li><p>As you can guess, <span class="math inline">\(V_A\)</span> of a specific character depends on the combined effect of all segregating loci in a population with effect on the specific quantitative character under study <span class="citation" data-cites="Frankham2010">(<a href="#/references" role="doc-biblioref" onclick="">Frankham et al., 2010</a>)</span>.</p></li>
+</ul>
+</section>
+<section id="heritability-and-evolutionary-potential" class="slide level2">
+<h2>Heritability and Evolutionary potential</h2>
+<ul>
+<li><p>Heritability determines the extent to which a character is passed on from parents to offspring. Only traits that are heritable will be passed on from generation to generation. A trait that is favorable, but it is not heritable will not be passed on!</p></li>
+<li><p>Heritability (<span class="math inline">\(h^2\)</span>) is defined as the proportion of total phenotypic variation due to additive genetic variance:</p></li>
+</ul>
+<p><span class="math display">\[
+\label{h2}
+\tag{8.6}
+h^2 = \frac{V_A}{V_P}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(h^2\)</span> value ranges from <span class="math inline">\(0\)</span> to <span class="math inline">\(1\)</span>, with <span class="math inline">\(0\)</span> characteristic of highly inbred populations with no genetic variation, and <span class="math inline">\(1\)</span> expected in traits with basically no environmental variance components and all additive genetic variance.</li>
+<li>Heritability can not be extrapolated for environments that are not native to population or species under study.</li>
 </ul>
 </section>
 <section class="slide level2">
 
-<h3 id="what-could-we-do-to-minimize-ga">What could we do to minimize GA?</h3>
 <ul>
-<li>Reduce the amount of time in captivity (i.e., reduce the number of iterations <span class="math inline">\(\sum_{i=1}^{y/L}\)</span>).</li>
-<li>Reduce the strength of selection, <span class="math inline">\(S\)</span>, in captivity. Very complicated, as it entails making the captive environment as similar as possible to the natural environment, both at the biotic and the abiotic level.</li>
-<li>Add more immigrants (unrelated individuals) from wild or captive populations to slow the rate of genetic adaptation.</li>
+<li>Quantitative variation is characterized using statistical parameters including means, variances, covariances, regressions and correlations <span class="citation" data-cites="Frankham2010">(<a href="#/references" role="doc-biblioref" onclick="">Frankham et al., 2010</a>)</span>.</li>
 </ul>
-<p>Understanding the intentions, methods and scope of the management plans is essential if we want to grasp the way in which captive populations are integrated into worldwide conservation strategies today <span class="citation" data-cites="Allendorf2022">(<a href="#/references" role="doc-biblioref" onclick="">Allendorf et al., 2022</a>)</span>.</p>
+<div class="fragment">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Parent means (P)</th>
+<th>Offspring means (O)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>6.8</td>
+<td>7.3</td>
+</tr>
+<tr class="even">
+<td>6.9</td>
+<td>7.4</td>
+</tr>
+<tr class="odd">
+<td>7.1</td>
+<td>7.6</td>
+</tr>
+<tr class="even">
+<td>7.3</td>
+<td>7.5</td>
+</tr>
+<tr class="odd">
+<td>7.3</td>
+<td>7.3</td>
+</tr>
+<tr class="even">
+<td>7.3</td>
+<td>7.2</td>
+</tr>
+<tr class="odd">
+<td>7.4</td>
+<td>7.4</td>
+</tr>
+<tr class="even">
+<td>7.5</td>
+<td>7.7</td>
+</tr>
+<tr class="odd">
+<td>7.5</td>
+<td>7.6</td>
+</tr>
+</tbody>
+</table>
+<p>Data from <span class="citation" data-cites="Murray1968">(<a href="#/references" role="doc-biblioref" onclick="">Murray &amp; Clarke, 1968</a>)</span>.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><p>Mean: <span class="math inline">\(\bar{P}=\frac{\sum_{i=1}^n P_i}{n}\)</span> and <span class="math inline">\(\bar{O}=\frac{\sum_{i=1}^n O_i}{n}\)</span></p></li>
+<li><p>Variance: <span class="math inline">\(V_{P}=\frac{\sum_{i=1}^n (P_i-\bar{P})^2}{n-1}\)</span> and <span class="math inline">\(V_{O}=\frac{\sum_{i=1}^n (O_i-\bar{O})^2}{n-1}\)</span></p></li>
+<li><p>Standard deviations: <span class="math inline">\(sd_{P} = \sqrt{V_{P}}\)</span> and <span class="math inline">\(sd_{O} = \sqrt{V_{O}}\)</span></p></li>
+<li><p>Covariance (<span class="math inline">\(Cov_{PO}\)</span>) measures the extent to which they vary in concert (<span class="math inline">\(+\)</span>), they vary independently (<span class="math inline">\(0\)</span>), or in opposition (<span class="math inline">\(-\)</span>): <span class="math inline">\(Cov_{PO} = \frac{\sum_{i=1}^n (P_i-\bar{P})(O_i-\bar{O})}{n-1}\)</span></p></li>
+<li><p>Correlation (<span class="math inline">\(r_{PO}\)</span>) is a standardized measure of how two measurements vary in concert. Ranges from <span class="math inline">\(-1\)</span> to <span class="math inline">\(+1\)</span>: <span class="math inline">\(r_{PO} = \frac{Cov_{PO}}{\sqrt{(V_{P}*V_{O})}}\)</span></p></li>
+<li><p>Regression of offspring on parents (<span class="math inline">\(b_{OP}\)</span>) is the slope of the line of best fit relating offspring and parents: <span class="math inline">\(b_{OP}= \frac{Cov_{PO}}{V_{P}}\)</span></p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><p>Access the <a href="https://drive.proton.me/urls/5RKA9GC418#RwMAMxHGaHl2">data for excercise</a> and lets try to estimate the heritability in R.</p></li>
+<li><p>Save the file in a specific folder and navigate to that folder within R.</p></li>
+</ul>
+<ul>
+<li>Load the data file in your working environment.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">load</span>(<span class="st">"path_to_file.RData"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Lets take a look at the data.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># Parent means complete dataset</span></span>
+<span id="cb2-2"><a></a>P</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 6.8 6.9 6.9 7.1 7.3 7.3 7.3 7.4 7.5 7.5 7.5 7.5 7.5 7.5 7.5 7.6 7.6 7.6 7.6
+[20] 7.6 7.6 7.7 7.7 7.8 7.8 7.8 7.8 7.8 7.9 7.9 7.9 7.9 7.9 8.0 8.0 8.0 8.1 8.1
+[39] 8.1 8.5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># Offspring means complete dataset</span></span>
+<span id="cb4-2"><a></a>O</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 7.3 7.4 7.6 7.5 7.3 7.2 7.4 7.7 7.6 7.5 7.7 7.4 7.8 7.6 7.3 7.7 7.7 7.9 7.4
+[20] 7.5 7.4 7.6 7.9 7.5 7.8 7.9 7.6 7.5 7.6 7.7 7.7 7.7 7.8 7.7 7.9 7.8 7.8 7.8
+[39] 7.9 8.1</code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Mean</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">mean</span>(P)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7.645</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">mean</span>(O)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7.63</code></pre>
+</div>
+</div>
+<ul>
+<li>Variance</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">var</span>(P)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1251026</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">var</span>(O)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.04266667</code></pre>
+</div>
+</div>
+<ul>
+<li>Standard deviation</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">sd</span>(P)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.3536984</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">sd</span>(O)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.2065591</code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Covariance</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">cov</span>(P,O)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.04964103</code></pre>
+</div>
+</div>
+<ul>
+<li>Correlation</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">cor</span>(P,O)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.679459</code></pre>
+</div>
+</div>
+<ul>
+<li>Regression</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a><span class="fu">plot</span>(O <span class="sc">~</span> P, <span class="at">xlab =</span> <span class="st">"Parent means"</span>, <span class="at">ylab =</span> <span class="st">"Offspring means"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="class_8_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" width="672"></section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">summary</span>(<span class="fu">lm</span>(O <span class="sc">~</span> P))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = O ~ P)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.293103 -0.097863 -0.002623  0.094215  0.287856 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  4.59644    0.53196   8.641 1.68e-10 ***
+P            0.39680    0.06951   5.709 1.43e-06 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.1535 on 38 degrees of freedom
+Multiple R-squared:  0.4617,    Adjusted R-squared:  0.4475 
+F-statistic: 32.59 on 1 and 38 DF,  p-value: 1.429e-06</code></pre>
+</div>
+</div>
+<ol type="1">
+<li>The estimate for the model parameters – the value of the y-intercept (in this case 4.596) and the estimated effect of parents on offspring (0.396).</li>
+<li>The standard error of the estimated values (Std. Error).</li>
+<li>The test statistic (t value, in this case the t statistic).</li>
+<li>The p value ( Pr(&gt;| t | ) ), aka the probability of finding the given t statistic if the null hypothesis of no relationship were true.</li>
+</ol>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">plot</span>(O <span class="sc">~</span> P, <span class="at">xlab =</span> <span class="st">"Parent means"</span>, <span class="at">ylab =</span> <span class="st">"Offspring means"</span>)</span>
+<span id="cb25-2"><a></a><span class="fu">abline</span>(<span class="fu">lm</span>(O <span class="sc">~</span> P))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="class_8_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+
+<img data-src="./class_15_3.jpg" class="r-stretch quarto-figure-center"><p class="caption">Hypothetical relationships between mean values of parents and mean values of offspring for three cases, representing (a) complete, (b) incomplete, and (c) zero relationships between parents and offspring <span class="citation" data-cites="Frankham2010">(<a href="#/references" role="doc-biblioref" onclick="">Frankham et al., 2010</a>)</span>.</p><ol type="a">
+<li>Parents with larger values produce offspring with larger values, <span class="math inline">\(h^2 = 1\)</span>.</li>
+<li>Parents with high phenotypic values produce offspring with slightly higher phenotypic values, but still close to the population mean, <span class="math inline">\(h^2\)</span> has an intermediate value.</li>
+<li>Parents with high and low values have similar offspring.</li>
+</ol>
+</section>
+<section id="predicting-response-to-selection" class="slide level2">
+<h2>Predicting response to selection</h2>
+<ul>
+<li>The genetic change (response) produced by directional selection can be predicted from the intensity of selection and the heritability.</li>
+</ul>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./class_15_4.jpg" style="width:40.0%"></p>
+<figcaption>Forms of selection operating on quantitative characters After <span class="citation" data-cites="Frankham2010">Frankham et al. (<a href="#/references" role="doc-biblioref" onclick="">2010</a>)</span> and <span class="citation" data-cites="Futuyma1979">Futuyma (<a href="#/references" role="doc-biblioref" onclick="">1979</a>)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="./class_15_5.jpg" class="r-stretch quarto-figure-center"><p class="caption">Predicting response to directional selection. Individuals with the highest values are selected to be parents (filled circles), and their mean phenotype value, <span class="math inline">\(S\)</span>, is higher than the mean of the general parental population After <span class="citation" data-cites="Frankham2010">(<a href="#/references" role="doc-biblioref" onclick="">Frankham et al., 2010</a>)</span>.</p></section>
+<section class="slide level2">
+
+<ul>
+<li><span class="math inline">\(S\)</span> is termed selection differential.</li>
+<li><span class="math inline">\(R\)</span> is termed response to selection (the difference in the offspring of selected parents against the offspring of all parents) can be measured as:</li>
+</ul>
+<p><span class="math display">\[
+\label{R}
+\tag{8.7}
+R = Sh^2
+\]</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./class_15_6.jpg" style="width:30.0%"></p>
+<figcaption>Darwin’s medium ground finches from Galápagos. After <span class="citation" data-cites="Frankham2010">Frankham et al. (<a href="#/references" role="doc-biblioref" onclick="">2010</a>)</span></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Over 18 months of drought and no breeding the finches suffered 85% mortality.</li>
+<li>Survivors had beaks that were 0.25mm wider than the original population (<span class="math inline">\(S\)</span>).</li>
+<li>The heritability for bill width in this population is 74.5%.</li>
+<li>Using this value we can predict the genetic change of the offspring of these survivors</li>
+</ul>
+</div></div>
 </section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
@@ -453,6 +931,9 @@ Frankham, R., Ballou, J. D., &amp; Briscoe, D. A. (2010). <em>Introduction to co
 <div id="ref-Fredrickson2006" class="csl-entry" role="listitem">
 Fredrickson, R. J., &amp; Hedrick, P. W. (2006). Dynamics of hybridization and introgression in red wolves and coyotes. <em>Conservation Biology</em>, <em>20</em>(4), 1272–1283. Retrieved from <a href="https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/j.1523-1739.2006.00401.x">https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/j.1523-1739.2006.00401.x</a>
 </div>
+<div id="ref-Futuyma1979" class="csl-entry" role="listitem">
+Futuyma, D. J. (1979). <em>Evolutionary biology</em>. Sinauer Associates, Inc.
+</div>
 <div id="ref-Leopold1944" class="csl-entry" role="listitem">
 Leopold, A. S. (1944). <span class="nocase">The Nature of Heritable Wildness in Turkeys</span>. <em>The Condor</em>, <em>46</em>(4), 133–197. Retrieved from <a href="https://doi.org/10.2307/1364213">https://doi.org/10.2307/1364213</a>
 </div>
@@ -464,6 +945,9 @@ Madsen, T., Shine, R., Olsson, M., &amp; Wittzell, H. (1999). <span class="nocas
 </div>
 <div id="ref-Madsen2011" class="csl-entry" role="listitem">
 Madsen, T., &amp; Ujvari, B. (2011). <span class="nocase">The potential demise of a population of adders (<em>Vipera berus</em>) in Smygehuk, Sweden</span>. <em>Herpetological Conservation and Biology</em>, <em>6</em>(1), 72–74.
+</div>
+<div id="ref-Murray1968" class="csl-entry" role="listitem">
+Murray, J., &amp; Clarke, B. (1968). Inheritance of shell size in partula. <em>Heredity</em>, <em>23</em>(2), 189–198. Springer Science; Business Media <span>LLC</span>. Retrieved from <a href="https://doi.org/10.1038%2Fhdy.1968.27">https://doi.org/10.1038%2Fhdy.1968.27</a>
 </div>
 <div id="ref-Obrien1996" class="csl-entry" role="listitem">
 O’Brien, S. J. (1996). Conservation genetics of the felidae. In J. C. Avise &amp; J. L. Hamrick (Eds.), <em>Conservation genetics: Case histories from nature.</em> (pp. 50–74). New York: Chapman; Hall.
