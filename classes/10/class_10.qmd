@@ -313,13 +313,37 @@ Considering all these factors together, water vapor ($H_2O$) and carbon dioxide 
 
 ![A schematics of how an integrated approach to climate-science could look like. After @Dawson2011.](./class_20_12.png)
 
+## An example of ENM
+
+![@Garizio2024](./Figure 1.png)
+
+
+------------------------------------------------------------------------
+
+![Red dots show the 427 *Conolophus marthae* location data collected during 11 sampling campaigns across 18 years (2005-2022). Map projection is WGS 1984 UTM Zone 15. After @Gargano2025](./Figure_1.png)
+
+------------------------------------------------------------------------
+
+![Estimated fixed effects of environmental variables on the probability of occurrence of *C. marthae*. After @Gargano2025](./Figure_2.png)
+
+------------------------------------------------------------------------
+
+![Map of the posterior predictive mean of the probability of occurrence of *Conolophus marthae* within the study area. After @Gargano2025](./Figure_3.png)
+
+------------------------------------------------------------------------
+
+![Predictive map of the probability of occurrence for C. marthae outside the sampling area. After @Gargano2025](./Figure_4.png)
+
+--------------------------------------------
+
+
 ## Policy initiative against climate change and favoring conservation
 
 -   With the availability of spatial tools, modeling algorithm, increasing data collection, it is not a question of whether we should engage in climate informed conservation, but of which tools to apply under what conditions and to which species conditions [@Tingley2014].
 
 -   According to @Tingley2014, it could be possible to classify conservation actions as either fine-filter or coarse-filter, with a portfolio of strategies that can be implemented. The authors further use the metaphor of a theater to better explain the rationale behind chosing a stratey that would save the actors or the stage.
 
--   Decision on what are the best strategies to use depends on the answers to three key management questions: where? When? Why?
+-   Decision on what are the best strategies to use depends on the answers to three key management questions: Where? When? Why?
 
 ------------------------------------------------------------------------
 
@@ -336,7 +360,7 @@ Considering all these factors together, water vapor ($H_2O$) and carbon dioxide 
 
 -   We have definitely managed to engage policy makers with [Paris Agreements](https://en.wikipedia.org/wiki/Paris_Agreement) (2015). Negotiated by 196 countries and currently signed by 195 and ratified by 185. The ultimate goal of the agreement is to reduce GHG emission to ensure a global warming no greater than $1.5\ ˚C$.
 
--   This agreement build on the United Nations Framework Convention on Climate Change and works to overcome some of the difficulties presented during and after the [Kyoto Protocol](https://en.wikipedia.org/wiki/Kyoto_Protocol) (1997).
+-   This agreement builds on the United Nations Framework Convention on Climate Change and works to overcome some of the difficulties presented during and after the [Kyoto Protocol](https://en.wikipedia.org/wiki/Kyoto_Protocol) (1997).
 
 ------------------------------------------------------------------------
 
