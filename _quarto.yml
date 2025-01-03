@@ -55,6 +55,8 @@ website:
             text: "Class 9 - Population viability analysis"
           - href: ./classes/10/class_10.html
             text: "Class 10 - Conservation and climate change"
+          - href: ./classes/11/class_11.html
+            text: "Class 11 - Excercise: Accessing weather station data"
 
 
 

@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-12-19">
+
+<title>Biologia della conservazione – Biologia della Conservazione 24/25</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-51307258928bd0a31c17ae41998d4f10.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-0d9bab189d1679d3b217abe72c996601.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Biologia della conservazione – Biologia della Conservazione 24/25">
+<meta property="og:description" content="Class 11 - Excercise: Accessing weather station data">
+<meta property="og:image" content="https://giulianocolosimo.github.com/classes/11/class_11_files/figure-html/unnamed-chunk-7-1.png">
+<meta property="og:site_name" content="Biologia della Conservazione 24/25">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:height" content="960">
+<meta property="og:image:width" content="1344">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Biologia della Conservazione 24/25</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../calendar.html"> 
+<span class="menu-text">Calendar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Biologia della conservazione</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../.././figures/avatar.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="mailto:giuliano.colosimo@protonmail.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Classes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.././classes/1/class_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 1 - Introduction to Conservation Biology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.././classes/2/class_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 2 - Biodiversity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.././classes/3/class_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 3 - Anthropocene</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.././classes/4/class_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 4 - Populations and conservation genetics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.././classes/5/class_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 5 - HW and Genetic drift</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.././classes/6/class_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 6 - <span class="math inline">\(N_{e}\)</span> and Population structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.././classes/7/class_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 7 - Inbreeding and Inbreeding depression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.././classes/8/class_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 8 - Hybridization and heritability</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.././classes/9/class_9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 9 - Population viability analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.././classes/10/class_10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 10 - Conservation and climate change</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.././classes/11/class_11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class 11 - Excercise: Accessing weather station data</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#climate-change-quiz" id="toc-climate-change-quiz" class="nav-link active" data-scroll-target="#climate-change-quiz">Climate change quiz!</a></li>
+  <li><a href="#lets-work-with-some-data" id="toc-lets-work-with-some-data" class="nav-link" data-scroll-target="#lets-work-with-some-data">Let’s work with some data</a>
+  <ul class="collapse">
+  <li><a href="#the-packages-we-will-be-using" id="toc-the-packages-we-will-be-using" class="nav-link" data-scroll-target="#the-packages-we-will-be-using">The packages we will be using</a></li>
+  <li><a href="#input-from-the-user" id="toc-input-from-the-user" class="nav-link" data-scroll-target="#input-from-the-user">Input from the user</a></li>
+  </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/quarto-dev/quarto-demo/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="class_11.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Biologia della conservazione</h1>
+<p class="subtitle lead">Class 11 - Excercise: Accessing weather station data</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 19, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="climate-change-quiz" class="level2">
+<h2 class="anchored" data-anchor-id="climate-change-quiz">Climate change quiz!</h2>
+<ul>
+<li><a href="https://climate.nasa.gov/explore/interactives/quizzes">This</a> is the link to the climate change quizzes!</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li><p>Most of the Earth’s water is found in:</p>
+<ol type="a">
+<li>The earth’s interior</li>
+<li>The atmosphere</li>
+<li>Lakes and rivers</li>
+<li>The ocean</li>
+<li>The polar ice caps</li>
+</ol></li>
+</ul>
+<p>. . .</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+d)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Most of Earth’s water (<span class="math inline">\(96.5\%\)</span>) is saline, or salty, ocean seawater. Most of the fresh water is tied up in glaciers and ice sheets, which means that only a relatively small portion is available to sustain human, plant and animal life.</p>
+</div>
+</div>
+<hr>
+<ul>
+<li><p>Which of these has a greater effect on global sea level?</p>
+<ol type="a">
+<li>Melting sea ice</li>
+<li>Melting land ice</li>
+<li>a and b combined</li>
+<li>Extreme precipitation events</li>
+<li>None of the above</li>
+</ol></li>
+</ul>
+<p>. . .</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+b)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sea level rise is caused primarily by two factors related to global warming: the added water from melting land ice and the expansion of seawater as it warms. Melting sea ice does not contribute nearly as much to ocean water volume because floating ice displaces water in an amount equal to its volume. Some coastal regions and island nations have begun to experience the consequences of sea level rise. Rising seas not only affect dwellings and infrastructure, but fresh water is also affected as rising saltwater begins to contaminate it through “saltwater intrusion.”</p>
+</div>
+</div>
+<hr>
+<ul>
+<li><p>Measurements of Earth’s gravitational field permit topographic, or surface, mapping of the ocean floor.</p>
+<ol type="a">
+<li>True</li>
+<li>False</li>
+</ol></li>
+</ul>
+<p>. . .</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+True
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Undersea mountain ranges like the the Mid-Atlantic Ridge, chains of islands and sea mounts like the strand from Hawai’i Island past Midway to the Aleutian Islands chain, and deep sea trenches like the Japan Trench can be identified in data collected by the GRACE (Gravity Recovery and Climate Experiment) spacecraft. The additional mass of rock that composes the undersea mountains and the lack of rock in trenches provide gravitational telltales that GRACE can detect.</p>
+</div>
+</div>
+<hr>
+<ul>
+<li><p>The only current that makes an uninterrupted circle around the entire Earth without hitting land is the:</p>
+<ol type="a">
+<li>Gulf stream</li>
+<li>Japan current</li>
+<li>California current</li>
+<li>Antarctic Circumpolar Current</li>
+<li>Monsoons</li>
+</ol></li>
+</ul>
+<p>. . .</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+d)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ocean currents are driven by ocean winds and influenced by the “Coriolis effect.” Water flows along the current until it encounters land, where the Coriolis effect causes the current to rotate clockwise in the northern hemisphere and counterclockwise in the south. Most currents form “gyres,” or large systems of rotating ocean currents. The gyre’s rotational patterns draw in debris from across the ocean, while wind patterns push the trash toward the center, trapping it there. In the Southern Ocean around Antarctica, there is no land, which allows the Antarctic Circumpolar Current to travel around the globe uninterrupted.</p>
+</div>
+</div>
+<hr>
+<ul>
+<li><p>Tides are caused by:</p>
+<ol type="a">
+<li>The wind</li>
+<li>Earthquakes</li>
+<li>The moon’s gravitational pool</li>
+<li>The gravitational pool of both the moon and the sun</li>
+<li>People swimming</li>
+</ol></li>
+</ul>
+<p>. . .</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+d)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Both the sun and the moon influence tide rise and fall, which are caused by the gravitational attraction between the ocean and the moon as well as the ocean and the sun. “Centrifugal force” — the same force that pulls you backward on the teacup ride at Disneyland – is generated from Earth’s spin and is another factor that influences Earth’s tides.</p>
+</div>
+</div>
+<hr>
+<ul>
+<li><p>About how much of Earth’s surface is covered by clouds at any given time?</p>
+<ol type="a">
+<li><span class="math inline">\(15\%\)</span></li>
+<li><span class="math inline">\(30\%\)</span></li>
+<li><span class="math inline">\(60\%\)</span></li>
+<li><span class="math inline">\(90\%\)</span></li>
+<li><span class="math inline">\(95\%\)</span></li>
+</ol></li>
+</ul>
+<p>. . .</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+c)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Covering most of the Earth at any given moment, clouds have a huge—but insufficiently understood—impact on climate.</p>
+</div>
+</div>
+<hr>
+<ul>
+<li><p>What effects do various aerosols have on the climate?</p>
+<ol type="a">
+<li>Reflect sunlight back in to space, cooling the planet</li>
+<li>Provide a platform for water droplets and ice crystals to form and develop in to cloud</li>
+<li>Increase the brightness of clouds making them reflect more sunlight in to space</li>
+<li>Absorb sunlight, heat the surrounding air and prevent cloud formation</li>
+<li>All of the above</li>
+<li>a, b, and c</li>
+</ol></li>
+</ul>
+<p>. . .</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+e)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>That’s part of what makes aerosols so hard to pin down in climate models. Various kinds of aerosols have various kinds of effects, both direct and indirect. As a direct effect, aerosols scatter sunlight back into space. As an indirect effect, they can either help or hinder the development of clouds, which in turn can either cool or warm the planet.</p>
+</div>
+</div>
+<hr>
+<ul>
+<li><p>The brighter a cloud looks, the less pollution it contains.</p>
+<ol type="a">
+<li>True</li>
+<li>False</li>
+</ol></li>
+</ul>
+<p>. . .</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+False
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A given volume of pollution-rich cloud tends to have more numerous and smaller droplets than in more pristine clouds. The high number of small droplets provides more surfaces to reflect light, making the cloud appear brighter than a cloud consisting of fewer and larger droplets.</p>
+</div>
+</div>
+<hr>
+<ul>
+<li><p>Do clouds heat or cool Earth?</p>
+<ol type="a">
+<li>Heat</li>
+<li>Cool</li>
+<li>Both heat and cool</li>
+<li>Neither heat nor cool</li>
+</ol></li>
+</ul>
+<p>. . .</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+c)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Different kinds of clouds at different altitudes play different roles in regulating Earth’s temperature. Wispy clouds at high altitudes tend to trap infrared radiation emitted by the sun-warmed Earth, which prevents it from escaping into space and warms the atmosphere. On the other hand, thick, low-lying clouds tend to cool the planet by shading Earth’s surface, reflecting sunlight back into space. Scientists are trying to determine how global warming will affect the balance we’ve been enjoying up to now.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="lets-work-with-some-data" class="level2">
+<h2 class="anchored" data-anchor-id="lets-work-with-some-data">Let’s work with some data</h2>
+<ul>
+<li><p>On-line data resources:</p>
+<ul>
+<li><a href="https://ec.europa.eu/eurostat/web/main/data">Eurostat</a></li>
+<li><a href="https://www.noaa.gov">NOAA</a></li>
+<li><a href="https://data.nasa.gov/browse">NASA</a></li>
+<li><a href="https://github.com/owid/co2-data">Our World in Data (via GitHub)</a></li>
+<li><a href="https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset">Copernicus</a></li>
+<li><a href="https://mesonet.agron.iastate.edu/ASOS/">Automated Surface Observing System (ASOS)</a></li>
+</ul></li>
+<li><p>Take your computer and open R.</p></li>
+</ul>
+<hr>
+<ul>
+<li>We will be downloading historical data from the ASOS data repository available at Iowa State.</li>
+<li>We will working on data from the Italian network of automated weather stations.</li>
+<li>First lets take a look at the website to see how we can use R to automate the process of downloading the data and eventually analyse them.</li>
+</ul>
+<p><a href="https://mesonet.agron.iastate.edu/ASOS/">Automated Surface Observing System (ASOS)</a></p>
+<p>. . .</p>
+<section id="the-packages-we-will-be-using" class="level3">
+<h3 class="anchored" data-anchor-id="the-packages-we-will-be-using">The packages we will be using</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installing the appropriate packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"jsonlite"</span>, <span class="st">"RCurl"</span>, <span class="st">"lubridate"</span>, <span class="st">"dplyr"</span>, <span class="st">"ggplot2"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loading them up in the working environment</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'jsonlite'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:purrr':
+
+    flatten</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCurl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'RCurl'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:tidyr':
+
+    complete</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+</section>
+<section id="input-from-the-user" class="level3">
+<h3 class="anchored" data-anchor-id="input-from-the-user">Input from the user</h3>
+<p>Now that we know the web site, we can set up a script to automate the downloading of the data. This process is often trial and error, but eventually it could work.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># first, we need to specify the date boundaries of our dataset</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>date1 <span class="ot">&lt;-</span> <span class="fu">ISOdate</span>(<span class="dv">1990</span>,<span class="dv">1</span>,<span class="dv">1</span>) <span class="co">#start date in year, month, day format</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>date2 <span class="ot">&lt;-</span> <span class="fu">ISOdate</span>(<span class="dv">2020</span>,<span class="dv">12</span>,<span class="dv">31</span>) <span class="co">#end date in year, month, day format</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># second, we need to specify the data network parameter we want to download the data from</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># and the state we want to download the data from</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>user.network <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"ASOS"</span>)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>user.state <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"IT"</span>) <span class="co">#state</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can now start and retrieve the identifier of all the weather stations we are interested in.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>network <span class="ot">&lt;-</span> <span class="fu">paste</span>(user.state, user.network, <span class="at">sep =</span> <span class="st">"__"</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>uri <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"https://mesonet.agron.iastate.edu/geojson/network/"</span>, network, <span class="st">".geojson"</span>, <span class="at">sep=</span><span class="st">""</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>uri</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "https://mesonet.agron.iastate.edu/geojson/network/IT__ASOS.geojson"</code></pre>
+</div>
+</div>
+<hr>
+<p>We use the URL address we have prepared and try to retrieve the information we want.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># first we tell R that that string has to be treated as a URL</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># in this way R will be opening a connection to that specific URL </span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># and we will be able to access the website and do our things</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">url</span>(uri)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>A connection with                                                                                
+description "https://mesonet.agron.iastate.edu/geojson/network/IT__ASOS.geojson"
+class       "url-libcurl"                                                       
+mode        "r"                                                                 
+text        "text"                                                              
+opened      "closed"                                                            
+can read    "yes"                                                               
+can write   "no"                                                                </code></pre>
+</div>
+</div>
+<hr>
+<p>Now we can use that connection to read the information.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>jdict <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(data)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>jdict</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$type
+[1] "FeatureCollection"
+
+$features
+       type   id properties.elevation    properties.sname
+1   Feature EQYS              23.0000           Sigonella
+2   Feature LIBA              60.0000            Amendola
+3   Feature LIBC             161.0000             Crotone
+4   Feature LIBD              44.0000                Bari
+5   Feature LIBE             834.1110     Monte S. Angelo
+6   Feature LIBF              80.0000              Foggia
+7   Feature LIBG              69.0000          Grottaglie
+8   Feature LIBH              12.0000    MARINA DI GINOSA
+9   Feature LIBN              61.0000               Lecce
+10  Feature LIBP              11.0000             Pescara
+11  Feature LIBQ            1720.0000      SCURO MOUNTAIN
+12  Feature LIBR              10.0000            Brindisi
+13  Feature LIBT              44.0000             TERMOLI
+14  Feature LIBU             896.0000           LATRONICO
+15  Feature LIBV             350.0000     Gioia Del Colle
+16  Feature LIBY             112.0000 SANTA MARIA DI LEUC
+17  Feature LICA              15.0000             Lamezia
+18  Feature LICB             292.5910              Comiso
+19  Feature LICC              17.0000             Catania
+20  Feature LICD              20.0000           Lampedusa
+21  Feature LICE             965.0000                ENNA
+22  Feature LICF              51.0000             MESSINA
+23  Feature LICG             191.0000         Pantelleria
+24  Feature LICJ              34.0000             Palermo
+25  Feature LICL              33.0000                GELA
+26  Feature LICO              51.0000       COZZO SPADARO
+27  Feature LICR              21.0000     Reggio Calabria
+28  Feature LICT               7.0000             Trapani
+29  Feature LICU             251.0000       USTICA ISLAND
+30  Feature LICZ              22.0000           Sigonella
+31  Feature LIEA              23.0000             Alghero
+32  Feature LIEB             156.0000     CAPE BELLAVISTA
+33  Feature LIEC             118.0000      CAPE CARBONARA
+34  Feature LIED              28.0000         Decimomannu
+35  Feature LIEE               4.0000            Cagliari
+36  Feature LIEO              13.0000               Olbia
+37  Feature LIMA             287.0000               Turin
+38  Feature LIMC             211.0000              Milano
+39  Feature LIME             237.0000             Bergamo
+40  Feature LIMF             287.0000              Torino
+41  Feature LIMG              49.0000             Albenga
+42  Feature LIMH            3488.0000 PIAN ROSA (MTN TOP)
+43  Feature LIMJ               3.0000               Genoa
+44  Feature LIMK             710.0000   TORINO/BRIC CROCE
+45  Feature LIML             103.0000               Milan
+46  Feature LIMN             169.0000              Cameri
+47  Feature LIMP              50.0000               Parma
+48  Feature LIMS             138.0000            Piacenza
+49  Feature LIMT            1040.0000           CISA PASS
+50  Feature LIMU             221.0000           CAPE MELE
+51  Feature LIMV             475.0000          GIOVI PASS
+52  Feature LIMW             545.0000               Aosta
+53  Feature LIMY            1742.0000  MALANOTTE MOUNTAIN
+54  Feature LIMZ             380.0000               Cuneo
+55  Feature LIPA             126.0000              Aviano
+56  Feature LIPB             241.0000             Bolzano
+57  Feature LIPC              10.0000              Cervia
+58  Feature LIPE              42.0000             Bologna
+59  Feature LIPF              10.0000       FERRARA (AUT)
+60  Feature LIPH              23.0000             Treviso
+61  Feature LIPI              53.0000             Rivolto
+62  Feature LIPK              32.0000               Forli
+63  Feature LIPL              92.0000               Ghedi
+64  Feature LIPO             109.0000             Brescia
+65  Feature LIPQ              12.0000 Ronchi De Legionari
+66  Feature LIPR              13.0000              Rimini
+67  Feature LIPS              41.0000             Treviso
+68  Feature LIPU              14.0000              Padova
+69  Feature LIPX              68.0000         Villafranca
+70  Feature LIPY              10.0000              Ancona
+71  Feature LIPZ               6.0000              Venice
+72  Feature LIQB             246.8307              Arezzo
+73  Feature LIQC             269.0000        CAPRI ISLAND
+74  Feature LIQJ               4.0000       CIVITAVECCHIA
+75  Feature LIQN             389.0000               RIETI
+76  Feature LIQO             632.0000    MOUNT ARGENTARIO
+77  Feature LIQW              10.0000        Sarzana (SP)
+78  Feature LIRA             101.0000                Rome
+79  Feature LIRB             258.0539      Vigna Di Valle
+80  Feature LIRE              12.0000     Pratica Di Mare
+81  Feature LIRF               3.0000                Rome
+82  Feature LIRG              89.0000            Guidonia
+83  Feature LIRH             181.0000  FROSINONE (IT-AFB)
+84  Feature LIRI              40.0000             Salerno
+85  Feature LIRJ             397.0000     Marina Di Campo
+86  Feature LIRK            1875.0000 TERMINILLO MOUNTAIN
+87  Feature LIRL              26.0000              Latina
+88  Feature LIRM              10.0000          Grazzanise
+89  Feature LIRN              72.0000              Naples
+90  Feature LIRP               2.0000                Pisa
+91  Feature LIRQ              38.0000            Florence
+92  Feature LIRS               7.0000            Grosseto
+93  Feature LIRT            1093.0000             TREVICO
+94  Feature LIRU              24.0000                Rome
+95  Feature LIRV             300.0000             Viterbo
+96  Feature LIRX             297.0000      MONTE CALAMITA
+97  Feature LIRY              31.0000             Unknown
+98  Feature LIRZ             205.0000             Perugia
+99  Feature LIVC            2173.0000     CIMONE MOUNTAIN
+100 Feature LIVD            1226.0000            DOBBIACO
+101 Feature LIVE            1800.0000          RESIA PASS
+102 Feature LIVF             574.0000            FRONTONE
+103 Feature LIVM               6.0000 POINT MARINA/RAVENN
+104 Feature LIVO             778.0000            TARVISIO
+105 Feature LIVP            2129.0000  PAGANELLA MOUNTAIN
+106 Feature LIVR            2006.0000          ROLLE PASS
+107 Feature LIVT              20.0000             TRIESTE
+108 Feature LIYW             126.0000       AVIANO (USAF)
+    properties.time_domain properties.archive_begin properties.archive_end
+1               (2022-Now)               2022-04-12                   &lt;NA&gt;
+2               (1944-Now)               1944-01-31                   &lt;NA&gt;
+3               (1957-Now)               1957-06-30                   &lt;NA&gt;
+4               (1943-Now)               1943-12-07                   &lt;NA&gt;
+5              (2003-2014)               2003-08-01             2014-04-27
+6               (1943-Now)               1943-09-30                   &lt;NA&gt;
+7               (1943-Now)               1943-09-27                   &lt;NA&gt;
+8               (1967-Now)               1967-03-17                   &lt;NA&gt;
+9               (1943-Now)               1943-12-31                   &lt;NA&gt;
+10              (1965-Now)               1965-01-31                   &lt;NA&gt;
+11              (2001-Now)               2001-07-21                   &lt;NA&gt;
+12              (1943-Now)               1943-11-29                   &lt;NA&gt;
+13             (1972-2016)               1972-12-31             2016-03-16
+14             (2005-2016)               2005-07-27             2016-02-12
+15              (1944-Now)               1944-02-29                   &lt;NA&gt;
+16              (1965-Now)               1965-01-31                   &lt;NA&gt;
+17              (1977-Now)               1977-10-31                   &lt;NA&gt;
+18              (1984-Now)               1984-03-23                   &lt;NA&gt;
+19              (1943-Now)               1943-10-28                   &lt;NA&gt;
+20              (1966-Now)               1966-01-04                   &lt;NA&gt;
+21             (1972-2014)               1972-12-31             2014-01-20
+22              (1931-Now)               1931-01-01                   &lt;NA&gt;
+23              (1943-Now)               1943-06-20                   &lt;NA&gt;
+24              (1964-Now)               1964-08-10                   &lt;NA&gt;
+25              (1943-Now)               1943-09-02                   &lt;NA&gt;
+26             (1965-2016)               1965-12-31             2016-03-13
+27              (1972-Now)               1972-12-31                   &lt;NA&gt;
+28              (1965-Now)               1965-01-31                   &lt;NA&gt;
+29             (1957-2021)               1957-06-30             2021-08-26
+30              (1943-Now)               1943-08-10                   &lt;NA&gt;
+31              (1957-Now)               1957-06-30                   &lt;NA&gt;
+32              (1966-Now)               1966-01-04                   &lt;NA&gt;
+33              (1972-Now)               1972-12-31                   &lt;NA&gt;
+34              (1966-Now)               1966-09-22                   &lt;NA&gt;
+35              (1943-Now)               1943-11-01                   &lt;NA&gt;
+36              (1969-Now)               1969-11-17                   &lt;NA&gt;
+37              (2008-Now)               2008-04-25                   &lt;NA&gt;
+38              (1965-Now)               1965-02-03                   &lt;NA&gt;
+39              (1966-Now)               1966-09-08                   &lt;NA&gt;
+40              (1964-Now)               1964-08-10                   &lt;NA&gt;
+41              (1973-Now)               1973-01-01                   &lt;NA&gt;
+42              (1965-Now)               1965-01-28                   &lt;NA&gt;
+43              (1928-Now)               1928-01-01                   &lt;NA&gt;
+44              (1972-Now)               1972-12-31                   &lt;NA&gt;
+45              (1931-Now)               1931-01-04                   &lt;NA&gt;
+46              (1966-Now)               1966-09-22                   &lt;NA&gt;
+47              (2003-Now)               2003-01-01                   &lt;NA&gt;
+48              (1966-Now)               1966-09-14                   &lt;NA&gt;
+49             (1972-2019)               1972-12-31             2019-09-23
+50              (1965-Now)               1965-04-30                   &lt;NA&gt;
+51              (1972-Now)               1972-12-31                   &lt;NA&gt;
+52              (1984-Now)               1984-06-30                   &lt;NA&gt;
+53              (1973-Now)               1973-06-07                   &lt;NA&gt;
+54              (2003-Now)               2003-01-01                   &lt;NA&gt;
+55              (1966-Now)               1966-06-30                   &lt;NA&gt;
+56              (1965-Now)               1965-01-28                   &lt;NA&gt;
+57              (1972-Now)               1972-12-31                   &lt;NA&gt;
+58              (1964-Now)               1964-08-10                   &lt;NA&gt;
+59              (1973-Now)               1973-01-01                   &lt;NA&gt;
+60              (1966-Now)               1966-09-01                   &lt;NA&gt;
+61              (1958-Now)               1958-04-14                   &lt;NA&gt;
+62              (1972-Now)               1972-12-31                   &lt;NA&gt;
+63              (1966-Now)               1966-09-04                   &lt;NA&gt;
+64              (2002-Now)               2002-02-21                   &lt;NA&gt;
+65              (1972-Now)               1972-12-31                   &lt;NA&gt;
+66              (1945-Now)               1945-04-07                   &lt;NA&gt;
+67              (1966-Now)               1966-09-04                   &lt;NA&gt;
+68              (1973-Now)               1973-01-01                   &lt;NA&gt;
+69              (1945-Now)               1945-05-17                   &lt;NA&gt;
+70              (1945-Now)               1945-04-14                   &lt;NA&gt;
+71              (1961-Now)               1961-03-01                   &lt;NA&gt;
+72             (1978-2016)               1978-09-14             2016-03-06
+73              (1972-Now)               1972-12-31                   &lt;NA&gt;
+74             (2005-2021)               2005-07-27             2021-08-26
+75              (1973-Now)               1973-12-13                   &lt;NA&gt;
+76              (1972-Now)               1972-12-31                   &lt;NA&gt;
+77              (1973-Now)               1973-11-08                   &lt;NA&gt;
+78              (1951-Now)               1951-09-30                   &lt;NA&gt;
+79             (1973-2016)               1973-01-01             2016-03-03
+80              (1966-Now)               1966-09-23                   &lt;NA&gt;
+81              (1965-Now)               1965-06-30                   &lt;NA&gt;
+82              (1966-Now)               1966-09-23                   &lt;NA&gt;
+83              (1972-Now)               1972-12-31                   &lt;NA&gt;
+84              (1993-Now)               1993-01-29                   &lt;NA&gt;
+85             (2010-2012)               2010-12-31             2012-01-20
+86              (1965-Now)               1965-01-31                   &lt;NA&gt;
+87              (1944-Now)               1944-03-01                   &lt;NA&gt;
+88              (1944-Now)               1944-03-31                   &lt;NA&gt;
+89              (1951-Now)               1951-09-30                   &lt;NA&gt;
+90              (1944-Now)               1944-11-24                   &lt;NA&gt;
+91              (1931-Now)               1931-01-02                   &lt;NA&gt;
+92              (1944-Now)               1944-12-11                   &lt;NA&gt;
+93              (1972-Now)               1972-12-31                   &lt;NA&gt;
+94              (1972-Now)               1972-12-31                   &lt;NA&gt;
+95              (1944-Now)               1944-06-30                   &lt;NA&gt;
+96              (1972-Now)               1972-12-31                   &lt;NA&gt;
+97              (2023-Now)               2023-07-16                   &lt;NA&gt;
+98              (1967-Now)               1967-11-06                   &lt;NA&gt;
+99              (1965-Now)               1965-01-31                   &lt;NA&gt;
+100             (1973-Now)               1973-01-01                   &lt;NA&gt;
+101             (1987-Now)               1987-03-25                   &lt;NA&gt;
+102             (1973-Now)               1973-01-01                   &lt;NA&gt;
+103             (1966-Now)               1966-01-04                   &lt;NA&gt;
+104             (1965-Now)               1965-01-28                   &lt;NA&gt;
+105             (1972-Now)               1972-12-31                   &lt;NA&gt;
+106             (1973-Now)               1973-01-01                   &lt;NA&gt;
+107             (1932-Now)               1932-10-20                   &lt;NA&gt;
+108            (1993-2015)               1993-06-30             2015-10-20
+    properties.state properties.country properties.climate_site properties.wfo
+1                                    IT                      NA             NA
+2               &lt;NA&gt;                 IT                      NA             NA
+3               &lt;NA&gt;                 IT                      NA             NA
+4               &lt;NA&gt;                 IT                      NA             NA
+5               &lt;NA&gt;                 IT                      NA             NA
+6               &lt;NA&gt;                 IT                      NA             NA
+7               &lt;NA&gt;                 IT                      NA             NA
+8               &lt;NA&gt;                 IT                      NA             NA
+9               &lt;NA&gt;                 IT                      NA             NA
+10              &lt;NA&gt;                 IT                      NA             NA
+11              &lt;NA&gt;                 IT                      NA             NA
+12              &lt;NA&gt;                 IT                      NA             NA
+13              &lt;NA&gt;                 IT                      NA             NA
+14              &lt;NA&gt;                 IT                      NA             NA
+15              &lt;NA&gt;                 IT                      NA             NA
+16              &lt;NA&gt;                 IT                      NA             NA
+17              &lt;NA&gt;                 IT                      NA             NA
+18              &lt;NA&gt;                 IT                      NA             NA
+19              &lt;NA&gt;                 IT                      NA             NA
+20              &lt;NA&gt;                 IT                      NA             NA
+21              &lt;NA&gt;                 IT                      NA             NA
+22              &lt;NA&gt;                 IT                      NA             NA
+23              &lt;NA&gt;                 IT                      NA             NA
+24              &lt;NA&gt;                 IT                      NA             NA
+25              &lt;NA&gt;                 IT                      NA             NA
+26              &lt;NA&gt;                 IT                      NA             NA
+27              &lt;NA&gt;                 IT                      NA             NA
+28              &lt;NA&gt;                 IT                      NA             NA
+29              &lt;NA&gt;                 IT                      NA             NA
+30              &lt;NA&gt;                 IT                      NA             NA
+31              &lt;NA&gt;                 IT                      NA             NA
+32              &lt;NA&gt;                 IT                      NA             NA
+33              &lt;NA&gt;                 IT                      NA             NA
+34              &lt;NA&gt;                 IT                      NA             NA
+35              &lt;NA&gt;                 IT                      NA             NA
+36              &lt;NA&gt;                 IT                      NA             NA
+37              &lt;NA&gt;                 IT                      NA             NA
+38              &lt;NA&gt;                 IT                      NA             NA
+39              &lt;NA&gt;                 IT                      NA             NA
+40              &lt;NA&gt;                 IT                      NA             NA
+41              &lt;NA&gt;                 IT                      NA             NA
+42              &lt;NA&gt;                 IT                      NA             NA
+43              &lt;NA&gt;                 IT                      NA             NA
+44              &lt;NA&gt;                 IT                      NA             NA
+45              &lt;NA&gt;                 IT                      NA             NA
+46              &lt;NA&gt;                 IT                      NA             NA
+47              &lt;NA&gt;                 IT                      NA             NA
+48              &lt;NA&gt;                 IT                      NA             NA
+49              &lt;NA&gt;                 IT                      NA             NA
+50              &lt;NA&gt;                 IT                      NA             NA
+51              &lt;NA&gt;                 IT                      NA             NA
+52              &lt;NA&gt;                 IT                      NA             NA
+53              &lt;NA&gt;                 IT                      NA             NA
+54              &lt;NA&gt;                 IT                      NA             NA
+55              &lt;NA&gt;                 IT                      NA             NA
+56              &lt;NA&gt;                 IT                      NA             NA
+57              &lt;NA&gt;                 IT                      NA             NA
+58              &lt;NA&gt;                 IT                      NA             NA
+59              &lt;NA&gt;                 IT                      NA             NA
+60              &lt;NA&gt;                 IT                      NA             NA
+61              &lt;NA&gt;                 IT                      NA             NA
+62              &lt;NA&gt;                 IT                      NA             NA
+63              &lt;NA&gt;                 IT                      NA             NA
+64              &lt;NA&gt;                 IT                      NA             NA
+65              &lt;NA&gt;                 IT                      NA             NA
+66              &lt;NA&gt;                 IT                      NA             NA
+67              &lt;NA&gt;                 IT                      NA             NA
+68              &lt;NA&gt;                 IT                      NA             NA
+69              &lt;NA&gt;                 IT                      NA             NA
+70              &lt;NA&gt;                 IT                      NA             NA
+71              &lt;NA&gt;                 IT                      NA             NA
+72                                   IT                      NA             NA
+73              &lt;NA&gt;                 IT                      NA             NA
+74              &lt;NA&gt;                 IT                      NA             NA
+75              &lt;NA&gt;                 IT                      NA             NA
+76              &lt;NA&gt;                 IT                      NA             NA
+77              &lt;NA&gt;                 IT                      NA             NA
+78              &lt;NA&gt;                 IT                      NA             NA
+79                                   IT                      NA             NA
+80              &lt;NA&gt;                 IT                      NA             NA
+81              &lt;NA&gt;                 IT                      NA             NA
+82              &lt;NA&gt;                 IT                      NA             NA
+83              &lt;NA&gt;                 IT                      NA             NA
+84              &lt;NA&gt;                 IT                      NA             NA
+85              &lt;NA&gt;                 IT                      NA             NA
+86              &lt;NA&gt;                 IT                      NA             NA
+87              &lt;NA&gt;                 IT                      NA             NA
+88              &lt;NA&gt;                 IT                      NA             NA
+89              &lt;NA&gt;                 IT                      NA             NA
+90              &lt;NA&gt;                 IT                      NA             NA
+91              &lt;NA&gt;                 IT                      NA             NA
+92              &lt;NA&gt;                 IT                      NA             NA
+93              &lt;NA&gt;                 IT                      NA             NA
+94              &lt;NA&gt;                 IT                      NA             NA
+95              &lt;NA&gt;                 IT                      NA             NA
+96              &lt;NA&gt;                 IT                      NA             NA
+97                                   IT                      NA             NA
+98              &lt;NA&gt;                 IT                      NA             NA
+99              &lt;NA&gt;                 IT                      NA             NA
+100             &lt;NA&gt;                 IT                      NA             NA
+101             &lt;NA&gt;                 IT                      NA             NA
+102             &lt;NA&gt;                 IT                      NA             NA
+103             &lt;NA&gt;                 IT                      NA             NA
+104             &lt;NA&gt;                 IT                      NA             NA
+105             &lt;NA&gt;                 IT                      NA             NA
+106             &lt;NA&gt;                 IT                      NA             NA
+107             &lt;NA&gt;                 IT                      NA             NA
+108             &lt;NA&gt;                 IT                      NA             NA
+    properties.tzname properties.ncdc81 properties.ncei91 properties.ugc_county
+1         Europe/Rome                NA                NA                    NA
+2         Europe/Rome                NA                NA                    NA
+3         Europe/Rome                NA                NA                    NA
+4         Europe/Rome                NA                NA                    NA
+5         Europe/Rome                NA                NA                    NA
+6         Europe/Rome                NA                NA                    NA
+7         Europe/Rome                NA                NA                    NA
+8         Europe/Rome                NA                NA                    NA
+9         Europe/Rome                NA                NA                    NA
+10        Europe/Rome                NA                NA                    NA
+11        Europe/Rome                NA                NA                    NA
+12        Europe/Rome                NA                NA                    NA
+13        Europe/Rome                NA                NA                    NA
+14        Europe/Rome                NA                NA                    NA
+15        Europe/Rome                NA                NA                    NA
+16        Europe/Rome                NA                NA                    NA
+17        Europe/Rome                NA                NA                    NA
+18        Europe/Rome                NA                NA                    NA
+19        Europe/Rome                NA                NA                    NA
+20        Europe/Rome                NA                NA                    NA
+21        Europe/Rome                NA                NA                    NA
+22        Europe/Rome                NA                NA                    NA
+23        Europe/Rome                NA                NA                    NA
+24        Europe/Rome                NA                NA                    NA
+25        Europe/Rome                NA                NA                    NA
+26        Europe/Rome                NA                NA                    NA
+27        Europe/Rome                NA                NA                    NA
+28        Europe/Rome                NA                NA                    NA
+29        Europe/Rome                NA                NA                    NA
+30        Europe/Rome                NA                NA                    NA
+31        Europe/Rome                NA                NA                    NA
+32        Europe/Rome                NA                NA                    NA
+33        Europe/Rome                NA                NA                    NA
+34        Europe/Rome                NA                NA                    NA
+35        Europe/Rome                NA                NA                    NA
+36        Europe/Rome                NA                NA                    NA
+37        Europe/Rome                NA                NA                    NA
+38        Europe/Rome                NA                NA                    NA
+39        Europe/Rome                NA                NA                    NA
+40        Europe/Rome                NA                NA                    NA
+41        Europe/Rome                NA                NA                    NA
+42        Europe/Rome                NA                NA                    NA
+43        Europe/Rome                NA                NA                    NA
+44        Europe/Rome                NA                NA                    NA
+45        Europe/Rome                NA                NA                    NA
+46        Europe/Rome                NA                NA                    NA
+47        Europe/Rome                NA                NA                    NA
+48        Europe/Rome                NA                NA                    NA
+49        Europe/Rome                NA                NA                    NA
+50        Europe/Rome                NA                NA                    NA
+51        Europe/Rome                NA                NA                    NA
+52        Europe/Rome                NA                NA                    NA
+53        Europe/Rome                NA                NA                    NA
+54        Europe/Rome                NA                NA                    NA
+55        Europe/Rome                NA                NA                    NA
+56        Europe/Rome                NA                NA                    NA
+57        Europe/Rome                NA                NA                    NA
+58        Europe/Rome                NA                NA                    NA
+59        Europe/Rome                NA                NA                    NA
+60        Europe/Rome                NA                NA                    NA
+61        Europe/Rome                NA                NA                    NA
+62        Europe/Rome                NA                NA                    NA
+63        Europe/Rome                NA                NA                    NA
+64        Europe/Rome                NA                NA                    NA
+65        Europe/Rome                NA                NA                    NA
+66        Europe/Rome                NA                NA                    NA
+67        Europe/Rome                NA                NA                    NA
+68        Europe/Rome                NA                NA                    NA
+69        Europe/Rome                NA                NA                    NA
+70        Europe/Rome                NA                NA                    NA
+71        Europe/Rome                NA                NA                    NA
+72        Europe/Rome                NA                NA                    NA
+73        Europe/Rome                NA                NA                    NA
+74        Europe/Rome                NA                NA                    NA
+75        Europe/Rome                NA                NA                    NA
+76        Europe/Rome                NA                NA                    NA
+77        Europe/Rome                NA                NA                    NA
+78        Europe/Rome                NA                NA                    NA
+79        Europe/Rome                NA                NA                    NA
+80        Europe/Rome                NA                NA                    NA
+81        Europe/Rome                NA                NA                    NA
+82        Europe/Rome                NA                NA                    NA
+83        Europe/Rome                NA                NA                    NA
+84        Europe/Rome                NA                NA                    NA
+85        Europe/Rome                NA                NA                    NA
+86        Europe/Rome                NA                NA                    NA
+87        Europe/Rome                NA                NA                    NA
+88        Europe/Rome                NA                NA                    NA
+89        Europe/Rome                NA                NA                    NA
+90        Europe/Rome                NA                NA                    NA
+91        Europe/Rome                NA                NA                    NA
+92        Europe/Rome                NA                NA                    NA
+93        Europe/Rome                NA                NA                    NA
+94        Europe/Rome                NA                NA                    NA
+95        Europe/Rome                NA                NA                    NA
+96        Europe/Rome                NA                NA                    NA
+97        Europe/Rome                NA                NA                    NA
+98        Europe/Rome                NA                NA                    NA
+99        Europe/Rome                NA                NA                    NA
+100       Europe/Rome                NA                NA                    NA
+101       Europe/Rome                NA                NA                    NA
+102       Europe/Rome                NA                NA                    NA
+103       Europe/Rome                NA                NA                    NA
+104       Europe/Rome                NA                NA                    NA
+105       Europe/Rome                NA                NA                    NA
+106       Europe/Rome                NA                NA                    NA
+107       Europe/Rome                NA                NA                    NA
+108       Europe/Rome                NA                NA                    NA
+    properties.ugc_zone properties.county properties.sid properties.network
+1                    NA                NA           EQYS           IT__ASOS
+2                    NA                NA           LIBA           IT__ASOS
+3                    NA                NA           LIBC           IT__ASOS
+4                    NA                NA           LIBD           IT__ASOS
+5                    NA                NA           LIBE           IT__ASOS
+6                    NA                NA           LIBF           IT__ASOS
+7                    NA                NA           LIBG           IT__ASOS
+8                    NA                NA           LIBH           IT__ASOS
+9                    NA                NA           LIBN           IT__ASOS
+10                   NA                NA           LIBP           IT__ASOS
+11                   NA                NA           LIBQ           IT__ASOS
+12                   NA                NA           LIBR           IT__ASOS
+13                   NA                NA           LIBT           IT__ASOS
+14                   NA                NA           LIBU           IT__ASOS
+15                   NA                NA           LIBV           IT__ASOS
+16                   NA                NA           LIBY           IT__ASOS
+17                   NA                NA           LICA           IT__ASOS
+18                   NA                NA           LICB           IT__ASOS
+19                   NA                NA           LICC           IT__ASOS
+20                   NA                NA           LICD           IT__ASOS
+21                   NA                NA           LICE           IT__ASOS
+22                   NA                NA           LICF           IT__ASOS
+23                   NA                NA           LICG           IT__ASOS
+24                   NA                NA           LICJ           IT__ASOS
+25                   NA                NA           LICL           IT__ASOS
+26                   NA                NA           LICO           IT__ASOS
+27                   NA                NA           LICR           IT__ASOS
+28                   NA                NA           LICT           IT__ASOS
+29                   NA                NA           LICU           IT__ASOS
+30                   NA                NA           LICZ           IT__ASOS
+31                   NA                NA           LIEA           IT__ASOS
+32                   NA                NA           LIEB           IT__ASOS
+33                   NA                NA           LIEC           IT__ASOS
+34                   NA                NA           LIED           IT__ASOS
+35                   NA                NA           LIEE           IT__ASOS
+36                   NA                NA           LIEO           IT__ASOS
+37                   NA                NA           LIMA           IT__ASOS
+38                   NA                NA           LIMC           IT__ASOS
+39                   NA                NA           LIME           IT__ASOS
+40                   NA                NA           LIMF           IT__ASOS
+41                   NA                NA           LIMG           IT__ASOS
+42                   NA                NA           LIMH           IT__ASOS
+43                   NA                NA           LIMJ           IT__ASOS
+44                   NA                NA           LIMK           IT__ASOS
+45                   NA                NA           LIML           IT__ASOS
+46                   NA                NA           LIMN           IT__ASOS
+47                   NA                NA           LIMP           IT__ASOS
+48                   NA                NA           LIMS           IT__ASOS
+49                   NA                NA           LIMT           IT__ASOS
+50                   NA                NA           LIMU           IT__ASOS
+51                   NA                NA           LIMV           IT__ASOS
+52                   NA                NA           LIMW           IT__ASOS
+53                   NA                NA           LIMY           IT__ASOS
+54                   NA                NA           LIMZ           IT__ASOS
+55                   NA                NA           LIPA           IT__ASOS
+56                   NA                NA           LIPB           IT__ASOS
+57                   NA                NA           LIPC           IT__ASOS
+58                   NA                NA           LIPE           IT__ASOS
+59                   NA                NA           LIPF           IT__ASOS
+60                   NA                NA           LIPH           IT__ASOS
+61                   NA                NA           LIPI           IT__ASOS
+62                   NA                NA           LIPK           IT__ASOS
+63                   NA                NA           LIPL           IT__ASOS
+64                   NA                NA           LIPO           IT__ASOS
+65                   NA                NA           LIPQ           IT__ASOS
+66                   NA                NA           LIPR           IT__ASOS
+67                   NA                NA           LIPS           IT__ASOS
+68                   NA                NA           LIPU           IT__ASOS
+69                   NA                NA           LIPX           IT__ASOS
+70                   NA                NA           LIPY           IT__ASOS
+71                   NA                NA           LIPZ           IT__ASOS
+72                   NA                NA           LIQB           IT__ASOS
+73                   NA                NA           LIQC           IT__ASOS
+74                   NA                NA           LIQJ           IT__ASOS
+75                   NA                NA           LIQN           IT__ASOS
+76                   NA                NA           LIQO           IT__ASOS
+77                   NA                NA           LIQW           IT__ASOS
+78                   NA                NA           LIRA           IT__ASOS
+79                   NA                NA           LIRB           IT__ASOS
+80                   NA                NA           LIRE           IT__ASOS
+81                   NA                NA           LIRF           IT__ASOS
+82                   NA                NA           LIRG           IT__ASOS
+83                   NA                NA           LIRH           IT__ASOS
+84                   NA                NA           LIRI           IT__ASOS
+85                   NA                NA           LIRJ           IT__ASOS
+86                   NA                NA           LIRK           IT__ASOS
+87                   NA                NA           LIRL           IT__ASOS
+88                   NA                NA           LIRM           IT__ASOS
+89                   NA                NA           LIRN           IT__ASOS
+90                   NA                NA           LIRP           IT__ASOS
+91                   NA                NA           LIRQ           IT__ASOS
+92                   NA                NA           LIRS           IT__ASOS
+93                   NA                NA           LIRT           IT__ASOS
+94                   NA                NA           LIRU           IT__ASOS
+95                   NA                NA           LIRV           IT__ASOS
+96                   NA                NA           LIRX           IT__ASOS
+97                   NA                NA           LIRY           IT__ASOS
+98                   NA                NA           LIRZ           IT__ASOS
+99                   NA                NA           LIVC           IT__ASOS
+100                  NA                NA           LIVD           IT__ASOS
+101                  NA                NA           LIVE           IT__ASOS
+102                  NA                NA           LIVF           IT__ASOS
+103                  NA                NA           LIVM           IT__ASOS
+104                  NA                NA           LIVO           IT__ASOS
+105                  NA                NA           LIVP           IT__ASOS
+106                  NA                NA           LIVR           IT__ASOS
+107                  NA                NA           LIVT           IT__ASOS
+108                  NA                NA           LIYW           IT__ASOS
+    properties.online properties.synop properties.METAR_RESET_MINUTE
+1                TRUE               NA                            46
+2                TRUE            99999                            55
+3                TRUE            99999                            50
+4                TRUE            99999                            50
+5               FALSE             9999                             0
+6                TRUE            99999                            50
+7                TRUE            99999                            50
+8                TRUE            99999                             0
+9                TRUE            99999                            55
+10               TRUE            99999                            50
+11               TRUE            99999                            55
+12               TRUE            99999                            50
+13              FALSE            99999                            14
+14              FALSE            99999                             0
+15               TRUE            99999                            55
+16               TRUE            99999                            55
+17               TRUE            99999                            50
+18               TRUE             9999                            50
+19               TRUE            99999                            50
+20               TRUE            99999                            50
+21              FALSE            99999                             0
+22               TRUE            99999                            55
+23               TRUE            99999                            50
+24               TRUE            99999                            50
+25               TRUE            99999                            22
+26              FALSE            99999                             0
+27               TRUE            99999                            50
+28               TRUE            99999                            55
+29              FALSE            99999                            55
+30               TRUE            99999                            55
+31               TRUE            99999                            50
+32               TRUE            99999                            55
+33               TRUE            99999                             0
+34               TRUE            99999                            55
+35               TRUE            99999                            50
+36               TRUE            99999                            50
+37               TRUE            99999                            50
+38               TRUE            99999                            50
+39               TRUE            99999                            50
+40               TRUE            99999                            50
+41               TRUE            99999                            50
+42               TRUE            99999                            55
+43               TRUE            99999                            50
+44               TRUE            99999                            55
+45               TRUE            99999                            50
+46               TRUE            99999                            55
+47               TRUE            99999                            50
+48               TRUE            99999                            55
+49              FALSE            99999                            55
+50               TRUE            99999                            55
+51               TRUE            99999                            55
+52               TRUE            99999                            50
+53               TRUE            99999                            55
+54               TRUE            99999                            50
+55               TRUE            99999                            55
+56               TRUE            99999                            50
+57               TRUE            99999                            55
+58               TRUE            99999                            50
+59               TRUE            99999                            55
+60               TRUE            99999                            50
+61               TRUE            99999                            55
+62               TRUE            99999                            50
+63               TRUE            99999                            55
+64               TRUE            99999                            50
+65               TRUE            99999                            50
+66               TRUE            99999                            50
+67               TRUE            99999                            55
+68               TRUE            99999                            50
+69               TRUE            99999                            50
+70               TRUE            99999                            50
+71               TRUE            99999                            50
+72              FALSE               NA                             0
+73               TRUE            99999                            55
+74              FALSE            99999                            55
+75               TRUE            99999                            50
+76               TRUE            99999                            55
+77               TRUE            99999                            55
+78               TRUE            99999                            50
+79              FALSE               NA                             0
+80               TRUE            99999                            55
+81               TRUE            99999                            50
+82               TRUE            99999                            55
+83               TRUE            99999                            55
+84               TRUE            99999                            50
+85              FALSE            99999                            55
+86               TRUE            99999                            55
+87               TRUE            99999                            55
+88               TRUE            99999                            55
+89               TRUE            34113                            50
+90               TRUE            99999                            45
+91               TRUE            99999                            50
+92               TRUE            99999                            55
+93               TRUE            99999                            55
+94               TRUE            99999                            50
+95               TRUE            99999                            55
+96               TRUE            99999                            55
+97               TRUE               NA                            55
+98               TRUE            99999                            50
+99               TRUE            99999                            55
+100              TRUE            99999                            55
+101              TRUE            99999                            55
+102              TRUE            99999                            55
+103              TRUE            99999                            55
+104              TRUE            99999                            55
+105              TRUE            99999                            55
+106              TRUE            99999                            55
+107              TRUE            99999                            55
+108             FALSE            99999                            58
+    geometry.type geometry.coordinates
+1           Point         14.92, 37.40
+2           Point     15.7139, 41.5381
+3           Point     17.0792, 38.9967
+4           Point     16.7650, 41.1381
+5           Point     15.9476, 41.7084
+6           Point     15.5350, 41.4329
+7           Point     17.3997, 40.5172
+8           Point     16.8867, 40.4244
+9           Point     18.1389, 40.2383
+10          Point     14.1872, 42.4372
+11          Point     16.3964, 39.3306
+12          Point     17.9514, 40.6577
+13          Point     14.9965, 42.0043
+14          Point     16.0136, 40.0875
+15          Point     16.9353, 40.7661
+16          Point     18.3422, 39.8114
+17          Point     16.2417, 38.9083
+18          Point     14.6000, 36.9333
+19          Point     15.0639, 37.4667
+20          Point     12.6183, 35.4981
+21          Point     14.2797, 37.5681
+22          Point         15.55, 38.20
+23          Point     11.9711, 36.8139
+24          Point     13.0994, 38.1819
+25          Point     14.2250, 37.0764
+26          Point     15.1314, 36.6861
+27          Point     15.6536, 38.0719
+28          Point     12.4914, 37.9142
+29          Point     13.1772, 38.7072
+30          Point     14.9186, 37.4056
+31          Point      8.2886, 40.6311
+32          Point      9.7132, 39.9307
+33          Point      9.5135, 39.1039
+34          Point      8.9675, 39.3461
+35          Point      9.0603, 39.2434
+36          Point      9.5178, 40.8986
+37          Point      7.6034, 45.0864
+38          Point      8.7231, 45.6300
+39          Point      9.7003, 45.6689
+40          Point      7.6494, 45.2025
+41          Point      8.1256, 44.0458
+42          Point      7.7072, 45.9352
+43          Point      8.8375, 44.4133
+44          Point      7.7317, 45.0333
+45          Point      9.2626, 45.4614
+46          Point      8.6692, 45.5296
+47          Point     10.2964, 44.8245
+48          Point      9.7278, 44.9092
+49          Point      9.9286, 44.4719
+50          Point      8.1697, 43.9572
+51          Point      8.9375, 44.5522
+52          Point      7.3687, 45.7385
+53          Point          7.80, 44.25
+54          Point      7.6232, 44.5470
+55          Point     12.6033, 46.0286
+56          Point     11.3264, 46.4603
+57          Point     12.2919, 44.2289
+58          Point     11.2969, 44.5308
+59          Point     11.6125, 44.8156
+60          Point     12.1944, 45.6484
+61          Point     13.0492, 45.9756
+62          Point     12.0697, 44.1956
+63          Point     10.2814, 45.4206
+64          Point     10.3306, 45.4289
+65          Point     13.4722, 45.8275
+66          Point     12.6128, 44.0244
+67          Point     12.1067, 45.6839
+68          Point     11.8479, 45.3958
+69          Point     10.8723, 45.3875
+70          Point     13.3603, 43.6167
+71          Point     12.3519, 45.5053
+72          Point     11.8456, 43.4597
+73          Point     14.2023, 40.5582
+74          Point     11.8331, 42.0328
+75          Point     12.8500, 42.4267
+76          Point     11.1697, 42.3869
+77          Point      9.9850, 44.0872
+78          Point     12.5846, 41.8078
+79          Point     12.2114, 42.0803
+80          Point     12.4452, 41.6545
+81          Point     12.2389, 41.8003
+82          Point     12.7344, 41.9967
+83          Point     13.2994, 41.6450
+84          Point     14.9113, 40.6204
+85          Point     10.2393, 42.7618
+86          Point     12.9833, 42.4667
+87          Point     12.9097, 41.5458
+88          Point     14.0789, 41.0606
+89          Point     14.2917, 40.8848
+90          Point     10.3956, 43.6825
+91          Point     11.2028, 43.8086
+92          Point     11.0589, 42.7481
+93          Point     15.2328, 41.0467
+94          Point     12.4999, 41.9533
+95          Point     12.0550, 42.4383
+96          Point         10.38, 42.73
+97          Point       12.277, 41.930
+98          Point     12.5103, 43.0972
+99          Point     10.7000, 44.1936
+100         Point         12.22, 46.73
+101         Point     10.5000, 46.8333
+102         Point     12.7278, 43.5169
+103         Point     12.2961, 44.4414
+104         Point     13.5861, 46.5056
+105         Point     11.0376, 46.1434
+106         Point     11.7867, 46.2978
+107         Point     13.7538, 45.6767
+108         Point     12.5992, 46.0303
+
+$generation_time
+[1] "2025-01-03T09:37:49Z"
+
+$count
+[1] 108</code></pre>
+</div>
+</div>
+<hr>
+<p>Quick look at where all stations are located.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>stationsPlot <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">unlist</span>(jdict<span class="sc">$</span>features<span class="sc">$</span>geometry<span class="sc">$</span>coordinates), <span class="at">nrow =</span> <span class="dv">2</span> )</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(stationsPlot[<span class="dv">1</span>,], stationsPlot[<span class="dv">2</span>,], <span class="at">asp =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="class_11_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+<p>Now that we have all the codes of the weather stations we can work on the URL address were all the specific information of each weather station is stored.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>service <span class="ot">&lt;-</span> <span class="st">"https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py?"</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>service <span class="ot">&lt;-</span> <span class="fu">paste</span>(service, <span class="st">"data=all&amp;tz=Etc/UTC&amp;format=comma&amp;latlon=yes&amp;"</span>, <span class="at">sep=</span><span class="st">""</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>service <span class="ot">&lt;-</span> <span class="fu">paste</span>(service, <span class="st">"year1="</span>, <span class="fu">year</span>(date1), <span class="st">"&amp;month1="</span>, <span class="fu">month</span>(date1), <span class="st">"&amp;day1="</span>, <span class="fu">mday</span>(date1), <span class="st">"&amp;"</span>, <span class="at">sep=</span><span class="st">""</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>service <span class="ot">&lt;-</span> <span class="fu">paste</span>(service, <span class="st">"year2="</span>, <span class="fu">year</span>(date2), <span class="st">"&amp;month2="</span>, <span class="fu">month</span>(date2), <span class="st">"&amp;day2="</span>, <span class="fu">mday</span>(date2), <span class="st">"&amp;"</span>, <span class="at">sep=</span><span class="st">""</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>service</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py?data=all&amp;tz=Etc/UTC&amp;format=comma&amp;latlon=yes&amp;year1=1990&amp;month1=1&amp;day1=1&amp;year2=2020&amp;month2=12&amp;day2=31&amp;"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>it_stations_id <span class="ot">&lt;-</span> jdict<span class="sc">$</span>features<span class="sc">$</span>id</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>it_stations_id</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] "EQYS" "LIBA" "LIBC" "LIBD" "LIBE" "LIBF" "LIBG" "LIBH" "LIBN" "LIBP"
+ [11] "LIBQ" "LIBR" "LIBT" "LIBU" "LIBV" "LIBY" "LICA" "LICB" "LICC" "LICD"
+ [21] "LICE" "LICF" "LICG" "LICJ" "LICL" "LICO" "LICR" "LICT" "LICU" "LICZ"
+ [31] "LIEA" "LIEB" "LIEC" "LIED" "LIEE" "LIEO" "LIMA" "LIMC" "LIME" "LIMF"
+ [41] "LIMG" "LIMH" "LIMJ" "LIMK" "LIML" "LIMN" "LIMP" "LIMS" "LIMT" "LIMU"
+ [51] "LIMV" "LIMW" "LIMY" "LIMZ" "LIPA" "LIPB" "LIPC" "LIPE" "LIPF" "LIPH"
+ [61] "LIPI" "LIPK" "LIPL" "LIPO" "LIPQ" "LIPR" "LIPS" "LIPU" "LIPX" "LIPY"
+ [71] "LIPZ" "LIQB" "LIQC" "LIQJ" "LIQN" "LIQO" "LIQW" "LIRA" "LIRB" "LIRE"
+ [81] "LIRF" "LIRG" "LIRH" "LIRI" "LIRJ" "LIRK" "LIRL" "LIRM" "LIRN" "LIRP"
+ [91] "LIRQ" "LIRS" "LIRT" "LIRU" "LIRV" "LIRX" "LIRY" "LIRZ" "LIVC" "LIVD"
+[101] "LIVE" "LIVF" "LIVM" "LIVO" "LIVP" "LIVR" "LIVT" "LIYW"</code></pre>
+</div>
+</div>
+<p>. . .</p>
+<p>Set the working directory where to store data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"path/to/your/folder/of/choice"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p>This is the main for loop to download the all the data.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beware!!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The original loop downloads about 4.4GB of data! You should only run it when you have a stable and fast internet connection. Right now we will run a simplified version of the script that should download data from only two stations.</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>it_stations_nm <span class="ot">&lt;-</span> jdict<span class="sc">$</span>features<span class="sc">$</span>properties<span class="sc">$</span>sname</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>){</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  uri <span class="ot">&lt;-</span> <span class="fu">paste</span>(service, <span class="st">"station="</span>, it_stations_id[i], <span class="at">sep =</span> <span class="st">""</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"Network:"</span>, network, </span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Downloading:"</span>, it_stations_nm[i], it_stations_id[i], <span class="at">sep=</span><span class="st">" "</span>))</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  data <span class="ot">&lt;-</span> <span class="fu">url</span>(uri)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>  datestring1 <span class="ot">&lt;-</span> <span class="fu">format</span>(date1, <span class="st">"%Y%m%d"</span>)</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>  datestring2 <span class="ot">&lt;-</span> <span class="fu">format</span>(date2, <span class="st">"%Y%m%d"</span>)</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>  outfn <span class="ot">&lt;-</span> <span class="fu">paste</span>(network, <span class="st">"_"</span>, it_stations_id[i], <span class="st">"_"</span>, datestring1, <span class="st">"_to_"</span>, datestring2, <span class="at">sep=</span><span class="st">""</span>)</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">download.file</span>(uri, <span class="fu">paste</span>(outfn, <span class="st">".csv"</span>), <span class="st">"auto"</span>)</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>When the download start you should see a message on the prompt telling you what station the script is downloading.</p>
+</section>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./class_21_1.png" class="img-fluid figure-img"></p>
+<figcaption>This is what my result folder looks like. Note, I have downloaded all 4.4GB of data, but you should only have two files corresponding to “LIMG” and “LIEA”.</figcaption>
+</figure>
+</div>
+<hr>
+<ul>
+<li>Time to load the data and look at them.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># path_to_csv &lt;- "path/to/your/data"</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>suffix <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"LIBA"</span>, <span class="st">"LIBC"</span>)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>files <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="at">path =</span> path_to_csv, <span class="at">pattern =</span> <span class="st">"*.csv"</span>, <span class="at">full.names =</span> T) </span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>files_names <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="at">path =</span> path_to_csv, <span class="at">pattern =</span> <span class="st">"*.csv"</span>, <span class="at">full.names =</span> F)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>myfiles  <span class="ot">&lt;-</span>  <span class="fu">lapply</span>(files, read.csv, <span class="at">skip =</span> <span class="dv">5</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="st">"M"</span>)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(myfiles) <span class="ot">&lt;-</span> suffix</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>myfiles[[<span class="dv">1</span>]][<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>,]</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>myfiles_df <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(myfiles, <span class="at">.id =</span> <span class="st">"station_label"</span>)</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>format <span class="ot">&lt;-</span> <span class="st">"%Y-%m-%d %H:%M"</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>myfiles_df<span class="sc">$</span>valid <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(myfiles_df<span class="sc">$</span>valid, <span class="at">format =</span> format, <span class="at">tz =</span> <span class="st">"UTC"</span>)</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(myfiles_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>  station            valid     lon     lat  tmpf  dwpf  relh drct sknt p01i
+1    LIBA 1990-01-01 00:00 15.7139 41.5381 43.16 41.72 94.61  320    6   NA
+2    LIBA 1990-01-01 01:00 15.7139 41.5381 42.80 41.00 93.30  300    7   NA
+3    LIBA 1990-01-01 02:30 15.7139 41.5381 42.80 41.00 93.30  300    7   NA
+4    LIBA 1990-01-01 03:00 15.7139 41.5381 42.80 41.36 94.60  310    5   NA
+5    LIBA 1990-01-01 04:50 15.7139 41.5381 42.80 41.00 93.30  310    5   NA
+   alti   mslp vsby gust skyc1 skyc2 skyc3 skyc4 skyl1 skyl2 skyl3 skyl4
+1 30.09 1019.2    7   NA  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    NA    NA    NA    NA
+2 30.06     NA    7   NA  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    NA    NA    NA    NA
+3 30.06     NA    7   NA  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    NA    NA    NA    NA
+4    NA 1018.7    5   NA  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    NA    NA    NA    NA
+5 30.06     NA    5   NA  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    NA    NA    NA    NA
+  wxcodes ice_accretion_1hr ice_accretion_3hr ice_accretion_6hr peak_wind_gust
+1    &lt;NA&gt;                NA                NA                NA             NA
+2    &lt;NA&gt;                NA                NA                NA             NA
+3    &lt;NA&gt;                NA                NA                NA             NA
+4    &lt;NA&gt;                NA                NA                NA             NA
+5    &lt;NA&gt;                NA                NA                NA             NA
+  peak_wind_drct peak_wind_time  feel
+1             NA             NA 38.97
+2             NA             NA 37.94
+3             NA             NA 37.94
+4             NA             NA 39.22
+5             NA             NA 39.22
+                                                                            metar
+1 LIBA 010000Z AUTO 32006KT 7SM 06/05 A3009 RMK SLP192 T00620054 58005 IEM_DS3505
+2              LIBA 010100Z AUTO 30007KT 7SM 06/05 A3006 RMK T00600050 IEM_DS3505
+3              LIBA 010230Z AUTO 30007KT 7SM 06/05 A3006 RMK T00600050 IEM_DS3505
+4       LIBA 010300Z AUTO 31005KT 5SM 06/05 RMK SLP187 T00600052 56004 IEM_DS3505
+5              LIBA 010450Z AUTO 31005KT 5SM 06/05 A3006 RMK T00600050 IEM_DS3505
+  snowdepth
+1        NA
+2        NA
+3        NA
+4        NA
+5        NA</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  station_label station               valid     lon     lat  tmpf  dwpf  relh
+1          LIBA    LIBA 1990-01-01 00:00:00 15.7139 41.5381 43.16 41.72 94.61
+2          LIBA    LIBA 1990-01-01 01:00:00 15.7139 41.5381 42.80 41.00 93.30
+3          LIBA    LIBA 1990-01-01 02:30:00 15.7139 41.5381 42.80 41.00 93.30
+4          LIBA    LIBA 1990-01-01 03:00:00 15.7139 41.5381 42.80 41.36 94.60
+5          LIBA    LIBA 1990-01-01 04:50:00 15.7139 41.5381 42.80 41.00 93.30
+6          LIBA    LIBA 1990-01-01 06:00:00 15.7139 41.5381 43.16 41.00 92.02
+  drct sknt p01i  alti   mslp vsby gust skyc1 skyc2 skyc3 skyc4 skyl1 skyl2
+1  320    6   NA 30.09 1019.2    7   NA  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    NA    NA
+2  300    7   NA 30.06     NA    7   NA  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    NA    NA
+3  300    7   NA 30.06     NA    7   NA  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    NA    NA
+4  310    5   NA    NA 1018.7    5   NA  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    NA    NA
+5  310    5   NA 30.06     NA    5   NA  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    NA    NA
+6  300    6   NA 30.03 1018.1    3   NA  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    NA    NA
+  skyl3 skyl4 wxcodes ice_accretion_1hr ice_accretion_3hr ice_accretion_6hr
+1    NA    NA    &lt;NA&gt;                NA                NA                NA
+2    NA    NA    &lt;NA&gt;                NA                NA                NA
+3    NA    NA    &lt;NA&gt;                NA                NA                NA
+4    NA    NA    &lt;NA&gt;                NA                NA                NA
+5    NA    NA    &lt;NA&gt;                NA                NA                NA
+6    NA    NA    &lt;NA&gt;                NA                NA                NA
+  peak_wind_gust peak_wind_drct peak_wind_time  feel
+1             NA             NA             NA 38.97
+2             NA             NA             NA 37.94
+3             NA             NA             NA 37.94
+4             NA             NA             NA 39.22
+5             NA             NA             NA 39.22
+6             NA             NA             NA 38.97
+                                                                            metar
+1 LIBA 010000Z AUTO 32006KT 7SM 06/05 A3009 RMK SLP192 T00620054 58005 IEM_DS3505
+2              LIBA 010100Z AUTO 30007KT 7SM 06/05 A3006 RMK T00600050 IEM_DS3505
+3              LIBA 010230Z AUTO 30007KT 7SM 06/05 A3006 RMK T00600050 IEM_DS3505
+4       LIBA 010300Z AUTO 31005KT 5SM 06/05 RMK SLP187 T00600052 56004 IEM_DS3505
+5              LIBA 010450Z AUTO 31005KT 5SM 06/05 A3006 RMK T00600050 IEM_DS3505
+6 LIBA 010600Z AUTO 30006KT 3SM 06/05 A3003 RMK SLP181 T00620050 56006 IEM_DS3505
+  snowdepth
+1        NA
+2        NA
+3        NA
+4        NA
+5        NA
+6        NA</code></pre>
+</div>
+</div>
+<hr>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">1</span>))</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">date</span>(myfiles_df[myfiles_df<span class="sc">$</span>station <span class="sc">==</span> <span class="st">"LIBA"</span>, ]<span class="sc">$</span>valid),</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>     myfiles_df[myfiles_df<span class="sc">$</span>station <span class="sc">==</span> <span class="st">"LIBA"</span>, ]<span class="sc">$</span>tmpf, <span class="at">type =</span> <span class="st">"o"</span>, </span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Year"</span>, <span class="at">ylab =</span> <span class="st">"Temp."</span>, <span class="at">main =</span> <span class="st">"LIBA, Amendola"</span>)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">date</span>(myfiles_df[myfiles_df<span class="sc">$</span>station <span class="sc">==</span> <span class="st">"LIBC"</span>, ]<span class="sc">$</span>valid),</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>     myfiles_df[myfiles_df<span class="sc">$</span>station <span class="sc">==</span> <span class="st">"LIBC"</span>, ]<span class="sc">$</span>tmpf, <span class="at">type =</span> <span class="st">"o"</span>, </span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Year"</span>, <span class="at">ylab =</span> <span class="st">"Temp."</span>, <span class="at">main =</span> <span class="st">"LIBC, Crotone"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="class_11_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(stationsPlot[<span class="dv">1</span>,], stationsPlot[<span class="dv">2</span>,], <span class="at">asp =</span> <span class="dv">1</span>, <span class="at">pch =</span> <span class="dv">21</span>, <span class="at">bg =</span> <span class="st">"gray"</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(stationsPlot[<span class="dv">1</span>,<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>], stationsPlot[<span class="dv">2</span>,<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>], <span class="at">pch =</span> <span class="dv">21</span>, <span class="at">bg  =</span> <span class="st">"green"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="class_11_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/giulianocolosimo\.github\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2024 Giuliano Colosimo</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/quarto-dev/quarto-demo/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>. Inspiration for this site comes from <a href="https://www.mm218.dev">here</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
