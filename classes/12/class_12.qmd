@@ -1,0 +1,38 @@
+---
+title: "Biologia della conservazione"
+subtitle: "Class 12 - Seminar: Bridging the gap between theoretical and applied conservation"
+date: "2025-01-09"
+footer: "[Biologia della conservazione 24/25 - Giuliano Colosimo, PhD](https://giulianocolosimo.github.io/biologia_della_conservazione_24-25/)"
+logo: ../../figures/Tor-Vergata_logo_cmyk.png
+format: 
+  revealjs:
+    width: 1600
+    height: 900
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    preview-links: true
+    chalkboard: 
+      boardmarker-width: 5
+editor: visual
+from: markdown+emoji
+execute:
+  freeze: auto
+editor_options: 
+  chunk_output_type: console
+bibliography: /Users/giulianocolosimo/Documents/manuscripts/literature/bibtex/comprehensive_database.bib
+csl: /Users/giulianocolosimo/Documents/manuscripts/literature/bibtex/apa_5th_edition.csl
+citation_package: biblatex
+citecolor: "red"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+x <- c("DT", "tidyverse", "RColorBrewer", "learnPopGen")
+lapply(x, require, character.only = T)
+rm(x)
+```
+
+## Seminar
+
+In today's class we will be following a seminar titled: Bridging the gap between theoretical and applied conservation. As some of the contents of this seminar are still unpublished I will not be able to share the slides with the class.

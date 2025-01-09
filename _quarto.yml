@@ -57,6 +57,8 @@ website:
             text: "Class 10 - Conservation and climate change"
           - href: ./classes/11/class_11.html
             text: "Class 11 - Excercise: Accessing weather station data"
+          - href: ./classes/12/class_12.html
+            text: "Class 12 - Seminar"
 
 
 
