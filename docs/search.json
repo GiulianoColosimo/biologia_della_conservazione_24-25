@@ -1622,5 +1622,117 @@
     "title": "Biologia della conservazione",
     "section": "Seminar",
     "text": "Seminar\nIn today’s class we will be following a seminar titled: Bridging the gap between theoretical and applied conservation. As some of the contents of this seminar are still unpublished I will not be able to share the slides with the class."
+  },
+  {
+    "objectID": "classes/13/class_13.html#references",
+    "href": "classes/13/class_13.html#references",
+    "title": "Biologia della conservazione",
+    "section": "References",
+    "text": "References\n\n\n\n\nDaly, H. E., & Farley, J. (2011). Ecological economics, second edition: Principles and applications. Island Press. Retrieved from https://books.google.is/books?id=20R9\\_6rC-LoC\n\n\nDyke, F. V., & Lamb, R. L. (2020). Conservation biology. Springer International Publishing. Retrieved from https://doi.org/10.1007%2F978-3-030-39534-6\n\n\nFisher, B., Naidoo, R., & Ricketts, T. (2015). A field guide to economics for conservationists. Macmillan Learning. Retrieved from https://books.google.is/books?id=YMHroQEACAAJ\n\n\nFrank, R., & Bernanke, B. (2012). Principles of economics. McGraw-Hill Education. Retrieved from https://books.google.is/books?id=2\\_SgPwAACAAJ\n\n\nKeenan, T. F., & Williams, C. A. (2018). The terrestrial carbon sink. Annual Review of Environment and Resources, 43(1), 219–243. Retrieved from https://doi.org/10.1146/annurev-environ-102017-030204\n\n\nWatson, R. T., & Zakri, A. H. (2005). Living beyon our means. Millennium Ecosystem Assessment.\n\n\nZhao, W., Liu, Y., Daryanto, S., Fu, B., Wang, S., & Liu, Y. (2018). Metacoupling supply and demand for soil conservation service. Current Opinion in Environmental Sustainability, 33, 136–141. Retrieved from https://www.sciencedirect.com/science/article/pii/S1877343517301926"
+  },
+  {
+    "objectID": "classes/13/class_13.html#conservation-economics",
+    "href": "classes/13/class_13.html#conservation-economics",
+    "title": "Biologia della conservazione",
+    "section": "Conservation economics",
+    "text": "Conservation economics\n\nEconomics is the study of how people make choices under condition of scarcity. Economics also studies the results of these choices and how they affect the society (Frank & Bernanke, 2012)\nSpeaking of economics within conservation science may seem a paradox, because economics is often an obstacle or a limit to the development of conservation strategies and the achievement of conservation goals\nAfter all, we live in a largely capitalistic world, and increasing the capital, which often translates to increasing the bank account, is the goal of most corporations worldwide\nDespite this, thinking like an economist or at least including a few economics notions in the way we think and develop conservation strategies can help to device appropriate conservation actions when resources are lacking or very few\nNo conservation effort or practice can ultimately endure without an intimate connection to value (Dyke & Lamb, 2020)"
+  },
+  {
+    "objectID": "classes/13/class_13.html#conservation-economics-1",
+    "href": "classes/13/class_13.html#conservation-economics-1",
+    "title": "Biologia della conservazione",
+    "section": "Conservation economics",
+    "text": "Conservation economics\n\nAdopting an economic behavior to conservation does not mean that the intrinsic value and motivation of conservation are less important or undermined by money.\nMoral intents do not require an economic justification!!!\nLearning some economics principles should be viewed as an additional set of tools to help us better navigate human biases, emotions, irrationality and the social context of economic-based decision process in conservation science.\n\n\n\nMicroeconomics, centers on incentives that influence individual behavior.\n\nIt is a branch of economics focused on markets!\nWhat factors influence the goods and services users consume.\nIt tries to consider the externalities (true costs and benefits of a product/service not considered in the market analysis)."
+  },
+  {
+    "objectID": "classes/13/class_13.html#section",
+    "href": "classes/13/class_13.html#section",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "There are three foundational economic concepts embedded in many conservation efforts:\n\nEcosystem-services\nStock-flow and fund-service resources\nNonexcludable and nonrival goods\n\nOver the past few decades efforts to captrue the value of nature through a market price have led to many creative programs and projects around the globe, but there is disagreement whether hinging motivation for conservation on economics\nSome research show that when social interaction become financial ones, economic interests overcome altruistic motivation, causing people to become even less likely to conserve nature for the common good (Fisher, Naidoo, & Ricketts, 2015)"
+  },
+  {
+    "objectID": "classes/13/class_13.html#how-to-value-nature-and-its-services",
+    "href": "classes/13/class_13.html#how-to-value-nature-and-its-services",
+    "title": "Biologia della conservazione",
+    "section": "How to value nature and its services?",
+    "text": "How to value nature and its services?\n\nWhen social interactions become financial ones, economic incentives obscure altruistic motivations causing individuals to become even less likely to conserve nature.\n\n\n\nConsider the services that, for example, a forest can provide.\n\nGas regulation\nClimate regulation\nDisturbance regulation\nWater supply\nSoil formation\n\n\n\n\n\nFor how many of these services do you think about paying on a daily basis?"
+  },
+  {
+    "objectID": "classes/13/class_13.html#stock-flow-and-fund-service-resources",
+    "href": "classes/13/class_13.html#stock-flow-and-fund-service-resources",
+    "title": "Biologia della conservazione",
+    "section": "Stock-flow and Fund-service resources",
+    "text": "Stock-flow and Fund-service resources\n\nThe material goods we use and derive from ecosystems and their associated biodiversity are various and diverse. A comprehensive list is hard to make. So, we can classify them based on how we use them\n\n\n\nStock-flow resources are those goods produced via a transformation process, usually self-renewing, occurring within the ecosystem itself. Goods extracted can then be used at a certain rate (flow) from the resource’s stock\nTimber from a forest is the classical example of a stock-flow resource. A standing stock of mature trees transforms water, sunlight and nutrients from the soil into new biomass and new individuals. It is important in the process of creating the resource, and becomes itself the resource\nIf a stock-flow resources is extracted at a rate \\(\\le\\) than its renewal rate, we can consider that resource self-perpetuating"
+  },
+  {
+    "objectID": "classes/13/class_13.html#section-1",
+    "href": "classes/13/class_13.html#section-1",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "All stock-flow resources share similar attributes\n\nStock-flow resources:\n\nhave all been materially transformed by ecosystem processes in to usable goods;\ncan be used at any desired rate, but in many case usage rates are too high to make the resource self-perpetuating;\ncan be stock-pilled or stored for future use!"
+  },
+  {
+    "objectID": "classes/13/class_13.html#non-excludable-and-non-rival-goods",
+    "href": "classes/13/class_13.html#non-excludable-and-non-rival-goods",
+    "title": "Biologia della conservazione",
+    "section": "Non-excludable and non-rival goods",
+    "text": "Non-excludable and non-rival goods\n\nNatural goods and resources have been proven hard for traditional economic theory\nAn excludable good or resource is one in which ownership of the resource permits the owner exclusive use of the resource and provides the owner with the ability to exclude others from its use\nA rival good or service is one for which its uses infringes with someone else’s ability to enjoy the same good or service\nMany ecosystem goods and services are non-excludable. Can you exclude someone from breathing oxygen?\nSome ecosystem and good services are also non-rival, in that the use of the good does not infringe on the use from other\nBecause of these characteristics (non-excludable and non-rival) these goods (like climate and water surfaces) are outside of the marketplace and are considered public goods"
+  },
+  {
+    "objectID": "classes/13/class_13.html#section-2",
+    "href": "classes/13/class_13.html#section-2",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "The need for some form of governance for public goods arises when there is some degree of rivalry and when changes in land usage and management threatens non-excludability\nOver exploitation of freshwater by one person or group in a discrete location may limit the availability of fresh water to other users at that same location, effectively changing it from a public good to a common pool resource\nIf a good is not excludable someone can use it whether or not any producer of the good allows it. If people can use the good regardless of whether or not they have to pay for it, they are considerably less likely to pay for it. If people are unwilling to pay for a good there will be no profit in its production and in a market no one will invest in it in a substantial way (Daly & Farley, 2011)"
+  },
+  {
+    "objectID": "classes/13/class_13.html#fundamental-assumptions-of-supply-and-demand",
+    "href": "classes/13/class_13.html#fundamental-assumptions-of-supply-and-demand",
+    "title": "Biologia della conservazione",
+    "section": "Fundamental assumptions of supply and demand",
+    "text": "Fundamental assumptions of supply and demand\n\nIn neoclassical economic theory, market price for any good or service stems from supply and demand.\nHigher demand for a particular resource is generated because the price gets lower while the resource or good is supplied with higher quantities.\n\n\nSupply and demand curves. By Paweł Zdziarski. Image downloaded here"
+  },
+  {
+    "objectID": "classes/13/class_13.html#section-3",
+    "href": "classes/13/class_13.html#section-3",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "A general framework to couple human-nature systems by soil conservation service assessment. Supply is characterized by ecosystem processes and functions, and demand is quantified as the total human benefit. After Zhao et al. (2018)"
+  },
+  {
+    "objectID": "classes/13/class_13.html#section-4",
+    "href": "classes/13/class_13.html#section-4",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "While most analysis focus on maintaining steady the supply portion of an ecosystem service, through conservation actions aiming at directly preserving the resource, the authors (Zhao et al., 2018) suggest that quantification of both supply and demand would improve decisions made about both of them.\nBy quantifying the benefits of soil conservation, based on the health of ecosystem services, they could help clarify the economic value of the service to people.\nThe authors focused on both the maximum allowable erosion rate (how much we can use the resource without depleting it out) and the current erosion rate.\nIf the current erosion rate exceeded the maximum there were negative consequences for ecosystem supply. However, if the current erosion were lower than the maximum, the implication for the ecosystem supply were positive.\nProperly developed, environmental markets can stimulate market efficiency and improve overall economic efficiency while supporting higher level of biodiversity conservation.\nTo do this, economists must address externalities, the costs or benefits that are not explicitly captured in a decision or action!"
+  },
+  {
+    "objectID": "classes/13/class_13.html#cost-benefit-analysis",
+    "href": "classes/13/class_13.html#cost-benefit-analysis",
+    "title": "Biologia della conservazione",
+    "section": "Cost Benefit Analysis",
+    "text": "Cost Benefit Analysis\n\nCost Benefit Analysis (CBA) is a tool used even in conservation economics.\n\nWill we gain more than we loose in economic terms?\nWhat are our options?\nWhat if we do nothing?\n\nThe main issue in CBA is to clarify how to quantify costs and benefits.\nThe Trump administration had long argued that the EPA (Environmental Protection Act), under the previous Obama administration overestimated the risk of various environmental regulation to the determent of industry (Dyke & Lamb, 2020).\nFor example, Trump’s EPA had initially calculated that replacing Obama’s Clean power Plan, with his proposed Affordable Clean Energy Act (CEA), would result in an additional 1400 deaths per year. His administration proposed a new set of rules to calculate CBA and this number was drastically reduced."
+  },
+  {
+    "objectID": "classes/13/class_13.html#section-5",
+    "href": "classes/13/class_13.html#section-5",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "In Microeconomics there are two general classes of evaluation techniques for putting a price tag on ecosystem services: revealed preference and stated preference.\nRevealed preference use observed behavior such as market purchases to make inferences on values of goods and services. Such approaches work with either actual markets or proxy market for property which reflects the various environmental attributes of the property itself.\nStated preference methods ask people how much they are willing to pay for a non-market good or service. Stated preference approaches create hypothetical markets for environmental benefits where there are no current market prices."
+  },
+  {
+    "objectID": "classes/13/class_13.html#neoclassical-economic-theory",
+    "href": "classes/13/class_13.html#neoclassical-economic-theory",
+    "title": "Biologia della conservazione",
+    "section": "Neoclassical economic theory",
+    "text": "Neoclassical economic theory\n\nMicroeconomics, centers on incentives that influence individual behavior.\n\nIt is a branch of economics focused on markets!\nWhat factors influence the goods and services users consume.\nIt tries to consider the externalities (true costs and benefits of a product/service not considered in the market analysis).\n\nMacroeconomics, is an extension of microeconomics.\n\nIt applies to a multitude of individuals and to a larger and wider scale.\nInvolves the decision making process that determines the appropriate level of economic activity in a society.\nIt also involves all processes determining how governments ought to think about its spending and revenue streams (Dyke & Lamb, 2020)"
+  },
+  {
+    "objectID": "classes/13/class_13.html#ecosystem-services",
+    "href": "classes/13/class_13.html#ecosystem-services",
+    "title": "Biologia della conservazione",
+    "section": "Ecosystem-services",
+    "text": "Ecosystem-services\n\nEconomic value is manifested in tangible goods (material resources) and services (functions of value to us performed by some other entity)\nEcosystem services refer to particular ecosystem conditions and functions that have value to humans\nConsider the services that, for example, a forest can provide.\n\nGas regulation\nClimate regulation\nDisturbance regulation\nWater supply\nSoil formation\n\n\n\n\nFor how many of these services do you think about paying on a daily basis?"
   }
 ]
