@@ -1,0 +1,195 @@
+---
+title: "Biologia della conservazione"
+subtitle: "Class 15 - Exercise in R"
+date: "2025-01-20"
+footer: "[Biologia della conservazione 24/25 - Giuliano Colosimo, PhD](https://giulianocolosimo.github.io/biologia_della_conservazione_24-25/)"
+logo: ../../figures/Tor-Vergata_logo_cmyk.png
+format: 
+  revealjs:
+    width: 1600
+    height: 900
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    preview-links: true
+    chalkboard: 
+      boardmarker-width: 5
+editor: visual
+from: markdown+emoji
+execute:
+  freeze: auto
+editor_options: 
+  chunk_output_type: console
+bibliography: /Users/giulianocolosimo/Documents/manuscripts/literature/bibtex/comprehensive_database.bib
+csl: /Users/giulianocolosimo/Documents/manuscripts/literature/bibtex/apa_5th_edition.csl
+citation_package: biblatex
+citecolor: "red"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+x <- c("DT", "tidyverse", "RColorBrewer", "learnPopGen",
+       "cranlogs", "plotly", "readxl")
+lapply(x, require, character.only = T)
+rm(x)
+```
+
+## Introduction
+
+- In this exercise we will first briefly look at the very basic of R and RStudio. We will then try to use some functions from various R packages to compute some of the genetic indexes that we have discussed  in the first part of the course
+
+- We will be using a dataset published by @Groombridge2000
+
+- The dataset contains 153 individuals of Kestrel, a small bird of prey, typed at 12 microsatellite loci
+
+- The dataset is available [here](https://drive.proton.me/urls/SHD6SKCV30#RfJOAMMTGpkQ) as an excel file. Download it and place in a directory of your convenience 
+
+- Before moving forward with the excercise I will review some basic **R** stuff, including the installation process and how to retrieve some of the most important packages
+
+## Setting up your computers
+
+-   Connect to Wi-Fi
+
+-   Visit the **R** <https://cran.r-project.org> page and download the **R** version compatible with your OS. Install the software following the instructions
+
+-   Visit the **RStudio** <https://www.rstudio.com/products/rstudio/download/> page and download the **RStudio** Desktop version compatible with your OS. Install the software following the instructions. Most recently **RStudio** has changed its name in to **Posit** <https://posit.co>, but the core idea is the same!
+
+::: callout-important
+**RStudio** is an Integrated Development Environment (IDE) within which it should be easier to organize your **R** workflow. [Learning all the specifics of **R** and **RStudio** is beyond the scope of this course and it is a student's responsibility to learn the basics of these tools. That being said, you can always write me with your questions if something does not work on your computer and I will help troubleshooting potential issues.]{.underline}
+:::
+
+## Brief intro to R and RStudio
+
+- R is a very powerful programing language. It was conceived for statistical computing, but now it has become a well rounded tool that can be used to do a number of different things, including writing manuscripts and designing websites 
+
+- At its core R can still be considered *number cruncher*
+
+```{r sum}
+# basic arithmetic
+3 + 5
+```
+
+```{r assign_val}
+# assigning values to object
+a <- 5
+b <- 3
+(c <- a + b)
+
+```
+
+```{r equation}
+# multiple type of data
+str(x <- a)
+str(y <- "a")
+str(z <- c(T, F))
+```
+
+------------------------------------------------------------------------
+
+- Data can be organized in a number of different ways each one with its specific structure
+- The three most simple "objects" that contain data are vecotrs, matrices, and data frames
+
+```{r matrix}
+# a matrix
+(mtrx_ex <- matrix(1:9, nrow = 3, ncol = 3))
+```
+
+```{r df}
+# a data frame
+(df_ex <- as.data.frame(mtrx_ex))
+```
+
+```{r df2}
+# another data frame
+(df_ex <- data.frame(id = c(1, 2, 3),
+                     species = c("cat", "dog", "lion"),
+                     is.domestic = c(T, T, F)))
+```
+
+------------------------------------------------------------------------
+
+- When you first install **R** on your computer you will find only a few basic packages that ship with basic installation
+
+- If you type the following command at your prompt you will get a series of information regarding the version of R and the hardware on which is running
+
+- The command will also output information relative to the name of packages installed and loaded in your working session
+
+```{r sI}
+sessionInfo() # the output is from my computer and mybe different for you
+```
+
+## Packages
+
+- There are thousands of available libraries (aka, *packages*) that can be used to perform very specific analyses and produce publication-grade graphical output.
+
+```{r packs}
+sI <- sessionInfo()
+sI$basePkgs # look at the basic packages installed and loaded
+```
+
+```{r installed_packs}
+# The following command provides a list of all packages that are installed
+rownames(installed.packages()) # the output is from my computer and mybe different for you
+```
+
+------------------------------------------------------------------------
+
+
+#### How to install new packages
+
+- Most packages can be installed using the following procedure
+
+```{r installnew, include=TRUE, eval=FALSE}
+install.packages("ggplot2", repos = "https://cloud.r-project.org")
+```
+
+- Once the package has been installed without any error as output, it should be available and can be loaded as a library in your working session
+
+```{r loadpck}
+library(ggplot2)
+```
+
+- Once the library is loaded it is possible to star using the functions that are contained within the library
+- **R** comes with a great help system that everybody is encouraged to read extensively and consult every time they are experiencing issues when running some code or using a function.
+
+```{r help}
+?geom_segment
+```
+
+## Loading the data in to **R**
+
+- We can read excel files in **R**, but we first need to install and load a specific library that can help us doing that
+
+```{r include=TRUE, eval=FALSE}
+install.packages("readxl", repos = "https://cloud.r-project.org")
+library(readxl)
+```
+
+- Now that the library is loaded we can load the excel file
+
+```{r include=T, eval=F}
+kestrel <- read_excel("/PATH/TO/EXCEL/FILE/Groombridge_et_al_genotypes_data.xlsx",
+           sheet = 1, col_types = "guess", na = "\\N")
+kestrel
+```
+
+
+```{r echo=F, eval=TRUE}
+kestrel <- read_excel("/Users/giulianocolosimo/Documents/websites/biologia_della_conservazione_24-25/data/Groombridge_et_al_genotypes_data.xlsx",
+           sheet = 1, col_types = "guess", na = "\\N")
+kestrel
+```
+
+---
+
+- Data is organized in a tibble, a data frame with some extra features when compared to regular data frames
+
+- We can summarize the second and third column to overview the type and number of sample
+
+```{r}
+table(kestrel$Species, kestrel$Info)
+```
+
+- The results tell us that there are 6 different species of kestrel, coming from various locations
+
+## References

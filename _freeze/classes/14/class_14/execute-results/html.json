@@ -1,0 +1,17 @@
+{
+  "hash": "691cf40868bf043fe7024cd30d2ce1b0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Biologia della conservazione\"\nsubtitle: \"Class 14 - GdF seminar\"\ndate: \"2025-01-20\"\nfooter: \"[Biologia della conservazione 24/25 - Giuliano Colosimo, PhD](https://giulianocolosimo.github.io/biologia_della_conservazione_24-25/)\"\nlogo: ../../figures/Tor-Vergata_logo_cmyk.png\nformat: \n  revealjs:\n    width: 1600\n    height: 900\n    theme: slides.scss\n    transition: fade\n    slide-number: true\n    preview-links: true\n    chalkboard: \n      boardmarker-width: 5\neditor: visual\nfrom: markdown+emoji\nexecute:\n  freeze: auto\neditor_options: \n  chunk_output_type: console\nbibliography: /Users/giulianocolosimo/Documents/manuscripts/literature/bibtex/comprehensive_database.bib\ncsl: /Users/giulianocolosimo/Documents/manuscripts/literature/bibtex/apa_5th_edition.csl\ncitation_package: biblatex\ncitecolor: \"red\"\n---\n\n\n\n\n\n\n\n\n## GdF seminar\n\n- In today's class we will be following a seminar from the Lgt. CS Candeloro CALABRÒ, Comandante della Squadra Operativa Volante del servizio CITES della Guardia di Finanza di Fiumicino Aeroporto. The seminar title will be LA COMMERCIALIZZAZIONE ED IL RICONOSCIMENTO DEGLI ANIMALI E PIANTE IN VIA DI ESTINZIONE: SPECIE TERRESTRI E MARINE A RISCHIO, QUALE FUTURO DI SOSTEBIBILITA’ AMBIENTALE.\n\n- You can use [this link](https://drive.proton.me/urls/Z08BYWC30R#zJL9YO510PrL) to download the presentation. Please note that the shared presentation is slightly different from the one you have seen in class, as it is a shorter version with a summary of the main information. The commander shared with me this presentation last year.",
+    "supporting": [
+      "class_14_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
