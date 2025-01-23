@@ -29,7 +29,7 @@ citecolor: "red"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 x <- c("DT", "tidyverse", "RColorBrewer", "learnPopGen",
-       "cranlogs", "plotly", "readxl")
+       "cranlogs", "plotly", "readxl", "hierfstat")
 lapply(x, require, character.only = T)
 rm(x)
 ```
@@ -175,7 +175,7 @@ kestrel
 
 
 ```{r echo=F, eval=TRUE}
-kestrel <- read_excel("/Users/giulianocolosimo/Documents/websites/biologia_della_conservazione_24-25/data/Groombridge_et_al_genotypes_data.xlsx",
+kestrel <- read_excel("../../data/Groombridge_et_al_genotypes_data.xlsx",
            sheet = 1, col_types = "guess", na = "\\N")
 kestrel
 ```
@@ -190,6 +190,129 @@ kestrel
 table(kestrel$Species, kestrel$Info)
 ```
 
-- The results tell us that there are 6 different species of kestrel, coming from various locations
+- The results tell us that there are 6 different species of kestrel (and 5 subspecies), coming from various locations. For each species (or subspecies) the number indicates how many samples of that species are in the dataframe
+
+---
+
+- We can now start looking at the actual genetic information. We will be using a package called **hierfstat** [@Goudet2005].
+
+- This package is a little outdated and there are some problems in the way some of the functions in this package handle the data!!!!
+
+- The package, if properly used, it is still pretty valuable and performs many useful analysis
+
+- In today's excercise what you will do is try to modify the format of some data and run a simple function from the package to count the number of alleles in the different populations
+
+- The idea is to try and figure out the issue in the way the data are handled by the function that counts the number of alleles
+
+---
+
+- Install the package and load it in your working session. 
+
+```{r include=T, eval=F}
+install.packages("hierfstat")
+library(hierfstat)
+```
+
+- With the package installation also come a series of example data. We can look at one of the explanatory files to make sure our samples are properly formatted for the analysis
+
+```{r, echo=TRUE}
+data(gtrunchier)
+gtrunchier
+```
+
+---
+
+- The example data contains genotypes at 6 microsatellite loci of *Galba truncatula*, an air-breathing freshwater snail, from different patches in Western Switzerland
+
+- The genotyped microsatellites data are organized so that one column contains 2 alleles. Lets take a look at the first sample in the dataframe. The first 2 columns contain sampling information ([Locality]{style="color: red;"} and [Patch]{style="color: red;"}), while the rest of the column contain the actual genotypes 
+
+```{r}
+gtrunchier[1, ]
+```
+
+- So, the first individual is homozygous at locus [L21.V]{style="color: blue;"} with two copies of allele [2]{style="color: green;"}
+
+- This individual is actually homozygous for all loci considered here. What is important to note at this stage is that the format of this data frame is slightly different from our data
+
+```{r}
+as.data.frame(kestrel[1, ])
+```
+
+---
+
+- In our data the two alleles are kept in two separate columns, and each locus has an [_A]{style="color: red;"} and [_B]{style="color: red;"} notation to specify the two different alleles
+
+- So, the first thing to do to start the analysis with *hierfstat* is to modify the format of our data. Basically we need to make a new data frame with one column per locus
+
+- Please note that there are many different ways to achieve this, and what I am showing below is just one of the many available alternatives
+
+```{r}
+# We first create an empy matrix that has the as mny rows as  number of samples in our dataset and 
+# as many columns as number of genotyped loci
+kestrel_df <- matrix(nrow = nrow(kestrel), ncol = length(kestrel[, 4:ncol(kestrel)])/2)
+```
+
+- We have just created an empty object and we can now proceed to fill it with the actual data. We can do so using a **for** loop
+
+```{r}
+for (i in seq(1, length(kestrel[, 4:ncol(kestrel)]), 2)) {
+  for (y in 1:nrow(kestrel)) {
+    kestrel_df[y, which(seq(1, length(kestrel[, 4:ncol(kestrel)]), 2) == i)] <- 
+      paste(kestrel[, 4:ncol(kestrel)][y, i], kestrel[, 4:ncol(kestrel)][y, i+1], sep = "") 
+  }
+}
+```
+
+---
+
+```{r}
+kestrel_df
+```
+
+- What we have now is a matrix with two alleles per column, but we are not done yet as we need to add samples information, the name of the loci, and transform everything in a dataframe. Before doing this we need to install and load another package that helps with string manipulations. The package is called **stringr** [@Wickham2023]
+
+```{r include=T, eval=F}
+install.packages("stringr")
+library(stringr)
+```
+
+---
+
+- We can now proceed with adding the names and transforming everything from a matrix to a dataframe
+
+```{r}
+rownames(kestrel_df) <- kestrel$ID
+colnames(kestrel_df) <- unlist(str_split(colnames(kestrel)[-c(1:3)],
+                                                "_"))[seq(1, length(unlist(str_split(colnames(kestrel)[-c(1:3)],
+                                                                                     "_"))), 4)]
+kestrel_df <- as.data.frame(kestrel_df)
+kestrel_df
+```
+
+---
+
+- We add the information about the sample provenience and we then simplify the information re the missing data
+
+```{r}
+kestrel_df <- cbind(kestrel$Info, kestrel_df)
+kestrel_df[kestrel_df == "NANA"] <- "NA"
+kestrel_df[,-1] <- sapply(kestrel_df[,-1], as.numeric)
+kestrel_df
+```
+
+- We can now start using functions from the hierfstat package 
+
+---
+
+- This first function counts the number of alleles by locus and in each population 
+
+```{r}
+allele.count(kestrel_df)
+```
+
+---
+
+- Examinate the output of the *allele.count()* function. What issues did you notice?
+
 
 ## References

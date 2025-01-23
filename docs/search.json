@@ -1747,7 +1747,7 @@
     "href": "classes/15/class_15.html#references",
     "title": "Biologia della conservazione",
     "section": "References",
-    "text": "References\n\n\n\n\nGroombridge, J. J., Jones, C. G., Bruford, M. W., & Nichols, R. A. (2000). ’Ghost’ alleles of the Mauritius kestrel. Nature, 403(6770), 616."
+    "text": "References\n\n\n\n\nGoudet, J. (2005). HIERFSTAT, a package for R to compute and test hierarchical F-statistics. Molecular Ecology Notes, 5(1), 184–186.\n\n\nGroombridge, J. J., Jones, C. G., Bruford, M. W., & Nichols, R. A. (2000). ’Ghost’ alleles of the Mauritius kestrel. Nature, 403(6770), 616.\n\n\nWickham, H. (2023). Stringr: Simple, consistent wrappers for common string operations. Retrieved from https://stringr.tidyverse.org"
   },
   {
     "objectID": "classes/12/class_12.html",
