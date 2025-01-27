@@ -41,7 +41,7 @@ rm(x)
 -   Despite this, thinking like an economist or at least including a few economics notions in the way we think and develop conservation strategies can help to device appropriate conservation actions when resources are lacking or very few
 -   No conservation effort or practice can ultimately endure without an intimate connection to value [@VanDyke2020]
 
----
+------------------------------------------------------------------------
 
 -   Adopting an economic behavior to conservation does not mean that the intrinsic value and motivation of conservation are less important or undermined by money
 
@@ -55,7 +55,6 @@ rm(x)
     -   It is a branch of economics focused on markets!
     -   What factors influence the goods and services users consume.
     -   It tries to consider the externalities (true costs and benefits of a product/service not considered in the market analysis).
-
 -   **Macroeconomics**, is an extension of microeconomics.
     -   It applies to a multitude of individuals and to a larger and wider scale.
     -   Involves the decision making process that determines the appropriate level of economic activity in a society.
@@ -63,19 +62,18 @@ rm(x)
 
 ## 
 
-- There are three foundational economic concepts embedded in many conservation efforts:
-    - [Ecosystem-services]{style="color: red;"}
-    - [Stock-flow]{style="color: green;"} and [fund-service resources]{style="color: green;"}
-    - [Nonexcludable]{style="color: blue;"} and [nonrival goods]{style="color: blue;"}
-- Over the past few decades efforts to captrue the value of nature through a market price have led to many creative programs and projects around the globe, but there is disagreement whether hinging motivation for conservation on economics
-- Some research show that when social interaction become financial ones, economic interests overcome altruistic motivation, causing people to become even less likely to conserve nature for the common good [@Fisher2015] 
-
+-   There are three foundational economic concepts embedded in many conservation efforts:
+    -   [Ecosystem-services]{style="color: red;"}
+    -   [Stock-flow]{style="color: green;"} and [fund-service resources]{style="color: green;"}
+    -   [Nonexcludable]{style="color: blue;"} and [nonrival goods]{style="color: blue;"}
+-   Over the past few decades efforts to captrue the value of nature through a market price have led to many creative programs and projects around the globe, but there is disagreement whether hinging motivation for conservation on economics
+-   Some research show that when social interaction become financial ones, economic interests overcome altruistic motivation, causing people to become even less likely to conserve nature for the common good [@Fisher2015]
 
 ## Ecosystem-services
 
 -   Economic value is manifested in tangible goods (material resources) and services (functions of value to us performed by some other entity)
 
-- Ecosystem services refer to particular ecosystem conditions and functions that have value to humans
+-   Ecosystem services refer to particular ecosystem conditions and functions that have value to humans
 
 -   Consider the services that, for example, a forest can provide.
 
@@ -99,15 +97,9 @@ In an effort to clarify ecosystem terms for an economic assessment some authors 
 
 -   [Ecosystems]{style="color: red;"}: are combinations of interacting species and their environment. They do many things, not all of which are ecosystem services (e.g., a wetland)
 
-
-
 -   [Ecosystem services]{style="color: red;"}: the subset of natural processes that actually generate benefits to people (e.g., water purification). Sometime the service is the production of a good
 
-
-
 -   [Benefits]{style="color: red;"}: the actual things that increase human welfare (e.g., clean water)
-
-
 
 -   [Value]{style="color: red;"}: the importance of a given benefit to a person or group, measured using a specific currency or some other metrics (e.g., \$30/gal/year)
 
@@ -117,11 +109,11 @@ In an effort to clarify ecosystem terms for an economic assessment some authors 
 
 -   Of the 24 services examined by the Millennium Ecosystem Assessment ([World Resource Institute](https://www.wri.org)), 15 were being used in an unsustainable way
 
----
+------------------------------------------------------------------------
 
-- As ecosystems and services they provide are degraded, global biodiversity is diminshed
+-   As ecosystems and services they provide are degraded, global biodiversity is diminshed
 
-- Results from the MEA demonstrated that failing to include the value of ecosystems has left critical dimensions of human well-being out of economic decision making
+-   Results from the MEA demonstrated that failing to include the value of ecosystems has left critical dimensions of human well-being out of economic decision making
 
 ## Stock-flow and Fund-service resources
 
@@ -129,12 +121,11 @@ In an effort to clarify ecosystem terms for an economic assessment some authors 
 
 . . .
 
--   [Stock-flow resources]{style="color: green;"}  are those goods produced via a transformation process, usually self-renewing, occurring within the ecosystem itself. Goods extracted can then be used at a certain rate (flow) from the resource's stock
+-   [Stock-flow resources]{style="color: green;"} are those goods produced via a transformation process, usually self-renewing, occurring within the ecosystem itself. Goods extracted can then be used at a certain rate (flow) from the resource's stock
 
 -   Timber from a forest is the classical example of a stock-flow resource. A standing stock of mature trees transforms water, sunlight and nutrients from the soil into new biomass and new individuals. It is important in the process of creating the resource, and becomes itself the resource
 
 -   If a stock-flow resources is extracted at a rate $\le$ than its renewal rate, we can consider that resource self-perpetuating
-
 
 ## 
 
@@ -146,19 +137,19 @@ Stock-flow resources:
 2.  can be used at any desired rate, but in many case usage rates are too high to make the resource self-perpetuating;
 3.  can be stock-pilled or stored for future use!
 
----
+------------------------------------------------------------------------
 
--   Ecosystems also provide [fund-service]{style="color: green;"} resources.  is something that can gradually be reduced or worn out, and it does not become a part of the resource it produces
+-   Ecosystems also provide [fund-service]{style="color: green;"} resources. is something that can gradually be reduced or worn out, and it does not become a part of the resource it produces
 
 -   The fund provides a service at a fixed rate so that the service is best measured in some metric that describes the output over time
 
 -   For example, from 2007 to 2016 terrestrial ecosystems globally removed an estimated 3.61 Pg (petagrams) C per year from the atmosphere which amounts to 33.7% of total anthropogenic emissions from industrial activity and land-use change [@Keenan2018]
 
-- By removing tha carbon at a fixed rate the ecosystem provides a collective service for the community
+-   By removing tha carbon at a fixed rate the ecosystem provides a collective service for the community
 
-- We can expand this capacity via afforestation, but we cannot stockpile this service
+-   We can expand this capacity via afforestation, but we cannot stockpile this service
 
-- Although the service cannot be used up, it can be worn out if the habitat providing the service is degraded or in suboptimal conditions
+-   Although the service cannot be used up, it can be worn out if the habitat providing the service is degraded or in suboptimal conditions
 
 ------------------------------------------------------------------------
 

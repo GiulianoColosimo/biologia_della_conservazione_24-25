@@ -1634,8 +1634,8 @@
     "objectID": "classes/13/class_13.html#conservation-economics",
     "href": "classes/13/class_13.html#conservation-economics",
     "title": "Biologia della conservazione",
-    "section": "Conservation economics",
-    "text": "Conservation economics\n\nEconomics is the study of how people make choices under condition of scarcity. Economics also studies the results of these choices and how they affect the society (Frank & Bernanke, 2012)\nSpeaking of economics within conservation science may seem a paradox, because economics is often an obstacle or a limit to the development of conservation strategies and the achievement of conservation goals\nAfter all, we live in a largely capitalistic world, and increasing the capital, which often translates to increasing the bank account, is the goal of most corporations worldwide\nDespite this, thinking like an economist or at least including a few economics notions in the way we think and develop conservation strategies can help to device appropriate conservation actions when resources are lacking or very few\nNo conservation effort or practice can ultimately endure without an intimate connection to value (Dyke & Lamb, 2020)"
+    "section": "",
+    "text": "Economics is the study of how people make choices under condition of scarcity. Economics also studies the results of these choices and how they affect the society (Frank & Bernanke, 2012)\nSpeaking of economics within conservation science may seem a paradox, because economics is often an obstacle or a limit to the development of conservation strategies and the achievement of conservation goals\nAfter all, we live in a largely capitalistic world, and increasing the capital, which often translates to increasing the bank account, is the goal of most corporations worldwide\nDespite this, thinking like an economist or at least including a few economics notions in the way we think and develop conservation strategies can help to device appropriate conservation actions when resources are lacking or very few\nNo conservation effort or practice can ultimately endure without an intimate connection to value (Dyke & Lamb, 2020)\n\n\n\nAdopting an economic behavior to conservation does not mean that the intrinsic value and motivation of conservation are less important or undermined by money\nMoral intents do not require an economic justification!!!\nLearning some economics principles should be viewed as an additional set of tools to help us better navigate human biases, emotions, irrationality and the social context of economic-based decision process in conservation science."
   },
   {
     "objectID": "classes/13/class_13.html#conservation-economics-1",
@@ -1663,14 +1663,14 @@
     "href": "classes/13/class_13.html#stock-flow-and-fund-service-resources",
     "title": "Biologia della conservazione",
     "section": "Stock-flow and Fund-service resources",
-    "text": "Stock-flow and Fund-service resources\n\nThe material goods we use and derive from ecosystems and their associated biodiversity are various and diverse. A comprehensive list is hard to make. So, we can classify them based on how we use them\n\n\n\nStock-flow resources are those goods produced via a transformation process, usually self-renewing, occurring within the ecosystem itself. Goods extracted can then be used at a certain rate (flow) from the resource’s stock\nTimber from a forest is the classical example of a stock-flow resource. A standing stock of mature trees transforms water, sunlight and nutrients from the soil into new biomass and new individuals. It is important in the process of creating the resource, and becomes itself the resource\nIf a stock-flow resources is extracted at a rate \\(\\le\\) than its renewal rate, we can consider that resource self-perpetuating"
+    "text": "Stock-flow and Fund-service resources\n\nThe material goods we use and derive from ecosystems and their associated biodiversity are various and diverse. A comprehensive list is hard to make. So, we can classify them based on how we use them\n\n. . .\n\nStock-flow resources are those goods produced via a transformation process, usually self-renewing, occurring within the ecosystem itself. Goods extracted can then be used at a certain rate (flow) from the resource’s stock\nTimber from a forest is the classical example of a stock-flow resource. A standing stock of mature trees transforms water, sunlight and nutrients from the soil into new biomass and new individuals. It is important in the process of creating the resource, and becomes itself the resource\nIf a stock-flow resources is extracted at a rate \\(\\le\\) than its renewal rate, we can consider that resource self-perpetuating"
   },
   {
     "objectID": "classes/13/class_13.html#section-1",
     "href": "classes/13/class_13.html#section-1",
     "title": "Biologia della conservazione",
     "section": "",
-    "text": "All stock-flow resources share similar attributes\n\nStock-flow resources:\n\nhave all been materially transformed by ecosystem processes in to usable goods;\ncan be used at any desired rate, but in many case usage rates are too high to make the resource self-perpetuating;\ncan be stock-pilled or stored for future use!"
+    "text": "All stock-flow resources share similar attributes\n\nStock-flow resources:\n\nhave all been materially transformed by ecosystem processes in to usable goods;\ncan be used at any desired rate, but in many case usage rates are too high to make the resource self-perpetuating;\ncan be stock-pilled or stored for future use!\n\n\n\nEcosystems also provide fund-service resources. is something that can gradually be reduced or worn out, and it does not become a part of the resource it produces\nThe fund provides a service at a fixed rate so that the service is best measured in some metric that describes the output over time\nFor example, from 2007 to 2016 terrestrial ecosystems globally removed an estimated 3.61 Pg (petagrams) C per year from the atmosphere which amounts to 33.7% of total anthropogenic emissions from industrial activity and land-use change (Keenan & Williams, 2018)\nBy removing tha carbon at a fixed rate the ecosystem provides a collective service for the community\nWe can expand this capacity via afforestation, but we cannot stockpile this service\nAlthough the service cannot be used up, it can be worn out if the habitat providing the service is degraded or in suboptimal conditions\n\n\n\n\n\nThe carbon cycle. After Keenan & Williams (2018)\n\n\n\n\nBy clearly distinguishing between these two resource types we are better able to define the parameters of the so called sustainable use"
   },
   {
     "objectID": "classes/13/class_13.html#non-excludable-and-non-rival-goods",
@@ -1691,7 +1691,7 @@
     "href": "classes/13/class_13.html#fundamental-assumptions-of-supply-and-demand",
     "title": "Biologia della conservazione",
     "section": "Fundamental assumptions of supply and demand",
-    "text": "Fundamental assumptions of supply and demand\n\nIn neoclassical economic theory, market price for any good or service stems from supply and demand.\nHigher demand for a particular resource is generated because the price gets lower while the resource or good is supplied with higher quantities.\n\n\nSupply and demand curves. By Paweł Zdziarski. Image downloaded here"
+    "text": "Fundamental assumptions of supply and demand\n\nIn neoclassical economic theory, market price for any good or service stems from supply and demand.\nHigher demand for a particular resource is generated because the price gets lower while the resource or good is supplied with higher quantities.\n\n\n\n\nSupply and demand curves. By Paweł Zdziarski. Image downloaded here"
   },
   {
     "objectID": "classes/13/class_13.html#section-3",
@@ -1733,7 +1733,7 @@
     "href": "classes/13/class_13.html#ecosystem-services",
     "title": "Biologia della conservazione",
     "section": "Ecosystem-services",
-    "text": "Ecosystem-services\n\nEconomic value is manifested in tangible goods (material resources) and services (functions of value to us performed by some other entity)\nEcosystem services refer to particular ecosystem conditions and functions that have value to humans\nConsider the services that, for example, a forest can provide.\n\nGas regulation\nClimate regulation\nDisturbance regulation\nWater supply\nSoil formation\n\n\n\n\nFor how many of these services do you think about paying on a daily basis?"
+    "text": "Ecosystem-services\n\nEconomic value is manifested in tangible goods (material resources) and services (functions of value to us performed by some other entity)\nEcosystem services refer to particular ecosystem conditions and functions that have value to humans\nConsider the services that, for example, a forest can provide.\n\nGas regulation\nClimate regulation\nDisturbance regulation\nWater supply\nSoil formation\n\n\n. . .\n\nFor how many of these services do you think about paying on a daily basis?\n\n\n\n\n\nData source: Millennium Ecosystem Assessment. After Watson & Zakri (2005)\n\n\n\nIn an effort to clarify ecosystem terms for an economic assessment some authors describe the following terms using an economic mindset :\n\nEcosystems: are combinations of interacting species and their environment. They do many things, not all of which are ecosystem services (e.g., a wetland)\nEcosystem services: the subset of natural processes that actually generate benefits to people (e.g., water purification). Sometime the service is the production of a good\nBenefits: the actual things that increase human welfare (e.g., clean water)\nValue: the importance of a given benefit to a person or group, measured using a specific currency or some other metrics (e.g., $30/gal/year)\n\n. . .\n\nThe strength of connections between services varies across ecosystems and regions, but it is clear that thier depletion and degradation will have serious consequences on a global scale\nOf the 24 services examined by the Millennium Ecosystem Assessment (World Resource Institute), 15 were being used in an unsustainable way\n\n\n\nAs ecosystems and services they provide are degraded, global biodiversity is diminshed\nResults from the MEA demonstrated that failing to include the value of ecosystems has left critical dimensions of human well-being out of economic decision making"
   },
   {
     "objectID": "classes/14/class_14.html#gdf-seminar",
@@ -1804,5 +1804,110 @@
     "title": "Biologia della conservazione",
     "section": "",
     "text": "In today’s class we will be following a seminar from the Lgt. CS Candeloro CALABRÒ, Comandante della Squadra Operativa Volante del servizio CITES della Guardia di Finanza di Fiumicino Aeroporto. The seminar title will be LA COMMERCIALIZZAZIONE ED IL RICONOSCIMENTO DEGLI ANIMALI E PIANTE IN VIA DI ESTINZIONE: SPECIE TERRESTRI E MARINE A RISCHIO, QUALE FUTURO DI SOSTEBIBILITA’ AMBIENTALE.\nYou can use this link to download the presentation. Please note that the shared presentation is slightly different from the one you have seen in class, as it is a shorter version with a summary of the main information. The commander shared with me this presentation last year."
+  },
+  {
+    "objectID": "classes/17/class_17.html#conservation-technology",
+    "href": "classes/17/class_17.html#conservation-technology",
+    "title": "Biologia della conservazione",
+    "section": "Conservation technology",
+    "text": "Conservation technology\nBerger-Tal & Lahoz-Monfort (2018)\nSchulz et al. (2023)"
+  },
+  {
+    "objectID": "classes/17/class_17.html#references",
+    "href": "classes/17/class_17.html#references",
+    "title": "Biologia della conservazione",
+    "section": "References",
+    "text": "References\n\n\n\n\nBerger-Tal, O., & Lahoz-Monfort, J. J. (2018). Conservation technology: The next generation. Conservation Letters, 11(6), e12458. Retrieved from https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/conl.12458\n\n\nSchulz, A. K., Shriver, C., Stathatos, S., Seleb, B., Weigel, E. G., Chang, Y.-H., Saad Bhamla, M., et al. (2023). Conservation tools: The next generation of engineering–biology collaborations. Journal of The Royal Society Interface, 20(205). The Royal Society. Retrieved from http://dx.doi.org/10.1098/rsif.2023.0232"
+  },
+  {
+    "objectID": "classes/16/class_16.html#non-excludable-and-non-rival-goods",
+    "href": "classes/16/class_16.html#non-excludable-and-non-rival-goods",
+    "title": "Biologia della conservazione",
+    "section": "Non-excludable and non-rival goods",
+    "text": "Non-excludable and non-rival goods\n\nNatural goods and resources have been proven hard for traditional economic theory\nAn excludable good or resource is one in which ownership of the resource permits the owner exclusive use of the resource and provides the owner with the ability to exclude others from its use\nA rival good or service is one for which its uses infringes with someone else’s ability to enjoy the same good or service\nMany ecosystem goods and services are non-excludable. Can you exclude someone from breathing oxygen?\nSome ecosystem and good services are also non-rival, in that the use of the good does not infringe on the use from other\nBecause of these characteristics (non-excludable and non-rival) these goods (like climate and water surfaces) are outside of the marketplace and are considered public goods"
+  },
+  {
+    "objectID": "classes/16/class_16.html#section",
+    "href": "classes/16/class_16.html#section",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "The need for some form of governance for public goods arises when there is some degree of rivalry and when changes in land usage and management threatens non-excludability\nOver exploitation of freshwater by one person or group in a discrete location may limit the availability of fresh water to other users at that same location, effectively changing it from a public good to a common pool resource\nIf a good is not excludable someone can use it whether or not any producer of the good allows it. If people can use the good regardless of whether or not they have to pay for it, they are considerably less likely to pay for it. If people are unwilling to pay for a good there will be no profit in its production and in a market no one will invest in it in a substantial way (Daly & Farley, 2011)"
+  },
+  {
+    "objectID": "classes/16/class_16.html#fundamental-assumptions-of-supply-and-demand",
+    "href": "classes/16/class_16.html#fundamental-assumptions-of-supply-and-demand",
+    "title": "Biologia della conservazione",
+    "section": "Fundamental assumptions of supply and demand",
+    "text": "Fundamental assumptions of supply and demand\n\nEconomists assume that consumers purchase the combination and quantity of goods that maximize their own well being (utility). Simultaneously, producers make rational decisions to provide such good based on potential for profitability\nEconomic theory assumes that the market agents (producers and consumers) account for all potential costs (opportunity costs), given the consumer or producer’s own resource restraints\nBased on this, economic analysis can figure out the maximum price P and individual with Q units of a good or service would be willing to pay for an additional unit (marginal profit) of that good or service\nBased on the same kind of analysis we can figure out the marginal cost of producing an additional unit (marginal cost)"
+  },
+  {
+    "objectID": "classes/16/class_16.html#references",
+    "href": "classes/16/class_16.html#references",
+    "title": "Biologia della conservazione",
+    "section": "References",
+    "text": "References\n\n\n\n\nDaly, H. E., & Farley, J. (2011). Ecological economics, second edition: Principles and applications. Island Press. Retrieved from https://books.google.is/books?id=20R9\\_6rC-LoC\n\n\nDyke, F. V., & Lamb, R. L. (2020). Conservation biology. Springer International Publishing. Retrieved from https://doi.org/10.1007%2F978-3-030-39534-6\n\n\nZhao, W., Liu, Y., Daryanto, S., Fu, B., Wang, S., & Liu, Y. (2018). Metacoupling supply and demand for soil conservation service. Current Opinion in Environmental Sustainability, 33, 136–141. Retrieved from https://www.sciencedirect.com/science/article/pii/S1877343517301926"
+  },
+  {
+    "objectID": "classes/16/class_16.html#section-1",
+    "href": "classes/16/class_16.html#section-1",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "A general framework to couple human-nature systems by soil conservation service assessment. Supply is characterized by ecosystem processes and functions, and demand is quantified as the total human benefit. After Zhao et al. (2018)"
+  },
+  {
+    "objectID": "classes/16/class_16.html#section-2",
+    "href": "classes/16/class_16.html#section-2",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "An updated method to quantifying SCS supply. The method is based on the calculation of T a soil loss tolerance value as a reference to evaluate SCS. After Zhao et al. (2018)"
+  },
+  {
+    "objectID": "classes/16/class_16.html#cost-benefit-analysis",
+    "href": "classes/16/class_16.html#cost-benefit-analysis",
+    "title": "Biologia della conservazione",
+    "section": "Cost Benefit Analysis",
+    "text": "Cost Benefit Analysis\n\nCost Benefit Analysis (CBA) is a tool used even in conservation economics\n\nWill we gain more than we loose in economic terms?\nWhat are our options?\nWhat if we do nothing?\n\nThe main issue in CBA is to clarify how to quantify costs and benefits\nThe Trump administration had long argued that the EPA (Environmental Protection Act), under the previous Obama administration overestimated the risk of various environmental regulation to the detriment of industry (Dyke & Lamb, 2020)\nFor example, Trump’s EPA had initially calculated that replacing Obama’s Clean power Plan, with his proposed Affordable Clean Energy Act (CEA), would result in an additional 1400 deaths per year. His administration proposed a new set of rules to calculate CBA and this number was drastically reduced"
+  },
+  {
+    "objectID": "classes/16/class_16.html#section-3",
+    "href": "classes/16/class_16.html#section-3",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "After quantifying the supply of SCS, the next crucial step is to characterize the demand for the service, which involves three components:\n\nidentification of the beneficiaries and their location,\nindicators to measure social-economic benefits\nlink to connect the SCS with social-economic benefits\n\n\n\n\n\n\nWhen the soil conservation service improves at the upstream area, it should benefit the upstream area (e.g. better soil fertility and land productivity or intracoupling), but also the other areas in a cascade effect. After Zhao et al. (2018)"
+  },
+  {
+    "objectID": "classes/16/class_16.html#supply-and-demand-with-ecosystem-service",
+    "href": "classes/16/class_16.html#supply-and-demand-with-ecosystem-service",
+    "title": "Biologia della conservazione",
+    "section": "Supply and demand with ecosystem service",
+    "text": "Supply and demand with ecosystem service\n\nZhao et al. (2018). The full article is available on-line and you should be able to access it using the university network"
+  },
+  {
+    "objectID": "classes/16/class_16.html#section-4",
+    "href": "classes/16/class_16.html#section-4",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "During the research processes of soil conservation service, we also need to carry out two-way (feedback) analysis between human system and nature system\nEcosystem management from human system will not only affect the target process, but also trigger possible unprecedented effects on the target processes and/or non-target processes\nGrain for Green restoration project in Loess Plateau of China as a case study, human influences and multiple ecosystem processes have been interconnected, and ecosystem management have cascading impacts at multiscales\nAt the local scale, ecosystem restoration can bring positive effect, such as soil conservation and C fixation. Unfortunately, it also led to some unprecedented environmental problems, such as dried soil layer and water shortage. If these problems are prolonged, more negative effects may happen at larger spatial and time scale, such as vegetation degradation, regional water shortage, and downstream wetland degradation. The disturbance effects on ecosystem are transmuting from one type to another, including to types that have not been considered"
+  },
+  {
+    "objectID": "classes/16/class_16.html#section-5",
+    "href": "classes/16/class_16.html#section-5",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "Hypothesis of disturbance effect transmutation and application based on a case study in the Loess Plateau of China. After Zhao et al. (2018)"
+  },
+  {
+    "objectID": "classes/16/class_16.html#section-6",
+    "href": "classes/16/class_16.html#section-6",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "In Microeconomics there are two general classes of evaluation techniques for putting a price tag on ecosystem services or nature in general: revealed preference and stated preference\nRevealed preference use observed behavior such as market purchases to make inferences on values of goods and services\n\nHedonic valuation model for private property\nHedonic travel cost method\n\nStated preference methods ask people how much they are willing to pay for a non-market good or service. Stated preference approaches create hypothetical markets for environmental benefits where there are no current market prices\n\nContingent valuation\n\nWillingness to pay\nWillingness to accept\n\nChoice experiments"
+  },
+  {
+    "objectID": "classes/13/class_13.html",
+    "href": "classes/13/class_13.html",
+    "title": "Biologia della conservazione",
+    "section": "",
+    "text": "Economics is the study of how people make choices under condition of scarcity. Economics also studies the results of these choices and how they affect the society (Frank & Bernanke, 2012)\nSpeaking of economics within conservation science may seem a paradox, because economics is often an obstacle or a limit to the development of conservation strategies and the achievement of conservation goals\nAfter all, we live in a largely capitalistic world, and increasing the capital, which often translates to increasing the bank account, is the goal of most corporations worldwide\nDespite this, thinking like an economist or at least including a few economics notions in the way we think and develop conservation strategies can help to device appropriate conservation actions when resources are lacking or very few\nNo conservation effort or practice can ultimately endure without an intimate connection to value (Dyke & Lamb, 2020)\n\n\n\nAdopting an economic behavior to conservation does not mean that the intrinsic value and motivation of conservation are less important or undermined by money\nMoral intents do not require an economic justification!!!\nLearning some economics principles should be viewed as an additional set of tools to help us better navigate human biases, emotions, irrationality and the social context of economic-based decision process in conservation science."
   }
 ]
