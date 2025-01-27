@@ -67,8 +67,8 @@ website:
             text: "Class 15 - Exercise in R"
           - href: ./classes/16/class_16.html
             text: "Class 16 - Conservation economics 2"
-#          - href: ./classes/17/class_17.html
-#            text: "Class 17 - Conservation technology"
+          - href: ./classes/17/class_17.html
+            text: "Class 17 - Conservation technology"
 
 
 

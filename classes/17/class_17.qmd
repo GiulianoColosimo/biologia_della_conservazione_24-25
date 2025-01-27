@@ -36,8 +36,10 @@ rm(x)
 
 ## Conservation technology
 
-@BergerTal2018
+![After @BergerTal2018. You can access the manuscript [here](https://drive.proton.me/urls/3KJHSB1H3M#fArISgoBBylZ).](./BergerTal_2018_1.png) 
 
-@Schulz2023
+##
+
+![After @Schulz2023. You can access the manuscript [here](https://drive.proton.me/urls/4CQ84SYNPC#d3oqOYqQygkr).](./schulz_2023_1.png)
 
 ## References
